@@ -1,0 +1,1064 @@
+\clearpage
+\newgeometry{hmargin=2.5cm,vmargin=2cm}
+\chapter{Contextualisation}                                                     \label{contexte}
+%Présentation du concours en lui même, où se situe la compétition 2019.....
+
+	\section{Le concours \textit{ERL Emergency Service Robots}}
+	%en quoi consiste le concours
+	
+		Le concours \textit{ERL\footnote{\textit{European Robotic League.}} Emergency Robots}
+	est un événement rassemblant différentes écoles d'ingénieur et organismes liés au domaine de 
+	la robotique. En particulier, ce concours ci a pour but de développer les 
+	solutions robotiques existantes dans le cadre de situations d'urgence\footnote{
+	Telles, par exemple, des catastrophes naturelles, des accidents dans des zones difficiles 
+	d'accès ou à risques pour les secouristes.}. L'aspiration principale du 
+	concours est d'allier la collaboration de robots aériens, terrestres, et 
+	sous-marins. La compétition est composée de différentes missions de terrain,  \label{missions}
+	que les robots doivent réaliser en toute autonomie et en respectant certaines
+	contraintes\footnote{Spécifiées par les organisateurs du concours.}. En outre, 
+	les robots terrestres et aériens doivent notamment être capable d'évoluer 
+	dans des bâtiments, ce qui rend l'utilisation des techniques de
+	localisation instantanée par \textit{GPS} obsolètes. Les exigences du 
+	concours 2019 sont présentées section \ref{exigences}.
+	
+	
+	\section{Travaux antérieurs}                                                  \label{anterieur}
+	%Les participatrions précédentes de l'école.
+		Ce n'est pas la première édition du concours \textit{ERL Emergency Service Robots}
+	à laquelle l'ESNTA Bretagne offre sa contribution,
+	l'ENSTA Bretagne avait participé en 2015, et diverses travaux avaient déjà 
+	été réalisés à l'ENSTA Bretagne, comme le travail de stage assistant ingénieur 
+	de M.Benhnini \cite{BEN17}. De ces innombrables travaux, il reste des robots 
+	aériens, terrestres, et sous-marins fonctionnels, ainsi que des techniques
+	et stratégies d'approche de la compétition. Le rôle du projet \textit{ERL2019}
+	n'est donc pas
+	de construire de nouveaux robots à mêmes d'accomplir les missions de terrain
+	de la compétition, mais, en plus de devoir améliorer 
+	les robots existants et ainsi les adapter aux missions de l'édition 2019,
+	il faudra construire un système qui permettra de contrôler les
+	robots lors de leur intervention.
+	
+	\section{Le concours 2019}
+	%Spécificités du concours 2019.
+		Pour l'édition 2019 de la compétition, les robots aériens et terrestres
+	concourront afin de mener à bien une intervention sur une zone \guillemotleft{} 
+	dévastée \guillemotright{}. Il ne sera donc pas question d'utiliser
+	des robots sous-marins pour cette édition. Comme présenté en section \ref{def},
+	les robots sélectionnés dans le cadre de notre projet seront: deux robots terrestres,
+	et un robot aérien\footnote{Pour davantage de précisions, veuillez vous référer
+	à la section \ref{terrestre} pour les robots terrestres, et à la section \ref{aerien} pour le robot aérien.}. Ces robots sont bien entendu, comme précisé
+	section \ref{anterieur}, des systèmes existants.
+		\\\indent En l'occurrence, trois missions
+	seront à réaliser par les robots aériens et terrestres. Premièrement, les
+	robots, terrestres comme aériens, devront être capable de produire une 
+	cartographie intérieur, de certains bâtiments présents sur la zone 
+	d'exploration\footnote{Ce sont en réalité de grands chapiteaux.\label{chapiteau}}, et extérieur,
+	sous-entendu de la zone à explorer. Deuxièmement, mais non pas moins important 
+	pour autant, les robots, aériens comme terrestres, devront être à mêmes 
+	de déposer une trousse de soin auprès d'un blessé présent sur la
+	zone d'exploration. Troisièmement, et non pas dernièrement, les robots, aussi
+	bien aériens que terrestres, devront pouvoir détecter des \textit{OPI}\footnote{\textit{
+	Object of Potential Interest.}, en d'autres termes des symboles éparpillés sur la zone
+	d'exploration.}, et de les reconnaître.
+	
+	\FloatBarrier
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\columnwidth, height = 0.5\columnwidth]{imgs/IS/zone.png}
+	\caption{Zone d'exploration en jaune. \cite{RULE}}
+	\label{zone}
+\end{figure}
+
+	\FloatBarrier
+	
+	\FloatBarrier
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.2\columnwidth, height = 0.2\columnwidth]{imgs/IS/entry.png}
+	\caption{\textit{OPI} indiquant les entrées autorisées. \cite{RULE}}
+	\label{entry}
+\end{figure}
+
+	\FloatBarrier
+	
+	
+	\FloatBarrier
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.2\columnwidth, height = 0.2\columnwidth]{imgs/IS/noentry.png}
+	\caption{\textit{OPI} indiquant les entrées non-autorisées. \cite{RULE}}
+	\label{noentry}
+\end{figure}
+
+	\FloatBarrier
+	
+	\FloatBarrier
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.2\columnwidth, height = 0.2\columnwidth]{imgs/IS/damages.png}
+	\caption{\textit{OPI} indiquant les dommages bâtiments. \cite{RULE}}
+	\label{damages}
+\end{figure}
+
+	\FloatBarrier
+	
+	Par ailleurs, tout au long de l'intervention des robots, les robots
+	suivront un liste de \textit{waypoints}\footnote{Coordonnées géographiques.\label{way}}, qui 
+	leurs indiquera quel chemin suivre dans la zone d'exploration, et surtout, où
+	est à déclencher ou à effectuer telle mission.
+
+
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+
+
+\chapter{Management de projet}                                                  \label{mana}
+
+	\section{Répartition du travail}
+		
+		L'organisation au sein de l'équipe de projet a été notre première préoccupation,
+	puisqu'elle a permis, dès le début du projet, d'apporter efficacité\footnote{
+	Chacun avait un travail qui lui était consacré, ou chaque tandem.}. L'équipe 
+	projet a été partitionnée en deux tandems: Corentin Jegat et Arnaud Klipfel, puis
+	Osama Al Shuaibi, et Ali Saad. Ce choix n'était pas anodin. En effet, comme la
+	compétition demande de travailler sur des robots terrestres et aériens, répartir un 
+	groupe\footnote{M.Jegat et M.Klipfel.} sur la gestion des robots terrestres\footnote{Les
+	travaux sur la partie terrestre sont présents au \ref{partieTe}.}, et 
+	un autre binôme\footnote{M.Saad, et M.Al Schuaibi.} sur la partie aérienne\footnote{Les
+	travaux sur la partie aérienne sont présents au \ref{partieAr}.}, se 
+	montre plus efficace. Par ailleurs, l'équipe projet a pu s'apercevoir
+	de l'utilité de l'\textit{ingénierie système} en termes de vision globale 
+	du système et de compréhension du système. De ce fait, M.Klipfel s'est 
+	progressivement davantage orienté vers l'\textit{ingénierie système}, le système 
+	devenant davantage complexe. M.Jegat s'est donc attelés aux travaux présentés au
+	\ref{obstacle}.
+	
+	
+	\section{Outils de projet}                                                    \label{outils}
+	
+		En plus d'une répartition du travail, au sein de l'équipe, adaptée au projet 
+	conduit, l'organisation du projet a été simplifiée par l'utilisation d'un outil
+	numérique en particulier\footnote{Notamment, très prisé pour sa simplicité, et 
+	sa gratuité.},
+	\textit{Trello}. Cet outils numérique de gestion de projet permet 
+	de manager une équipe par le biais de \frstg{} tableaux de bord
+	\lstg. Comme l'image \ref{tb} page \pageref{tb} le montre, le tableau de bord de projet
+	a été organisé par domaine de projet. 
+	
+	\FloatBarrier
+	
+	\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\columnwidth, height = 0.6\columnwidth]{imgs/IS/trellogene.png}
+	\caption{\textit{Tableau de bord} du projet \textit{ERL2019}.}
+	\label{tb}
+	\end{figure}
+	
+	\FloatBarrier
+	
+	\FloatBarrier
+	
+	\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\columnwidth, height = 0.6\columnwidth]{imgs/IS/trelloIS.png}
+	\caption{\textit{Tableau de bord} de la partie \textit{Ingénierie Système}.}
+	\label{tbis}
+	\end{figure}
+	
+	\FloatBarrier
+	
+	Par conséquent, il est notable de remarquer
+	que le projet \textit{ERL2019} se découpe en une partie aérienne et une partie
+	terrestre, et que pour chacune de ces parties, des tâches en simulation et
+	pratiques sont à réaliser. Au sein d'une partie de projet, comme le montre
+	l'image \ref{tbis} page \pageref{tbis}, les tâches sont réparties sous forme de liste. 
+	Cette dichotomie, émanant d'une analyse en amont 
+	de notre projet nous a permis d'organiser l'activité à long termes\footnote{Par
+	un diagramme de Gantt.}, de collaborer
+	plus efficacement, et de définir des ordres de priorité. Ainsi, la première phase du projet
+	\footnote{Jusque début Janvier.} consiste à travailler sur les parties en simulation
+	principalement, agrémentées par quelques parties pratiques, et d'obtenir
+	un modèle convaincant de notre système. La deuxième phase\footnote{Janvier jusqu'à la fin
+	du projet.} portera plutôt sur la partie pratique. Par ailleurs, il est 
+	impératif de posséder un système\footnote{Premier prototype.} opérationnel pour 
+	le concours se déroulant du 18 ou 23 Février à Sevilla en Espagne. Une
+	fois une première version établie, l'équipe se concentrera sur la réalisation
+	du démonstrateur.
+	
+	
+\chapter{Vision globale du système}                                             \label{ischap}
+%Présentation générale du projet ERL2019: cdc (règle du concours), analyse
+%fonctionnelle...
+
+	\section{Analyse du besoin}
+	
+		\subsection{Définition du système}                                          \label{def}
+		
+			Comme le présente le diagramme bête à cornes figure \ref{bc} page \pageref{bc},
+			le système réalisé à l'occasion du projet \textit{ERL2019} est un système
+			de contrôle et d'adaptation des robots existants, afin de permettre une réussite
+			des interventions sur le terrain. Par \frstg{} intervention \lstg, il faut comprendre
+			une évolution autonome des robots sauveteurs durant laquelle ils devront 
+			accomplir trois types de mission\footnote{cf. section \ref{missions} page \pageref{missions}}.
+			Ainsi, avant le départ en intervention, les sauveteurs communiquent aux robots
+			sauveteurs une liste de \textit{waypoints}\footnote{cf. note de bas de page \ref{way}
+			page \pageref{way}.}, qui permettent aux robots sauveteurs à la fois de connaître leur
+			itinéraire d'intervention, et  où les missions doivent être exécutées. Pour la 
+			suite de ce rapport, l'acronyme \textit{SIC} pour 
+			\textit{Système d'Intervention et de Contrôle} fait référence au système réalisé
+			dans le cadre du projet \textit{ERL2019}.
+			
+			\FloatBarrier
+	
+			\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=\columnwidth, height = 0.6\columnwidth]{imgs/IS/bete_a_corne_v2.png}
+			\caption{Diagramme de type \textit{bête à cornes} pour l'analyse du besoin.}
+			\label{bc}
+			\end{figure}
+		
+			\FloatBarrier
+			
+		
+		\subsection{Exigences}                                                      \label{exigences}
+	
+			Afin de mieux cerner le \textit{SIC}, il a fallut dans un premier temps 
+			identifier et reformuler les besoins du concours \textit{ERL2019}
+			\footnote{Principalement, perçues 
+		comme des exigences.} et les besoins de M. Le Bars. Pour ce faire, l'étude 
+		des règles du concours a été indispensable \cite{RULE}, ce qui a permis, 
+		en plus de quelques requêtes de M. Le Bars de définir un cahier des charges
+		pour le projet \textit{ERL2019}, qui est présenté annexe 
+		\ref{cdc} page \pageref{cdc}.
+		Les critères principaux choisis pour les exigences
+		sont: une description, un type\footnote{Exigence de type contrainte ou fonction.}, et 
+		sa raison d'être\footnote{Seuls les critères les plus importants sont présentés
+		dans ce rapport.}.
+		\\\indent Par la suite, les exigences ont été regroupées en cinq \textit{GLE}\footnote{
+		\textit{Groupe Logique d'Exigences}.}. Le \textit{GLE1 Analyse Environnement}
+		regroupe l'ensemble des exigences liées aux mesures, et aux capteurs. Le 
+		\textit{GLE2 Autonomie} est composé des exigences relatives à l'évolution
+		autonome des robots sauveteurs contrôlés par le \textit{SIC} durant 
+		une intervention. Le \textit{GLE3 Missions} traite de l'ensemble 
+		des exigences définissant le cadre des missions de terrain\footnote{cf. \ref{missions}
+		page \pageref{missions}.}. Le \textit{GLE4 Sécurité} rassemble les exigences 
+		visant à assurer une évolution autonome en toute sécurité, et de ce fait 
+		de rendre l'évolution autonome un minimum contrôlable. Finalement, le \textit{GLE5 Intégration} recense 
+		les exigences liées à l'intégrabilité du \textit{SIC} à l'existant.
+		
+	
+	\section{Analyse fonctionnelle}
+
+		\subsection{Analyse externe}                                                \label{analyseext}
+		
+			Afin de réaliser un cahier des charges fonctionnelles, et donc 
+		d'identifier fonctions principales et fonctions de contrainte, une analyse
+		fonctionnelle partant des acteurs du milieu extérieur a dans un premier été
+		menée. Pour simplifier le diagramme pieuvre fourni figure \ref{pieuvre} page
+		\pageref{pieuvre}, une seule fonction 
+		principale \textit{FP1} a été représentée à ce niveau de raffinement.
+		Cette fonction principale a ensuite été décomposée en plusieurs fonctions
+		principales, comme illustré section \ref{cdcf} page \pageref{cdcf}. Pour une 
+		spécification des fonctions principales veuillez vous référer au cahier des 
+		charges fonctionnelles figure	.
+		
+			\FloatBarrier
+	
+			\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=1.1\columnwidth, height = 1.0\columnwidth]{imgs/IS/pieuvre.png}
+			\caption{Diagramme pieuvre du \textit{SIC}. Les fonctions 
+			principales et de contrainte sont détaillées dans le cahier des charges
+			fonctionnelles figure.}
+			\label{pieuvre}
+			\end{figure}
+		
+			\FloatBarrier
+				
+				
+		\subsection{Cahier des charges fonctionnelles}                              \label{cdcf}
+		
+			Après avoir identifié une fonction principale de haut niveau, \textit{FP1}
+			\footnote{cf. \ref{analyseext} page \pageref{analyseext}.}, celle-ci 
+			a été décomposée en plusieurs sous-fonctions principales. Dans 
+			ce processus, la correspondance
+			avec les \textit{GLE}\footnote{Présentés au \ref{exigences} page \pageref
+			{exigences}}
+			a été conservée. Par ailleurs, certaines fonctions principales se décomposent
+			en deux fonctions principales liées au contrôle des robots terrestres pour
+			l'une, et au contrôle des robots aériens pour l'autre. En effet, pour
+			exemple, la réalisation de la fonction principale \textit{FP1.2.1} sur
+			l'asservissement des robots sauveteurs ne sera pas identique d'un robot aérien
+			à un robot terrestre.
+			\\\indent De plus, certaines
+			fonctions principales n'ont pas été spécifiées suivant les \textit{trois axes}
+			\footnote{Temps, comportement, et données E/S.}, puisque leur 
+			trop haut niveau d'abstraction rendait cette opération incohérente.
+			Il a été préféré de spécifier suivant les trois axes les sous-fonctions
+			principales de moins hauts niveaux d'abstraction. Le cahier des charges
+			fonctionnelles pour sa partie contrainte est 
+			disposé en annexe \ref{FC} page \pageref{FC},  et pour sa partie fonctionnalités
+			du \textit{SIC} est disponible en annexe \ref{FP} page \pageref{FP}.
+			
+		
+		\subsection{Analyse interne}
+		
+			Après avoir établi un cahier des charges fonctionnelles\footnote{cf.
+			annexe \ref{cdcfAnnexe} page \pageref{cdcfAnnexe}.}, il a fallut raffiner
+			les fonctions principales en cours de développement pendant la présente
+			phase du projet. Seul le raffinement par \textit{FAST} de la 
+			fonction principale 1.2.1.2 concernant l'asservissement des
+			robots terrestres dans leur suivi des \textit{waypoints} est présenté
+			dans ce rapport, étant le plus abouti. Ainsi, la figure \ref{fast} page
+			\pageref{fast} montre  \textit{comment} les robots terrestres contrôlés
+			par le \textit{SIC} peuvent être asservis\footnote{Pour davantage de
+			renseignements et de détails technique sur l'asservissement des robots terrestres,
+			veuillez vous référer au \ref{obstacle} page \pageref{obstacle}.}. Les robots
+			terrestres doivent être commandés afin de les mener d'un \textit{waypoint}
+			à un autre. A cette fin, les données des capteurs des robots terrestres
+			sont recueillies, analysées, et traitées. Ici, pour simplifier,
+			seule l'analyse des données capteurs permettant de détecter les obstacles\footnote{
+			Objets naturels se trouvant entre le robot et son prochain \textit{waypoint}.}
+			a été représentée. Ainsi, après détection des obstacles,  et connaissant
+			l'itinéraire à suivre\footnote{Ensemble de \textit{waypoints}.}, il est possible
+			à l'aide d'algorithmes\footnote{présentés au \ref{obstacle} page \pageref{obstacle}.}
+			de calculer la commande à appliquer aux robots terrestres\footnote{tension
+			des moteurs par exemple.}, afin de rallier le prochain \textit{waypoint}
+			sans encombres.
+		
+			\FloatBarrier
+	
+			\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=1.2\columnwidth, height = 0.7\columnwidth]{imgs/IS/fast.png}
+			\caption{Raffinement par \textit{FAST} de la fonction principale FP1.2.1.2 (cf.
+			cahier des charges fonctionnelles en annexe \ref{FP} page \pageref{FP}) en bas;
+			architecture physique de la chaîne fonctionnelle au-dessus.}
+			\label{fast}
+			\end{figure}
+		
+			\FloatBarrier
+			
+			
+		\subsection{Architecture fonctionnelle}
+		
+				Les fonctions principales du \textit{SIC} étant identifiées\footnote{
+			cf. cahier des charges fonctionnelles en annexe \ref{cdcfAnnexe} page
+			\pageref{cdcfAnnexe}.}, il est dès lors possible de s'intéresser aux
+			interactions entre les fonctions principales du système.
+				\\\indent Pour ce faire les flux entre les fonctions principales 
+			ont été étudiés, débouchant sur l'architecture physique présentée
+			figure \ref{af} page \pageref{af}. De l'architecture fonctionnelle de 
+			la figure \ref{af}, il est possible de décrire le fonctionnement
+			possible du \textit{SIC}. Ainsi, le sauveteur rempli au préalable 
+			un fichier contenant les ordres et informations d'intervention. Principalement,
+			le sauveteur communique aux robots un ensemble de \textit{waypoints}, qui 
+			constitue l'itinéraire de l'intervention et spécifie à quel moment
+			dans l'intervention les missions doivent être lancées\footnote{Les trois missions
+			sont rappelées figure \ref{af} pagèe \pageref{af}.}. Dans le cas où
+			les requêtes des sauveteurs sont valides\footnote{Conforme avec les fonctionnalités
+			des robots sauveteurs.}, le \textit{SIC} évolue en mode autonome, et par conséquent
+			les robots sauveteurs également. Durant ce \frstg{} mode autonome \lstg{},
+			les sauveteurs reçoivent des informations en temps réel\footnote{Par un ordinateur 
+			avec un bureau à distance connecté par \textit{Wifi} sur les robots sauveteurs.}
+			de l'état du \textit{sic}, et possèdent le pouvoir d'arrêter l'intervention
+			quand ils le jugent nécessaire, ainsi que de modifier les ordres d'intervention
+			stipulés initialement.
+				\\\indent Au cours de l'évolution autonome, le \textit{SIC} analyse 
+			l'environnement à proximité des robots sauveteurs, veille à la sécurité
+			des acteurs extérieurs\footnote{Les sauveteurs ou les blessés par 
+			exemple. Les acteurs extérieurs sont mentionnés dans le diagramme 
+			pieuvre figure \ref{pieuvre} page \pageref{pieuvre}.}, dirige les 
+			robots sauveteurs, et déclenche les missions adéquates en fonction 
+			des \textit{waypoints} atteints par les robots sauveteurs. Le \textit{SIC}
+			permet de véhiculer les états et informations relatives aux robots sauveteurs
+			entre eux.
+		
+			\FloatBarrier
+	
+			\begin{sidewaysfigure}[!htbp]
+			\centering
+			\includegraphics[width=1\columnwidth, height = 0.5\columnwidth]{imgs/IS/af.png}
+			\caption{Architecture fonctionnelle du \textit{SIC}.}
+			\label{af}
+			\end{sidewaysfigure}
+		
+			\FloatBarrier
+		
+	\section{Analyse organique}
+
+		\subsection{Sous-systèmes}
+		
+				Afin de déterminer l'architecture physique du \textit{SIC}, le système 
+			a d'abord était décomposé en sous-systèmes. Puis, les interfaces
+			physiques existantes entre ces sous-systèmes ont été identifiées. Finalement,
+			les fonctions principales on été associées aux différents sous-systèmes ce
+			qui a permis de déboucher à l'architecture organique présentée
+			figure \ref{ap} page \pageref{ap}. 
+				\\\indent Aucunes solutions à l'échelle du composant n'a été pour l'instant
+			étudiée étant donné que la première phase du projet\footnote{Comme 
+			décrit au \ref{outils} page \pageref{outils}.} se focalise sur l'établissement
+			d'algorithmes et de commandes robustes des robots sauveteurs, et ainsi 
+			davantage sur la programmation et la simulation.
+			
+			\FloatBarrier
+	
+			\begin{sidewaysfigure}[!htbp]
+			\centering
+			\includegraphics[width=1\columnwidth, height = 0.5\columnwidth]{imgs/IS/ap.png}
+			\caption{Architecture organique du \textit{SIC}.}
+			\label{ap}
+			\end{sidewaysfigure}
+		
+			\FloatBarrier
+			
+			
+			
+			
+			
+			
+\chapter{Partie terrestre du système}                                           \label{partieTe}
+	
+	\section{Etats de l'art des robots existants}                                                                                \label{terrestre}
+			\subsection{Le robot six-roues}                                           \label{sirou}
+			
+				\subsubsection{Architecture mécanique}
+				
+					\FloatBarrier
+			
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.3\columnwidth, height = 0.5\columnwidth]{imgs/TR/6r-meca2.jpg}
+					\caption{Robot six-roues utilisé pour l'édition 2015 du concours \textit{ERL}.}
+					\label{sixroues}
+					\end{figure}
+				
+					\FloatBarrier
+				
+				
+				
+							Le robot, figure \vref{sixroues}, est constitué
+					de six roues, trois à droites et trois à gauche. La chaîne de
+				  puissance mécanique est constituée d’un moteur par côté qui transmet la rotation aux trois 
+				 roues via des chenilles et des barbotins. Une vue des les chaînes de transmissions
+				de puissance du robot est à disposition figure \vref{chaines}.
+							\\\indent Les moteurs choisis sont des motoréducteurs, ils sont assez 
+					long par rapport 
+					à la largeur du robot. C’est pourquoi le moteur qui entraîne le côté droit
+					et celui qui entraîne le côté gauche ne peuvent pas se placer en regard.
+					Le parti pris a été de placer le moteur droit sur la roue avant et 
+					le moteur gauche sur la roue du milieu. Cela ne change en rien la cinématique
+					du robot, tout laisse à penser que la contrainte d’espace a guidé ce choix.
+					
+					\FloatBarrier
+			
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=1\columnwidth, height = 0.5\columnwidth]{imgs/TR/6r-meca1.jpg}
+					\caption{Chaînes de transmission de puissance du robot six-roues.}
+					\label{chaines}
+					\end{figure}
+				
+					\FloatBarrier
+					
+					Le robot étant fait pour s'aventurer sur plusieurs types de terrain, 
+					notamment sur des zones non plates, il est donc articulé par une 
+					liaison pivot entre le centre et l’arrière. Le
+					schéma cinématique figure \ref{cine} page \pageref{cine} le met en évidence.
+					
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.8\columnwidth, height = 0.6\columnwidth]{imgs/TR/cine.png}
+					\caption{Schéma cinématique du robot six-roues.\\ Légende: moteur D correspond 
+					au moteur droit, et moteur G au moteur gauche.}
+					\label{cine}
+					\end{figure}
+					
+					\FloatBarrier
+				
+				\subsubsection{Architecture électronique}                               \label{electer}
+					
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.7\columnwidth, height = 0.5\columnwidth]{imgs/TR/arelec.png}
+					\caption{\'Electronique du robot six-roues.\\
+					Caméra (1), Ordinateur embarqué (2), Batterie (3), Carte de contrôle des moteurs (4),
+					Bouton d'arrêt d'urgence (5).
+					}
+					\label{elecSix}
+					\end{figure}
+					
+					\FloatBarrier
+					
+					\paragraph*{Caméra (1)\footnote{cf. figure \vref{elecSix}.}}
+					
+						La caméra utilisée est une Kinect. Initialement prévue comme 
+						accessoire à la console de jeu XBOX, la Kinect possède de nombreux 
+						avantages qui font d’elle un excellent capteur en robotique. 
+						Premièrement elle possède une caméra couleur haute définition 
+						($1920 \times 1280$ pixels avec une vitesse de transmission de 30 images 
+						par seconde). On peut alors utiliser cette vidéo pour faire du 
+						traitement d’image en temps réel. Mais la Kinect possède également
+						une caméra qui est image de la distance des objets devant elle. 
+						En combinant ces deux flux d’information, on peut reconstituer un
+						nuage de point en 3D coloré.
+					
+					\paragraph*{Ordinateur embarqué (2)} \label{nuke}
+					
+						C’est le cœur de l’électronique de ce robot. Ce mini-ordinateur, 
+						l’Intel NUC, va centraliser toutes les données pour ensuite faire 
+						tourner les différents codes programmés. Il possède tous les composants
+						d’un ordinateur normal (carte graphique, processeur, sortie USB \dots) 
+						et sa petite taille, $10 \times 10 cm$, fait de lui un excellent ordinateur 
+						embarqué.
+					
+					\paragraph*{Batterie (3)}
+					
+					Elle sert à alimenter les divers équipements du robot. 
+					Attention tout de même à son utilisation car c’est une batterie Li-Po.
+					
+					\paragraph*{Carte de contrôle des moteurs (4)}
+					
+					La carte \textit{Polulu Maestro} est l’intermédiaire entre les commandes 
+					envoyées par l’ordinateur et les moteurs. Pour les servomoteurs 
+					elle converti l’angle souhaité du moteur en impulsions électroniques.
+					Pour les moteurs de puissance, elle converti la vitesse souhaitée en 
+					impulsions PWM (Pulse-width modulation).
+					
+					\paragraph*{Bouton d'arrêt d'urgence (5)}
+					
+					En cas de problème il faut toujours garder une sécurité manuelle. 
+					C’est un composant incontournable de tout projet robotique pour 
+					éviter des mésaventures désagréables.
+					
+					\paragraph*{Centrale inertielle (non-représenté sur la figure)}
+	
+					Sur le capot du robot se trouve une centrale inertielle. Ce composant 
+					permet de connaître, après un traitement informatique des données 
+					recueillis, la position et l’orientation du robot. C’est un composant
+					très utilisé pour la localisation, que ce soit pour un robot terrestre,
+					aérien ou sous-marin
+					
+			\subsection{Le robot \textit{char}}
+			
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.9\columnwidth, height = 0.5\columnwidth]{imgs/TR/char.png}
+					\caption{Robot char de l'\textit{ENSTA Bretagne}.}
+					\label{char}
+					\end{figure}
+					
+					\FloatBarrier
+			
+			
+				\subsubsection{Architecture mécanique}
+				
+				Le  déplacement dur robot-char, figure \vref{char}, est différent de celui
+				d’une voiture classique avec des 
+				roues directrices. On a ici un moteur par chaîne, que l’on appellera 
+				respectivement M1 et M2. Pour avancer en ligne droite M1 tourne dans 
+				le même sens que M2, pour reculer les deux sont en sens inverse, et pour
+				tourner M1 tourne dans un sens et M2 dans l’autre.
+				Ce type de véhicule est pratique car créer une commande pour le déplacer est 
+				relativement simple.
+
+				\subsubsection{Architecture électronique}
+				
+					Les composants électroniques et leurs agencements sont les mêmes que
+				pour le robot six-roues présenté en \vref{sirou}. Veuillez donc vous
+				référer au \vref{electer} pour davantage de détails sur l'architecture électronique
+				d'un robot terrestre.
+				
+			\subsection{Le robot \textit{buggy}}
+			
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.9\columnwidth, height = 0.5\columnwidth]{imgs/TR/buggy.png}
+					\caption{Robot de type \frstg{} buggy \lstg{} de l'\textit{ENSTA Bretagne}.}
+					\label{buggy}
+					\end{figure}
+					
+					\FloatBarrier
+			
+			
+				\subsubsection{Architecture mécanique}
+			
+				Le buggy figure \vref{buggy} est composé de châssis complètement suspendus. 
+				Chaque châssis
+				est composé d’un moteur pour la propulsion et d’un servomoteur pour la 
+				direction. La suspension pendulaire permet une grande mobilité du châssis
+				pour passer les différents obstacles qui peuvent exister sur le trajet. 
+				Les 4 roues sont motrices et directrices, on pilote donc ce buggy comme 
+				une voiture, avec un angle de direction.
+				
+				\subsubsection{Architecture électronique}
+				
+				Les composants électroniques et leurs agencements sont les mêmes que
+				pour le robot six-roues présenté en \vref{sirou}. Veuillez donc vous
+				référer au \vref{electer} pour davantage de détails sur l'architecture électronique
+				d'un robot terrestre.
+				
+	\section{Robot choisi}
+		%Description détaillée de la technologie du robot terrestre et de la procédure de 
+		%lancement.
+		Des robots présentés au \vref{terrestre} le robot six-roues a été retenu
+		pour sa robustesse. En effet, il est plus imposant que le buggy \vref{buggy}, et ne possède
+		pas de chenilles comme le robot char \vref{char}.
+		
+		
+	%\section{Cartographie 3D}
+	
+	\section{Algorithme d'évitement d'obstacle}                                  \label{obstacle}
+	
+		\subsection{Suivi d'itinéraire}
+		
+			Le suivi d’itinéraire est un point essentiel de ce projet. Le robot doit
+			être capable de rallier une position demandée de manière autonome. 
+			Pour cela, il doit être capable de suivre une consigne donnée par les 
+			programmes des cartes de contrôles\footnote{Typiquement, les ordinateurs
+			embarqués présents sur les robots, cf. \vref{nuke}.}. A tout instant le robot
+			va chercher à aligner sa direction avec
+			un vecteur directeur qui fera office de consigne. Pour l’instant 
+			l’asservissement ne se fait que par un correcteur proportionnel.
+		
+		\subsection{\'Evitement d'obstacle}
+				
+				Lorsque notre robot se déplace d’un point à un autre, il se peut 
+				\footnote{Et dans le cadre du concours c’est même certain.} qu’il y ait un ou des 
+				obstacles sur le chemin. C’est pourquoi on cherche à implémenter dans 
+				le robot un algorithme d’évitement d’obstacle.
+		
+		\subsubsection{Les champs de potentiel}                                     \label{champPotAlgo}
+			
+				La première technique utilise les champs de potentiel. L’objectif est
+			simple: à chaque point de l’espace on associe un vecteur qui pointe vers
+			le waypoint, point en vert sur la figure \vref{iti} . Par exemple au point 
+			bleu\footnote{cf. figure \vref{iti}.} on associe le
+			vecteur unitaire noir qui pointe vers le point vert. Ce vecteur sera un 
+			repère pour asservir le robot (voir Suivi d’itinéraire).
+			
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.5\columnwidth, height = 0.4\columnwidth]{imgs/TR/waypoint.png}
+					\caption{Robot (en \textcolor{blue}{bleu}) pointant dans la direction de son prochain
+					\textit{waypoint} (en \textcolor{green}{vert}).}
+					\label{iti}
+					\end{figure}
+					
+					\FloatBarrier
+			
+				Maintenant on s’intéresse au cas où on détecte un obstacle. 
+				Chaque obstacle sera représenté par un point dit « répulsif ». Ils sont
+				appelés ainsi, car leur rôle est de faire varier l’inclinaison des vecteurs
+				afin que le robot puisse éviter les obstacles. On veut également que plus
+				le robot soit proche d’un point répulsif, plus l’influence de ce dernier 
+				soit forte sur le vecteur directeur. Mathématiquement ce problème se 
+				traduit de la manière suivante :
+				
+				\begin{enumerate}
+					\item On crée un \textit{waypoint} à suivre.
+					\item A tout point de l’espace on associe un vecteur unitaire qui
+					pointe vers le \textit{waypoint}.
+					\item A tout point répulsif on associe un champ de potentiel de norme
+					égal à l’inverse de la distance entre le robot et le point répulsif et
+					de direction radiale.
+					\item On ajoute les deux champs.
+				\end{enumerate}
+			
+				A l’aide de cette méthode on obtient bien des vecteurs qui tendent à 
+				éviter les obstacles autour des points répulsifs et des vecteurs loin 
+				des points répulsifs qui pointent vers le waypoint à atteindre.
+				Le résultat brut et le résultat
+				avec les champ normé sont présents respectivement figure \ref{repulsif}
+				et figure \vref{norme}.
+			
+				\FloatBarrier
+					
+					\begin{figure}[!htbp]
+						%\centering %ne les met pas les unes à côté des autres
+						\subfloat[Champ de potentiel brut]{\includegraphics[width=0.5\columnwidth, height = 0.4\columnwidth]{imgs/TR/repulsif.png}\label{repulsif}}
+						\subfloat[champ de potentiel normé]{\includegraphics[width=0.5\columnwidth, height = 0.4\columnwidth]{imgs/TR/norme.png}\label{norme}}
+						\caption{Champ de potentiel généré à partir de points répulsifs, les obstacles (en
+						\textcolor{red}{rouge}), et du waypoint (en \textcolor{green}{vert}).}\label{champpot}
+					\end{figure}
+					
+				\FloatBarrier
+			
+			
+					
+			\subsubsection{Simulation d'un lidar}                                     \label{lidarAlgo}
+			
+					Maintenant qu’une technique d’évitement a été mise au point on va chercher
+				à simuler notre lidar\footnote{Un lidar, ou \textit{light detection ranging}, est
+				est un capteur qui permet de détecter des obstacles en envoyant un faisceau
+				laser directif.}. En effet, il est bien plus aisé de tester un algorithme
+				dans plein de situations générées numériquement, que de prendre du temps 
+				pour créer un possible environnement physique et voir si le robot réel 
+				réagit comme prévu. On simule d’abord une pièce ou un environnement dans
+				lequel évolue le robot. Après un traitement mathématique (Tiré d’un 
+				exercice de robotique de Luc Jaulin \cite{JAU14}) , on acquiert
+				la position des murs\footnote{cf. figure \vref{fast} pour
+				un détail de l'architecture physique du calcul de l'asservissement
+				effectué par les algorithmes de traitement des données capteurs, ici les
+				données du lidar, et de calcul des commandes connaissant la position des
+				obstacles.}. Le résultat obtenu avec 150 points d’acquisition est présent 
+				\vref{lidarTest}.
+				
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.5\columnwidth, height = 0.4\columnwidth]{imgs/TR/lidar.png}
+					\caption{Simulation du lidar (les points \textcolor{black}{noirs} sont
+					les points qui simulent des données traitées d'un lidar).}
+					\label{lidarTest}
+					\end{figure}
+					
+					\FloatBarrier
+				
+				On remarque que plus les murs sont loin plus l’espacement entre les points
+				noirs images du mur sont espacés. Cela est tout à fait normal car le lidar 
+				prend une valeur pour chaque pas angulaire. En faisant varier ce pas on 
+				augmente et on diminue le nombre de points obtenus. En simulation, on ne
+				dépassera pas 200 points pour avoir un temps raisonnable de calcul.
+			
+			\subsubsection{Mise en évidence des limites des champs de potentiel}
+			
+				Reprenons notre simulation avec une salle différente, où le vecteur bleu
+			représente la direction du robot, comme présenté figure \vref{lidarlim}. 
+			On applique donc notre algorithme
+			\footnote{Développé en \vref{lidarAlgo} et en \vref{champPotAlgo}.}et on 
+			obtient la figure \vref{lidarlim}.
+			
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+						%\centering %ne les met pas les unes à côté des autres
+						\subfloat[Vue omnisciente]{\includegraphics[width=0.5\columnwidth, height = 0.4\columnwidth]{imgs/TR/limite_1.png}\label{limiteUn}}
+						\subfloat[Vue du robot]{\includegraphics[width=0.5\columnwidth, height = 0.4\columnwidth]{imgs/TR/limite_2.png}\label{limiteDeux}}
+						\caption{Simulation de l'algorithme d'évitement d'obstacle par 
+						champ de potentiel du \vref{champPotAlgo} avec simulation de
+						données \textit{lidar}, comme développé au \vref{lidarAlgo}.}\label{limitePot}
+						\label{lidarlim}
+					\end{figure}
+					
+				\FloatBarrier
+				
+			Le problème est le suivant : le champ de vecteur résultant tend
+			à faire rebrousser le robot en arrière. Or, dans certains cas,
+			il y a aussi un mur derrière le robot. De ce fait, le mur est également
+			situé dans l’angle mort du robot. Le robot va donc
+			osciller et faire des demi-tours intempestifs. Ce qui n'est pas le 
+			comportement désiré.
+			\\\indent Afin de remédier à ces imprévus, pour la suite
+			du projet, il est envisagé d'implémenter un autre type d'algorithme, un algorithme de
+			type \textit{SLAM}\footnote{\textit{Simultaneous Localisation And Mapping}.}.
+	
+	
+	
+	
+	
+	%\section{Bras robotisé}
+	%schéma cinématique.
+
+
+
+
+
+
+
+\chapter{Partie aérienne du système}                                            \label{partieAr}
+
+	\section{\'Etat de l'art des robots existants}                                                    \label{aerien}
+		
+			\subsection{robots existants}
+			
+				Plusieurs drones ont déjà été construits à l’Ensta-Bretagne, dont les trois
+				présentés figure \vref{drones}, que ce soit
+				par des professeurs ou bien par des élèves. Comme nous devons
+				utiliser un drone dans le cadre de la compétition 2019, il a donc fallut
+				étudier les différentes solutions, peser le pour et le contre, et décider.
+				Même si
+				durant la compétition un seul drone aérien ne pourra être utilisé, il faut
+				tout de même prévoir l’éventualité d’une panne ou d’un problème technique sur
+				le drone, comme cela s’est déjà produit lors de l’édition 2015 de la compétition.
+				Plusieurs drones sont donc à retenir\footnote{Les drones de secours
+				seront les drones des images \vref{RobUn} et \vref{RobTrois}.}. Néanmoins, un seul drone sera
+				effectivement désigné comme \textit{drone principal}\footnote{cf. drone
+				de l'image \vref{RobDeux}.}.
+			
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+						%\centering %ne les met pas les unes à côté des autres
+						\subfloat[]{\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/rob_1.jpg}\label{RobUn}}
+						\subfloat[]{\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/rob_2.png}\label{RobDeux}}
+						\subfloat[]{\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/rob_3.png}\label{RobTrois}}
+						\caption{Drones de l'ENSTA Bretagne étudiées.}\label{drones}
+					\end{figure}
+					
+				\FloatBarrier
+			
+			
+			\subsection{Architecture\footnote{Ensemble des éléments
+			constitutifs d'un drone.} d'un quadrirotor\footnote{Drone ayant
+			quatre rotors horizontaux comme présenté figure \vref{modele}.}}
+				
+					Afin de choisir le \textit{drone principal} des études détaillées des 
+				différents drones  présents figure \vref{drones} ont été conduites.
+				Le but était de 
+				déterminer les éléments constitutifs d'un drone afin de guider le choix
+				du \textit{drone principal}. Comme les architectures des drones
+				figure \vref{drones} sont fortement similaires, seule l'architecture du
+				drone image \vref{RobTrois} est détaillée dans ce rapport.
+					\paragraph*{Moteur}Le moteur convertit l’énergie électrique délivrée par
+				la batterie en énergie mécanique de rotation transmise aux pales. La figure 
+				\vref{moteur} en donne un aperçu.
+				
+				\paragraph*{Carte électronique} C’est le \frstg{} cerveau \lstg{} du drone. Elle
+				acquiert les données renvoyées par les capteurs et module la tension 
+				envoyée aux moteurs pour les faire tourner plus ou moins rapidement.  La figure 
+				\vref{carte} en donne un aperçu.
+				
+				\paragraph*{Batterie}Elle fournit l’énergie pour alimenter tous 
+				les composants du drone, que ce soit aux moteurs ou aux autres 
+				composants électroniques.
+				
+				\paragraph*{Hélice}Les hélices d’un drone sont formées de deux ou trois 
+				pales. Ces pales possèdent un pas, qui représente l’angle de rotation 
+				des pales, et qui a une influence sur la portance générée\footnote{La
+				force qui permet de faire voler le drone, de le soulever dans
+				les airs.}. Chaque hélice est 
+				encastrée sur un arbre moteur, afin de pouvoir mouvoir le drone.  La figure 
+				\vref{helice} en donne un aperçu.
+				
+				\paragraph*{Capteur}On peut trouver plusieurs types de capteurs sur le
+				drone. Par exemple : le \textbf{capteur de GPS} qui permet connaître la position 
+				exacte du drone, le \textbf{capteur ultrasonore} qui permet de mesurer la hauteur
+				entre le drone et le sol, le \textbf{Gyroscope} qui stabilise le drone 
+				horizontalement.  Les figures 
+				\vref{gps} et \vref{us} en donne un aperçu.
+				
+				\paragraph*{Caméra \textit{flow optique}} On peut trouver deux types de
+				caméra sur un drone. Une caméra de résolution qui se trouve généralement
+				à l’avant du drone, et une caméra située en-dessous du drone qui est 
+				utilisée pour la stabilité du drone.
+				
+				\paragraph*{\textit{Main switch}\footnote{Interrupteur principal.}}C’est
+				un commutateur électronique conçu principalement pour la sécurisation de
+				l'alimentation principale d'un modèle radio-commandé. Cette partie permet
+				de remplir la fonction d’arrêt d’urgence.  
+				
+				\paragraph*{\textit{ESC}\footnote{\textit{Electronic Speed Control}.}}
+				L’\textit{ESC} est un composant qui converti une consigne de vitesse de rotation 
+				provenant de la carte électronique, image \vref{carte}, en une tension d’alimentation variable
+				du moteur électrique, image \vref{moteur}.
+	
+				\FloatBarrier
+					
+					\begin{figure}[!htbp]
+						%\centering %ne les met pas les unes à côté des autres
+						\subfloat[Moteur]{
+						\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/moteur.png}\label{moteur}}
+						\subfloat[Carte électronique]{
+						\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/carte.png}\label{carte}}
+						\subfloat[Hélices]{
+						\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/helice.png}\label{helice}}
+						\\\subfloat[\textit{GPS}]{
+						\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/gps.png}\label{gps}}
+						\centering
+						\subfloat[Transducteurs ultrasonores]{
+						\includegraphics[width=0.3\columnwidth, height = 0.2\columnwidth]{imgs/AR/us.png}\label{us}}
+						\caption{\'Eléments principaux constitutifs d'un quadrirotor.}\label{architectureQuad}
+					\end{figure}
+					
+				\FloatBarrier
+	
+	
+	\section{Robots choisis}                                                      \label{choixAr}
+				Chacun des drones présents figure \vref{drones} a des avantages. Il a fallut
+				trancher au vu de nos exigences\footnote{cf. exigence E2.11 du cahier 
+				des charge au \vref{cdc}.}.
+					\\\indent Le drone image \vref{RobDeux} a l’avantage de sa petite taille.
+					Cela lui permet
+				de passer dans un bâtiment par les portes et les fenêtres, de dépasser 
+				les obstacles facilement tout en ayant un cadre qui protège ses hélices.
+				Néanmoins, le grand défaut de ce drone réside dans son autonomie. En effet,
+				du fait ses dimensions réduites, et de ses moteurs moins puissants
+				que ceux des drones aux images \vref{RobUn} et \vref{RobTrois}, le drone
+				(\vref{RobDeux})
+				est incapable de transporter une batterie de trop grande capacité\footnote{
+				Car trop lourde.}. Nous ne pouvons donc	pas utiliser le drone sur une longue période.
+					\\\indent Les drones des images \vref{RobUn} et \vref{RobTrois} ont 
+					l'avantage de leurs grandes dimensions. Ils peuvent ainsi transporter
+					davantage de capteurs, et possèdent un temps 
+				d’utilisation plus long. La construction du châssis en carbone 
+				les rend également plus résistants aux chocs que le drone en \vref{RobDeux}.
+				Cependant, d'un autre côté, de telles dimensions les rendent beaucoup moins adéquats
+				pour des environnements confinés, tels l'intérieur d'un bâtiment, ou d'un chapiteau
+				\footnote{cf. note de bas de page \vref{chapiteau}.}.
+					\\\indent Pour toutes ces raisons, et comme
+				la contrainte de taille est la plus significative, le drone présenté
+				figure \vref{RobDeux} a été retenu. Les deux autres drones seront 
+				employés en cas d'urgence.
+				
+	\section{Travaux sur le \textit{matrice 600}}
+	
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\centering
+					\includegraphics[width=0.5\columnwidth, height = 0.4\columnwidth]{imgs/AR/matrice600.png}
+					\caption{Drone \textit{matrice 600}. \cite{MAT}}
+					\label{matrice}
+					\end{figure}
+					
+					\FloatBarrier
+				
+					Le drone \textit{principal} étant choisi\footnote{cf. \vref{choixAr}.},
+				en même temps que sa réparation, nous avons pris en main un drone opérationnel,
+				le \textit{matrice 600}. En effet, ce premier contact avec la technologie
+				des quadrirotors
+				a permis de découvrir les problèmes récurrents des drones, notamment
+				concernant la stabilité, et de se familiariser avec les capteurs 
+				embarqués que possèdent les drones.
+					\\\indent D'une part, nous avons travaillé sur une technique de
+				stabilisation horizontale\footnote{en roulis, afin d'éviter
+				les oscillations du drone.} par caméra. Il a donc était question d'installer
+				une caméra\footnote{La caméra \frstg{} Zenmuse Z3 \lstg{}.}
+				en-dessous du drone, afin de stabiliser le drone à l'aide d'un logiciel 
+				présent sur le \textit{matrice 600}.
+					\\\indent D'autre part, nous avons pris en main un \textit{GPS}. 
+				Le \textit{GPS} du \textit{matrice 600} a donc été calibré, ce qui 
+				a permis de comprendre le fonctionnement d'un \textit{GPS}.
+					\\\indent Ayant faits nos  premiers pas dans la technologie des quadrirotors, 
+				il était alors nécessaire de chercher davantage à comprendre  le modèle
+				théorique d'un quadrirotor, ce qui fait l'objet du \vref{modeleQ}.
+	
+	\section{Modèle théorique d'un quadrirotor}                                   \label{modeleQ}
+				
+					Dans un souci de compréhension du fonctionnement d'un quadrirotor, mais
+				également parce que l'objectif final est de rendre le drone \vref{RobDeux}
+				autonome\footnote{Exigence \textit{E2.03} du cahier des charges au \vref{cdc}.
+				}, le modèle théorique du quadrirotor présenté figure \vref{modele} a
+				été étudié.
+					\\\indent Le quadrirotor est un drone volant propulsé par quatre moteurs.
+				Chaque moteur met en mouvement une hélice. Les moteurs sont 
+				commandés de telle sorte que les hélices positionnées deux à deux face à face
+				\footnote{La disposition des hélices est représentée figure \vref{quad}.}
+				aient le même sens de rotation, soit dans le sens direct\footnote{clockwise.} ou 
+				dans le sens opposé\footnote{counterclockwise.}. Le quadrirotor
+				va donc de ce fait pouvoir être incliné et avancer. Après avoir cherché les 
+				équations d’état du système, présentées figure \vref{eq} avec 
+				un schéma illustratif présentant les conventions figure \vref{quad},
+				une simulation sous \textit{Python} a été réalisée afin de tester
+				divers codes de régulation, le but étant au final 
+				de comprendre comment fonctionne un quadrirotor afin de s'intéresser
+				à l'asservissement d'un quadrirotor dans un second temps.
+				Inspirés par \cite{JAU15}, le code présenté en annexe au \vref{simuQ},
+				permet de simuler un asservissement du drone en position. Le quadrirotor
+				va donc stabiliser puis conserver une position donnée. 
+					\\\indent Après avoir simulé un asservissement en position
+				d'un quadrirotor, il serait alors intéressant d'adapter les 
+				algorithmes d'évitement d'obstacle et de suivi de \textit{waypoints} par 
+				champ de potentiel développés au \vref{obstacle}
+				
+					\FloatBarrier
+					
+					\begin{figure}[!htbp]
+					\subfloat[\'Equations d'états d'un quatrirotor]{
+					\includegraphics[width=0.5\columnwidth, height = 0.3\columnwidth]{imgs/AR/eq.png}\label{eq}}
+					\subfloat[Quadrirotor]{
+					\includegraphics[width=0.5\columnwidth, height = 0.3\columnwidth]{imgs/AR/modele.png}\label{quad}}
+					\caption{Modèle théorique d'un quadrirotor selon \cite{JAU15}.}
+					\label{modele}
+					\end{figure}
+					
+					\FloatBarrier
+						
+	\section{Choix de l’auto-pilote}
+	
+		\subsection{Ensemble des solutions}
+		
+		\subsection{Auto-pilote retenu}
+		
+			Afin de rendre le drone autonome, nous avons du nous intéresser 
+			aux \textit{auto-pilotes}. L'\textit{APM}\footnote{\textit{Ardu Pilot Mega}.}
+			présenté figure \vref{apm},
+			est une carte électronique
+			qui contient des programmes et des libraires qui permettent de faire des 
+			calculs pour voler, voler en autonomie et récupérer les informations des 
+			capteurs. APM contient des capteurs principaux comme des accéléromètres 
+			qui mesurent l’accélération, des gyroscopes qui mesure la position et 
+			des magnétomètres qui mesurent le cape. Mais nous pouvons rajouter des 
+			capteurs en plus comme le GPS, télémètre ultrasonore ou laser (lidars), etc. 
+		
+			\FloatBarrier
+						
+			\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=0.5\columnwidth, height = 0.3\columnwidth]{imgs/AR/apm.png}
+			\caption{Auto-pilote \textit{Ardu Pilot Mega}. \cite{ARDU}}
+			\label{apm}
+			\end{figure}
+
+			\FloatBarrier
+			
+		\subsection{Les avantages}
+		
+			Comparé aux autres solutions étudiées, l'autopilote \textit{APM} possède
+			les avantages suivant: \cite{ARDU}
+			\begin{itemize}
+				\item[\textbullet]Il ajuste la balance automatiquement et gére le vent.
+				\item[\textbullet]L’APM a la propriété de retourner au point d’origine 
+				lorsque la connexion avec l’avion est perdue.
+				\item[\textbullet]Il contient un système de sécurité au décollage et à 
+				l'atterrissage.
+				\item[\textbullet]Il est opérationnel pour différents modèles de robots
+				aériens\textit{Avions, quadrirotors \dots}.
+			\end{itemize}
+		
+		\subsection{Configuration de l'auto-pilote}
+		
+					Pour cette partie nous avons utilisé le programme \textit{Mission Planner}, 
+				le programme qui permet de configurer un APM, comme
+				l'illustre la figure \vref{mp}.  Il affiche toutes les
+				lectures des capteurs qui sont dans l’APM. On choisit le type de drone
+				et le programme télécharge les librairies qui contiennent toutes les 
+				informations pour ce drone. Ensuite il câble les moteurs correctement 
+				en respectent le bon ordre. Puis il calibre, en ajustant la balance du
+				drone. Enfin il connecte la télécommande pour que l’utilisateur puisse 
+				agir dessus.
+				
+				\FloatBarrier
+						
+				\begin{figure}[!htbp]
+				\centering
+				\includegraphics[width=0.5\columnwidth, height = 0.3\columnwidth]{imgs/AR/mp.png}
+				\caption{Configuration de l'auto-pilote avec \textit{Mission Planner}.}
+				\label{mp}
+				\end{figure}
+
+				\FloatBarrier
+				
+				Le choix de ce gestionnaire d'autopilote a notamment été guidé
+				par le fait, que \textit{Mission Planner} détecte les anomalies 
+				de fonctionnement des drones, et met à disposition un tutoriel 
+				détaillé pour sa prise en main, ce qui est une différence notable par rapport
+				aux autres constructeurs.
