@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  17 JUN 2019 09:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  24 JUL 2019 03:45
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -1937,38 +1937,38 @@ LaTeX Warning: Unused global option(s):
 (rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 39.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 37.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2083,7 +2083,7 @@ Package grfext Info: Graphics extension search list:
 )
 \AtBeginShipoutBox=\box96
  ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring ON on input line 37.
+Package hyperref Info: Link coloring ON on input line 39.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
 sty"
@@ -2096,14 +2096,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 \c@section@level=\count470
 LaTeX Info: Redefining \Ref on input line 515.
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
  (rapport.out) (rapport.out)
 \@outlinefile=\write7
 \openout7 = `rapport.out'.
 
-LaTeX Info: Redefining \Ref on input line 37.
+LaTeX Info: Redefining \Ref on input line 39.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-englis
 h\glossaries-dictionary-English.dict"
@@ -2121,42 +2121,42 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'rapport.bbl' found.
  (rapport.bbl)
-Package biblatex Info: Reference section=0 on input line 37.
-Package biblatex Info: Reference segment=0 on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 41.
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 43.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 41.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 43.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 41.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 43.
 
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 41.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 43.
 
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 41.
+(Font)              <12> on input line 43.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 41.
+(Font)              <8> on input line 43.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 41.
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+(Font)              <6> on input line 43.
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
  ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2165,32 +2165,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf Graphic file (type pdf)
 <use imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf>
 Package pdftex.def Info: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf  used on in
-put line 41.
+put line 43.
 (pdftex.def)             Requested size: 99.18579pt x 119.50148pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 41.
+(Font)              <10> on input line 43.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 41.
+(Font)              <7> on input line 43.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 41.
+(Font)              <5> on input line 43.
+<imgs/logo_dal.png, id=12, 1204.5pt x 1204.5pt>
+File: imgs/logo_dal.png Graphic file (type png)
+<use imgs/logo_dal.png>
+Package pdftex.def Info: imgs/logo_dal.png  used on input line 43.
+(pdftex.def)             Requested size: 119.50133pt x 119.50148pt.
 
-Overfull \hbox (138.1816pt too wide) in paragraph at lines 41--41
+Overfull \hbox (138.1816pt too wide) in paragraph at lines 43--43
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/lmr/bx/sc' in size <12> not available
-(Font)              Font shape `T1/cmr/bx/sc' tried instead on input line 41.
+(Font)              Font shape `T1/cmr/bx/sc' tried instead on input line 43.
+
+Overfull \vbox (29.79106pt too high) detected at line 43
+ []
+
 [1
 
 {C:/Users/Arnaud/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./imgs/log
-o_ENSTA_Bretagne_Vertical_CMJN.pdf>] (rapport.toc)
+o_ENSTA_Bretagne_Vertical_CMJN.pdf> <./imgs/logo_dal.png>] (rapport.toc)
 \tf@toc=\write8
 \openout8 = `rapport.toc'.
 
- [2
 
-] (corps/abstract.tex
-[3
+[2
+
+] (corps/abstract.tex [3
 
 ] [4
 
@@ -2229,14 +2238,14 @@ o_ENSTA_Bretagne_Vertical_CMJN.pdf>] (rapport.toc)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-) (corps/conclusion.tex) (corps/appendix.tex)
-[6
+) (corps/conclusion.tex)
+(corps/appendix.tex) [6
 
 
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 52.
+LaTeX Warning: Empty bibliography on input line 54.
 
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -2261,11 +2270,11 @@ Package minitoc(hints) Warning: W0024
 [7
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
 (rerunfilecheck)             Checksum: FD720A55CAD858BBE82AF4A900EAD6F3;47.
 Package logreq Info: Writing requests to 'rapport.run.xml'.
@@ -2273,10 +2282,10 @@ Package logreq Info: Writing requests to 'rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39060 strings out of 492970
- 704008 string characters out of 3126151
- 1226883 words of memory out of 3000000
- 41937 multiletter control sequences out of 15000+200000
+ 39068 strings out of 492970
+ 704140 string characters out of 3126151
+ 1228080 words of memory out of 3000000
+ 41943 multiletter control sequences out of 15000+200000
  65997 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,94p,2016b,1867s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2289,9 +2298,9 @@ s/type1/public/lm/lmbxi10.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Arnaud/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on rapport.pdf (7 pages, 310363 bytes).
+Output written on rapport.pdf (7 pages, 681579 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  15 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
