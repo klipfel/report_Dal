@@ -24,4 +24,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Tracking}{8}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{10}{section*.2}
+\contentsline {chapter}{\numberline {3}Hardware}{9}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Software}{10}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{12}{section*.2}

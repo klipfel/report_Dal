@@ -17,7 +17,7 @@
 
 \RequirePackage{diagbox} %diagbox remplace slashbox
 
-\RequirePackage{xcolor}
+\RequirePackage[dvipsnames]{xcolor}
 
 \RequirePackage{subfig}  %enables to put subfigures.
 
@@ -210,7 +210,7 @@
 
 \RequirePackage{ifthen}
 
-% Chapters redefinition
+% Chapters, section redefinition
 
 \titleformat
 {\chapter} % command
@@ -228,6 +228,32 @@
 \rule{\textwidth}{1pt}
 ] % after-code
 
+\titleformat
+{\section} % command
+[hang] % shape
+{\normalfont\sffamily\bfseries} % format of the font
+{\sffamily \textcolor{red}{\thesection}} % label (before the text)
+{0.5ex} % sep
+{} % before-code
+[] % after-code
+
+\titleformat
+{\subsection} % command
+[hang] % shape
+{\normalfont\sffamily\bfseries} % format of the font
+{\sffamily \textcolor{ForestGreen}{\thesubsection}} % label (before the text)
+{0.5ex} % sep
+{} % before-code
+[] % after-code
+
+\titleformat
+{\subsubsection} % command
+[hang] % shape
+{\normalfont\sffamily\bfseries} % format of the font
+{\sffamily \textcolor{blue}{\thesubsubsection}} % label (before the text)
+{0.5ex} % sep
+{} % before-code
+[] % after-code
 
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------

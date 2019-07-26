@@ -40,5 +40,43 @@
   2)}
     \field{year}{2016}
   \endentry
+
+  \entry{jetbot}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=n}{%
+         family={nvidia},
+         familyi={n\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{n1}
+    \strng{fullhash}{n1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{nvi}
+    \field{extraalpha}{1}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{howpublished}{\url{https://github.com/NVIDIA-AI-IOT/jetbot/wiki}}
+    \field{title}{Jetbot : an educational robot.}
+  \endentry
+
+  \entry{kaya}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=n}{%
+         family={nvidia},
+         familyi={n\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{n1}
+    \strng{fullhash}{n1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{nvi}
+    \field{extraalpha}{2}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+  \field{howpublished}{\url{https://docs.nvidia.com/isaac/isaac/apps/tutorials/doc/assemble_kaya.html}}
+    \field{title}{Kaya}
+  \endentry
 \enddatalist
 \endinput
