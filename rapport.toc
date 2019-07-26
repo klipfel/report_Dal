@@ -28,4 +28,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Software}{10}{chapter.4}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Tracking}{10}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}ROS}{10}{section.4.2}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Bibliography}{12}{section*.2}

@@ -255,6 +255,24 @@
 {} % before-code
 [] % after-code
 
+\titleformat
+{\paragraph} % command
+[hang] % shape
+{\normalfont\sffamily\bfseries} % format of the font
+{\sffamily \textcolor{blue}{\thesubsubsection}} % label (before the text)
+{0.5ex} % sep
+{} % before-code
+[] % after-code
+
+\titleformat
+{\subparagraph} % command
+[hang] % shape
+{\normalfont\sffamily\bfseries} % format of the font
+{\sffamily \textcolor{blue}{\thesubsubsection}} % label (before the text)
+{0.5ex} % sep
+{} % before-code
+[] % after-code
+
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 %New commands

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  25 JUL 2019 22:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  26 JUL 2019 11:01
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -2188,7 +2188,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=62, 236.15828pt x 284.52798pt>
+<imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=70, 236.15828pt x 284.52798pt>
 File: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf Graphic file (type pdf)
 <use imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf>
 Package pdftex.def Info: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf  used on in
@@ -2200,7 +2200,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 46.
-<imgs/logo_dal.png, id=64, 1204.5pt x 1204.5pt>
+<imgs/logo_dal.png, id=72, 1204.5pt x 1204.5pt>
 File: imgs/logo_dal.png Graphic file (type png)
 <use imgs/logo_dal.png>
 Package pdftex.def Info: imgs/logo_dal.png  used on input line 46.
@@ -2304,12 +2304,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-] [7]
+]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 97.
+ ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [7]
 Chapter 2.
 Package lettrine.sty Info: Targeted height = 24.59999pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.71431pt (P);
-(lettrine.sty)             reported on input line 85.
+(lettrine.sty)             reported on input line 108.
 [8
 
 ]
@@ -2317,7 +2321,7 @@ Chapter 3.
 Package lettrine.sty Info: Targeted height = 24.59999pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.71431pt (P);
-(lettrine.sty)             reported on input line 114.
+(lettrine.sty)             reported on input line 137.
 [9
 
 ]
@@ -2325,7 +2329,7 @@ Chapter 4.
 Package lettrine.sty Info: Targeted height = 24.59999pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 22.71431pt (P);
-(lettrine.sty)             reported on input line 116.
+(lettrine.sty)             reported on input line 139.
 ) (corps/conclusion.tex [10
 
 ]) (corps/appendix.tex) [11
@@ -2362,7 +2366,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 4F8D3A7999FD6D7A8FBB93096DB9739F;885.
+(rerunfilecheck)             Checksum: 56A1225B2871815AAED03F9D336197BF;1000.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2372,34 +2376,35 @@ Package logreq Info: Writing requests to 'rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39745 strings out of 492970
- 715062 string characters out of 3126151
- 1240729 words of memory out of 3000000
- 42561 multiletter control sequences out of 15000+200000
- 97940 words of font info for 86 fonts, out of 3000000 for 9000
+ 39788 strings out of 492970
+ 716029 string characters out of 3126151
+ 1241729 words of memory out of 3000000
+ 42598 multiletter control sequences out of 15000+200000
+ 98305 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,94p,2016b,1867s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
-nc} <C:\Users\Arnaud\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\ecxc1200.pk><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/calligra-type1/callig15.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Arnaud/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Arnaud/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Arnaud/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Arnaud/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Arnaud/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Arnaud
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Arn
-aud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/
-Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Use
-rs/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C
-:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pf
-b><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss
-bo10.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmssbx10.pfb>
-Output written on rapport.pdf (12 pages, 888511 bytes).
+{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.
+enc}{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
+.enc} <C:\Users\Arnaud\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecxc1200.pk><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/calligra-type1/callig15.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Arnaud/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Arnaud/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Arnaud/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Arnaud/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Arnaud/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Arna
+ud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/A
+rnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/User
+s/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/U
+sers/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
+<C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.
+pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
+ssbo10.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmssbx10.pfb>
+Output written on rapport.pdf (12 pages, 891958 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

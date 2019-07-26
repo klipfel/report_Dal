@@ -10,6 +10,7 @@
 		The main goal of this project was to build a \textit{Deep Learning Tracking Robot}. Many tracking
 		robots have been implemented in the previous years, few have used the adaptive, versatile, and 
 		now standard robotic Middleware \textit{ROS}\footnote{Which stands for \textit{Robot Operating System}.}.
+		In addition, even fewer have ventured combining \textit{ROS} and \textit{Deep Learning} techniques.
 		\\\indent Why \textit{ROS} precisely? As defined by Anis Kouba in \cite{latexcompanion}, \textit{ROS}
 		is an \frstg{} open-source \textit{middleware} \lstg{} that provides a robust and reliable framework 
 		to build robots. \textit{ROS} is a voguish tool to create robots with advanced functionalities so much so 
@@ -81,6 +82,28 @@
 		\\\indent In the second place, the sofware has to be implemented. Precisely, 
 		the tracking algorithm had to be chosen, and the \textit{ROS} architecture had 
 		to be designed.
+		\\\indent For the entire project, the philosophy was to try to have 
+		a working first prototype as soon as possible. In a nutshell, 
+		having a hardware and software which are compatible, and then refining
+		the existing platform. Indeed, \textit{ROS} provides here another
+		crucial boon, for it enables us to have an evolutive architecture 
+		where each part can be replaced easily without 
+		undermining the overhaul process. For instance, once 
+		an architecture is working, the tracking technique could
+		be easily replaced.
+		\\\indent Throughout this report, which presents the 
+		results of the project, three questions will be answered:
+		\begin{itemize}
+			\item[\textbullet] How can the hardware of the robot be selected?
+			You can find the answers to 
+			this question in the part \vref{hardware}.
+			\item[\textbullet] How can the tracking algorithm be built? Which belongs 
+			more to the software. You can find the answers to 
+			this question in the section \vref{tracking}.
+			\item[\textbullet] How can the \textit{ROS} architecture be designed? 
+			Which belongs more to the software. You can find the answers to 
+			this question in the section \vref{ros}.
+		\end{itemize}
 		
 \chapter{State of the art}
 
@@ -114,3 +137,7 @@
 \chapter{Hardware}\label{hardware}
 
 \chapter{Software}\label{software}
+
+	\section{Tracking}\label{tracking}
+	
+	\section{ROS}\label{ros}
