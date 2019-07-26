@@ -15,20 +15,23 @@
 \setcounter{secnumdepth}{5} %paramètre la profondeur d'affichage des numéros de 
                             %sections...
 
-\renewcommand{\LettrineFontHook}{\Rothdnfamily} % lettrine style
+% lettrine style
+%\renewcommand{\LettrineFontHook}{\Rothdnfamily}
+\renewcommand{\LettrineFontHook}{\calligra}
 
 \title{2019 Summer Internship\\
 Dalhousie University, Halifax, Nova Scotia, Canada\\
-\hrulefill
+\rule{\textwidth}{1pt}
 \\\textit{Robust Deep Learning Tracking Robot\\}
-\hrulefill}
+\rule{\textwidth}{1pt}
+}
 \author{
-written by \textsc{Arnaud Klipfel}, Robotics specialization\\
-supervized by Dr. \textsc{Thomas Trappenberg}
+written by \textsc{Arnaud Klipfel}, Robotics specialization at \textsc{ENSTA-Bretagne}\\
+supervised by Dr. \textsc{Thomas Trappenberg, Dalhousie University}
  }
 \date{\today}
 \doctype{report}
-\promo{CI2020}
+\promo{CI2020\\second year}
 \etablissement{\textsc{Ensta} Bretagne\\2, rue François Verny\\
   29806 \textsc{Brest} cedex\\\textsc{France}\\Tel +33 (0)2 98 34 88 00\\ \url{www.ensta-bretagne.fr}}
 \logoEcole{\includegraphics[height=4.2cm]{logo_ENSTA_Bretagne_Vertical_CMJN}} % enables the import of the logoecole variable in the forepage.
@@ -50,7 +53,7 @@ supervized by Dr. \textsc{Thomas Trappenberg}
 \input{appendix}
 \clearpage
 \phantomsection
-\addcontentsline{toc}{chapter}{References}
+\addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 \end{document}
 

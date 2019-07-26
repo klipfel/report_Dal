@@ -16,5 +16,29 @@
   {}
 \endgroup
 
-\datalist[entry]{anyt/global//global/global}\enddatalist
+\datalist[entry]{anyt/global//global/global}
+  \entry{latexcompanion}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Koubaa},
+         familyi={K\bibinitperiod},
+         given={Anis},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kou16}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Robot Operating System : the complete reference (volume 1 and
+  2)}
+    \field{year}{2016}
+  \endentry
+\enddatalist
 \endinput

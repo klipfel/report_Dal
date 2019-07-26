@@ -1,2 +1,103 @@
 \clearpage
 \newgeometry{hmargin=2.5cm,vmargin=2cm}
+
+\chapter{Project Contextualization}
+
+	\section{Project Specification}
+	
+		\subsection{Motivations}
+	
+		The main goal of this project was to build a \textit{Deep Learning Tracking Robot}. Many tracking
+		robots have been implemented in the previous years, few have used the adaptive, versatile, and 
+		now standard robotic Middleware \textit{ROS}\footnote{Which stands for \textit{Robot Operating System}.}.
+		\\\indent Why \textit{ROS} precisely? As defined by Anis Kouba in \cite{latexcompanion}, \textit{ROS}
+		is an \frstg{} open-source \textit{middleware} \lstg{} that provides a robust and reliable framework 
+		to build robots. \textit{ROS} is a voguish tool to create robots with advanced functionalities so much so 
+		that it has become the standard to develop robots. \textit{ROS2} is already in part 
+		operational. In this project though, 
+		it has been decided that the first version of \textit{ROS} will be used since \textit{ROS2} is still 
+		in heavy development and \textit{ROS} is better documented than its counterpart.
+		\\\indent Why is \textit{Deep Learning} suitable for robotic applications? In general, \textit{AI}
+		\footnote{Artificial Intelligence, which comprises \textit{Deep Learning}.}
+		is really adapted for critical algorithms, such as embedded codes
+		on robots, since the performances are much higher than with traditional implementations. By traditional
+		implementations, one could for instance consider iterative algorithms where for a particular task 
+		all processes are hand-implemented. \textit{AI} enables much finer and more robust
+		implementations since the \textit{model},
+		which can be regarded as the applied processes, can evolve by itself through diverse methods such as training.
+		 
+		\subsection{Requirements}
+		
+		In order to realize the tracking robot, several requirements had to be met in this
+		project. First of all, the robot had to reuse an old \textit{Race Car} platform comprising
+		the chassis, the wheels \dots all the mechanics. The brain of the robot, that is to say
+		the embedded computer will be the \textit{Jetson Nano} designed by \textit{Nvidia}. By and
+		large, to build the tracker the material of the laboratory had to be used as much as 
+		possible, and the equipment bought had to remain affordable.
+		%TODO image of the old platform rc car
+		%TODO image of the jetson nano
+	
+	\section{Strategy}
+	
+		\subsection{Different periods}
+
+		Developing a robot is a critical task, and has to be conducted thoroughly. 
+		In this regard, \textit{ROS} builds a framework for developing 
+		robots in a more organized way. For each task to implement, 
+		the work-flow has always been the following: research, simulation, isolated 
+		tests, integration.
+		\\\indent Before even implementing something and integrating it, one should 
+		research all the possibilities that are offered to them. Then one of the 
+		easier or maybe most sustainable options could be chosen. Yet, even the
+		tests, simulation, and integration has to be thought and foreseen beforehand.
+		\\\indent Simulating robots, without depending on the hardware is
+		a needed step.	 A specific hardware has always some specificities that
+		could hide some issues and unpredictable behaviors. As a matter of fact, 
+		simulating algorithms that will be integrated in the robot afterward in 
+		a controlled environment prevents any hardware based issue to shadow
+		our understanding of the basic implementation of
+		the \textit{software}.
+		\\\indent Once the simulation is in place, it is then 
+		recommended to test the simulation as much as possible in order
+		to unveil some detrimental singularities. In the case of the hardware, 
+		each component has to be tested independently before integration
+		\footnote{Especially, some driver issues are sometimes really 
+		hard to pinpoint.}.
+		\\\indent The final step is to integrate the work in the robot, and
+		to test it to see if the robot behaves as expected or if there 
+		is any regression.
+		\\\indent A robot is not just a piece of software, it is a system 
+		where the interaction of the software and the hardware is by 
+		definition the future behavior of the robot.
+		
+		\subsection{Different aspects}
+
+		The development of a robot encapsulates different areas or type of work.
+		In the construction of the tracker, principally two aspects 
+		have been tackled, the hardware, and the software.
+		\\\indent In the first place, the hardware has to be well-chosen beforehand.
+		The motor had to replaced, the \textit{wifi} access had to be added, batteries 
+		had to be chosen \dots to fit the requirements of the tracking robot.
+		\\\indent In the second place, the sofware has to be implemented. Precisely, 
+		the tracking algorithm had to be chosen, and the \textit{ROS} architecture had 
+		to be designed.
+		
+\chapter{State of the art}
+
+		In order to build the tracker, the first step was to chose the
+		hardware of the robot. Secondly, the \textit{ROS} architecture had to be decided
+		and thirdly the tracking algorithm had to be implemented. This part 
+		presents a brief overview of different existing projects and solutions 
+		that could have been selected throughout the project.
+		
+		\section{Building an electric car}
+		
+		Several projects have aimed to realize an electric car robot, sometimes autonomous. 
+		Having in mind these projects can give some piece of advice on how it is common 
+		to design such systems.
+		\\\indent Some projects have used the on-board computer \textit{Jetson Nano}. 
+		One can name the following robots : \textit{Jetbot}, \textit{Kaya}.
+		
+		\section{Using ROS}
+		
+		\section{Tracking}

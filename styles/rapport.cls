@@ -25,6 +25,9 @@
 
 \RequirePackage{pdfpages} % insert pdfpages
 
+% Customization of chapters, sections ..
+\RequirePackage{titlesec}
+
 %additional package needed for excecl tab to latex tab convertion
 %-----------------------------beginning
 \RequirePackage{colortbl}
@@ -68,6 +71,7 @@
 \RequirePackage{tipa}
 \RequirePackage{lettrine}
 \RequirePackage{Typocaps,Rothdn}
+\RequirePackage{calligra}
 
 % aeguill correspond a ea plus les guillemets francais
 \RequirePackage{lmodern}
@@ -205,6 +209,24 @@
 %\RequirePackage[square]{natbib}
 
 \RequirePackage{ifthen}
+
+% Chapters redefinition
+
+\titleformat
+{\chapter} % command
+[display] % shape
+{\sffamily\bfseries\Large\itshape} % format of the font of the chapter
+{\sffamily \textcolor{red}{\lettrine[lines=1]{P}{art} \thechapter} \centering} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{1pt}
+    \vspace{1ex}
+   	\centering
+} % before-code
+[
+\vspace{-2.0ex}%
+\rule{\textwidth}{1pt}
+] % after-code
 
 
 %-------------------------------------------------------------------------------
