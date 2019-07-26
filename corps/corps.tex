@@ -23,7 +23,10 @@
 		is really adapted for critical algorithms, such as embedded codes
 		on robots, since the performances are much higher than with traditional implementations. By traditional
 		implementations, one could for instance consider iterative algorithms where for a particular task 
-		all processes are hand-implemented. \textit{AI} enables much finer and more robust
+		all processes are hand-implemented. The conventional solution 
+		that comes to mind regarding tracking is an \textit{RGB} tracking, that is to say an 
+		algorithm that tracks the color in a frame\footnote{image.} by applying 
+		color filters. \textit{AI} enables much finer and more robust
 		implementations since the \textit{model},
 		which can be regarded as the applied processes, can evolve by itself through diverse methods such as training.
 		 
@@ -32,7 +35,7 @@
 		In order to realize the tracking robot, several requirements had to be met in this
 		project. First of all, the robot had to reuse an old \textit{Race Car} platform comprising
 		the chassis, the wheels \dots all the mechanics. The brain of the robot, that is to say
-		the embedded computer will be the \textit{Jetson Nano} designed by \textit{Nvidia}. By and
+		the embedded computer had to be the \textit{Jetson Nano} designed by \textit{Nvidia} \cite{nano}. By and
 		large, to build the tracker the material of the laboratory had to be used as much as 
 		possible, and the equipment bought had to remain affordable.
 		%TODO image of the old platform rc car
@@ -126,12 +129,42 @@
 		\textit{Jetson} board series\footnote{Jetson Nano, Xavier, TX1, TX2 \dots}. It 
 		is notably interesting to take as example their hardware selection since they
 		use the same embedded computer the tracker use.
+		\\\indent Other \textit{RC-cars}\footnote{\textit{Remote Control Car}.} use other types of embedded computers.
+		However, the hardware architecture with regard to \textit{RC-cars} is 
+		almost always the same. With either the \textit{DeepRacer} of \textit{Amazon} \cite{deepracer}, or
+		the \textit{Pi-Car} \textit{raspberry} powered car \cite{rasp}, or 
+		\textit{Ghost} car \cite{ghost}, or the \textit{Roscar} \cite{roscar}, or
+		the \textit{F1tenth} car \cite{f1tenth}, or the \textit{Donkey} car \cite{donkey}, the architecture
+		follows some fundamental principles.
+		\\\indent The selection of the hardware is discussed further in the part \vref{hardware}.
+		
+		\section{Tracking}
+		
+		The mission of the tracker is to follow a specific object in a frame
+		\footnote{Given by a camera for instance.}, to be able to 
+		learn the object in that process, and even to be able to recover the target after 
+		any occlusion. Looking at the deep learning models and algorithms 
+		which have been developed in the recent years,
+		some could be more labeled as detection algorithms, do not really learn the specificities 
+		of the target, and even track multiple targets. For instance, the network \textit{Yolo} 
+		\cite{bjelonicYolo2018} is rather designed for multi-tracking and 		not to follow a specific target. 
+		\\\indent Considering deep learning models that are able to 
+		track a specific target the database \textit{GOT-10k} has produced
+		an enumeration and ranking of the current most effective techniques \cite{trakinglist}.
+		\\\indent For sure, in order to automate the robot, a detection algorithm
+		could precede the tracking.
+		 
 		
 		\section{Using ROS}
 		
-		
-		
-		\section{Tracking}
+		Developing with \textit{ROS} gives also an incredible
+		advantage to any roboticist. In fact, some \textit{ROS packages}
+		which are totally open-source already provide cutting-edge algorithms
+		such as sensor fusion by Kalman filtering, \textit{SLAM}. Unfortunately, 
+		applied to tracking few \textit{ROS} packages were developed, and
+		the existing ones do not use deep learning techniques at all.
+		\\\indent Apart from that, 
+		%TODO 
 		
 		
 \chapter{Hardware}\label{hardware}

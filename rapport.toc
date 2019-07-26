@@ -10,9 +10,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.2}Requirements}{6}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Strategy}{6}{section.1.2}
+\contentsline {section}{\numberline {1.2}Strategy}{7}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Different periods}{6}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.1}Different periods}{7}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.2}Different aspects}{7}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
@@ -20,16 +20,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Building an electric car}{8}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Using ROS}{8}{section.2.2}
+\contentsline {section}{\numberline {2.2}Tracking}{8}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Tracking}{8}{section.2.3}
+\contentsline {section}{\numberline {2.3}Using ROS}{9}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Hardware}{9}{chapter.3}
+\contentsline {chapter}{\numberline {3}Hardware}{10}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Software}{10}{chapter.4}
+\contentsline {chapter}{\numberline {4}Software}{11}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Tracking}{10}{section.4.1}
+\contentsline {section}{\numberline {4.1}Tracking}{11}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}ROS}{10}{section.4.2}
+\contentsline {section}{\numberline {4.2}ROS}{11}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{12}{section*.2}
+\contentsline {chapter}{Bibliography}{13}{section*.2}

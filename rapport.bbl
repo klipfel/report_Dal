@@ -17,6 +17,126 @@
 \endgroup
 
 \datalist[entry]{anyt/global//global/global}
+  \entry{deepracer}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Amazon},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ama}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{howpublished}{\url{https://aws.amazon.com/deepracer/}}
+    \field{title}{Amazon Deep Racer.}
+  \endentry
+
+  \entry{bjelonicYolo2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BM}{%
+         family={Bjelonic},
+         familyi={B\bibinitperiod},
+         given={Marko},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BM1}
+    \strng{fullhash}{BM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bje16}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{howpublished}{\url{https://github.com/leggedrobotics/darknet_ros}}
+    \field{title}{{YOLO ROS}: Real-Time Object Detection for {ROS}}
+    \field{year}{2016--2018}
+  \endentry
+
+  \entry{ghost}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DS}{%
+         family={Daniluk},
+         familyi={D\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DS1}
+    \strng{fullhash}{DS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Dan}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://medium.com/hackernoon/ghost-ii-controlling-an-rc-car-with-a-computer-b1d1849d9e43}}
+    \field{title}{Ghost II : controlling an RC car with a computer.}
+  \endentry
+
+  \entry{donkey}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={DiyRoboCars.},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Diy}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{howpublished}{\url{https://docs.donkeycar.com/}}
+    \field{title}{Donkey Car.}
+  \endentry
+
+  \entry{f1tenth}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={F1Tenth},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{F1T}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{howpublished}{\url{http://f1tenth.org/build.html}}
+    \field{title}{F1Tenth race car.}
+  \endentry
+
+  \entry{trakinglist}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=kGOTBG}{%
+         prefix={10k},
+         prefixi={k\bibinitperiod},
+         family={:\bibnamedelima Generic Object Tracking\bibnamedelima
+  Benchmark.},
+         familyi={\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  O\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={GOT},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GOTBGk1}
+    \strng{fullhash}{GOTBGk1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{GOTB19}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{howpublished}{\url{http://got-10k.aitestunion.com/leaderboard}}
+    \field{title}{Leaderboard : Up-to-date generic object tracking performance}
+    \field{year}{2019}
+  \endentry
+
   \entry{latexcompanion}{book}{}
     \name{author}{1}{}{%
       {{hash=KA}{%
@@ -39,6 +159,51 @@
     \field{title}{Robot Operating System : the complete reference (volume 1 and
   2)}
     \field{year}{2016}
+  \endentry
+
+  \entry{nano}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MJ}{%
+         family={MSV},
+         familyi={M\bibinitperiod},
+         given={Janakiram},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJ1}
+    \strng{fullhash}{MJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{MSV19}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\url{https://thenewstack.io/nvidia-brings-affordable-gpu-to-the-edge-with-jetson-nano/}}
+    \field{title}{NVIDIA Brings Affordable GPU to the Edge with Jetson Nano.}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{roscar}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=rbtunG}{%
+         prefix={repository by the\bibnamedelima user},
+         prefixi={r\bibinitperiod\bibinitdelim b\bibinitperiod\bibinitdelim
+  t\bibinitperiod\bibinitdelim u\bibinitperiod},
+         family={naisy.},
+         familyi={n\bibinitperiod},
+         given={Github},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{nGrbtu1}
+    \strng{fullhash}{nGrbtu1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{nai}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{howpublished}{\url{https://github.com/naisy/roscar}}
+    \field{title}{ROSCAR.}
   \endentry
 
   \entry{jetbot}{misc}{}
@@ -77,6 +242,24 @@
     \field{sortinithash}{N}
   \field{howpublished}{\url{https://docs.nvidia.com/isaac/isaac/apps/tutorials/doc/assemble_kaya.html}}
     \field{title}{Kaya}
+  \endentry
+
+  \entry{rasp}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={SunFounder},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Sun}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{howpublished}{\url{https://www.sunfounder.com/picar-s-kit.html}}
+    \field{title}{Raspberry Pi Smart Robot.}
   \endentry
 \enddatalist
 \endinput
