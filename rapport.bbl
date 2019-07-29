@@ -17,6 +17,25 @@
 \endgroup
 
 \datalist[entry]{anyt/global//global/global}
+  \entry{adafruitpwm}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Adafruit},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ada}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{howpublished}{\url{https://www.adafruit.com/product/815}}
+    \field{title}{Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface -
+  PCA9685}
+  \endentry
+
   \entry{deepracer}{misc}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -24,8 +43,8 @@
          familyi={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{Ama}
@@ -94,6 +113,7 @@
     \field{labelalpha}{Car}
     \field{sortinit}{C}
     \field{sortinithash}{C}
+  \field{howpublished}{\href{https://www.monstercars.nl/docs/Himoto\%20Manual\%20PDF.pdf}{link}}
     \field{note}{H1 model.}
     \field{title}{Instructions manual}
   \endentry
@@ -138,13 +158,16 @@
 
   \entry{f1tenth}{misc}{}
     \name{author}{1}{}{%
-      {{hash=F}{%
+      {{hash=FUOP}{%
          family={F1Tenth},
          familyi={F\bibinitperiod},
+         given={University Of\bibnamedelima Pennsylvania},
+         giveni={U\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{F1}
-    \strng{fullhash}{F1}
+    \strng{namehash}{FUOP1}
+    \strng{fullhash}{FUOP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{F1T}
@@ -179,6 +202,24 @@
     \field{year}{2019}
   \endentry
 
+  \entry{racecarj}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={JetsonHacks},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Jet}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+  \field{howpublished}{\url{https://www.jetsonhacks.com/2018/01/28/racecar-j-initial-assembly/}}
+    \field{title}{RACECAR/J Initial Assembly}
+  \endentry
+
   \entry{rosprojects}{book}{}
     \name{author}{1}{}{%
       {{hash=JL}{%
@@ -203,7 +244,7 @@
     \field{year}{2017}
   \endentry
 
-  \entry{latexcompanion}{book}{}
+  \entry{ros}{book}{}
     \name{author}{1}{}{%
       {{hash=KA}{%
          family={Koubaa},
@@ -225,6 +266,48 @@
     \field{title}{Robot Operating System : the complete reference (volume 1 and
   2)}
     \field{year}{2016}
+  \endentry
+
+  \entry{bonanza}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MG}{%
+         family={McComb},
+         familyi={M\bibinitperiod},
+         given={Gordon},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill Education}%
+    }
+    \strng{namehash}{MG1}
+    \strng{fullhash}{MG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{McC18}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Robot Builder's Bonanza, 5th Edition}
+    \field{year}{2018}
+  \endentry
+
+  \entry{mitracecar}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MIT},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{MIT}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{howpublished}{\href{https://github.com/mit-racecar}{github project}
+  \& \href{http://fast.scripts.mit.edu/racecar/}{official documentation}}
+    \field{title}{MIT racecar.}
   \endentry
 
   \entry{nano}{misc}{}
@@ -308,6 +391,48 @@
     \field{sortinithash}{N}
   \field{howpublished}{\url{https://docs.nvidia.com/isaac/isaac/apps/tutorials/doc/assemble_kaya.html}}
     \field{title}{Kaya}
+  \endentry
+
+  \entry{motor}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SM}{%
+         family={Scarpino},
+         familyi={S\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Que Pub}%
+    }
+    \strng{namehash}{SM1}
+    \strng{fullhash}{SM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Sca15}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Motors for Makers: A Guide to Steppers, Servos, and Other
+  Electrical Machines}
+    \field{year}{2015}
+  \endentry
+
+  \entry{zeddoc}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=s}{%
+         family={stereloabs},
+         familyi={s\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{s1}
+    \strng{fullhash}{s1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ste}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+  \field{howpublished}{\url{https://www.stereolabs.com/docs/getting-started/}}
+    \field{title}{ZED camera documentation}
   \endentry
 
   \entry{rasp}{misc}{}

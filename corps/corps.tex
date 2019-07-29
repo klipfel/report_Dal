@@ -1,7 +1,14 @@
 \clearpage
 \newgeometry{hmargin=2.5cm,vmargin=2cm}
 
-\chapter{Project Contextualization}
+\chapter{Setup}\label{setup}
+
+\introductionLettrine{T}{his} part presents the material needed and the 
+necessary conditions to replicate the results of
+this project. Should you need some explanations on the project, please
+refer to parts \vref{context}, \vref{stateofart}, \vref{hardware}, and \vref{software}.
+
+\chapter{Project Contextualization}\label{context}
 
 	\section{Project Specification}
 	
@@ -11,7 +18,7 @@
 		robots have been implemented in the previous years, few have used the adaptive, versatile, and 
 		now standard robotic Middleware \textit{ROS}\footnote{Which stands for \textit{Robot Operating System}.}.
 		In addition, even fewer have ventured combining \textit{ROS} and \textit{Deep Learning} techniques.
-		\\\indent Why \textit{ROS} precisely? As defined by Anis Kouba in \cite{latexcompanion}, \textit{ROS}
+		\\\indent Why \textit{ROS} precisely? As defined by Anis Kouba in \cite{ros}, \textit{ROS}
 		is an \frstg{} open-source \textit{middleware} \lstg{} that provides a robust and reliable framework 
 		to build robots. \textit{ROS} is a voguish tool to create robots with advanced functionalities so much so 
 		that it has become the standard to develop robots. \textit{ROS2} is already in part 
@@ -110,7 +117,7 @@
 			this question in the section \vref{ros}.
 		\end{itemize}
 		
-\chapter{State of the art}
+\chapter{State of the art}\label{stateofart}
 
 		\introductionLettrine{I}{n} order to build the tracker, the first step was to choose the
 		hardware of the robot. Secondly, the \textit{ROS} architecture had to be decided
@@ -120,7 +127,7 @@
 		presented and listed here will then be compared and the choices
 		made will be underpinned in the parts \vref{hardware} and \vref{software}.
 		
-		\section{Building an electric car}
+		\section{Building an electric car}\label{buildingcar}
 		
 		Several projects have aimed to realize an electric car robot, sometimes autonomous. 
 		Having in mind these projects can give some piece of advice on how it is common 
@@ -194,16 +201,16 @@
 the behavior of the robot, the existing platform had to be fixed, and if needed adapted
 to the current needs of the project. This part starts by presenting the latest architecture 
 of the tracking robot, an then breaks this architecture apart by giving an overview of
-each challenge that had to be tackled.
+each challenge which had to be tackled.
 	
 	\section{Hardware architecture}
-	
-		% TODO What do we need to build a robot?
+		
+		
 		It is crucial to chose wisely the hardware of the robot in the first place, since
 		the software could be seen then as an exploitation of the hardware of 
 		the robot. The initial hardware of the robot did comprise
-		a \textit{brushed DC motor}\footnote{More is explained 
-		on that in the section \vref{motor}.} and a motor controller, or \textit{ESC}, which
+		a servomotor, a \textit{brushed DC motor}\footnote{More is explained 
+		on that in the section \vref{motor}.}, and a motor controller, or \textit{ESC}, which
 		stands for \textit{ Electronic Speed Controller}.
 		\\\indent This initial architecture had to be adapted for several reasons.
 		The latest hardware architecture of the tracking robot is
@@ -214,6 +221,22 @@ each challenge that had to be tackled.
 		in this project is based on image and depth inputs, but to be more
 		precise, on a \textit{stereo camera}. A \textit{stereo camera}
 		provides basically two types of information : depth and color.
+		For this purpose the \textit{ZED camera} of \textit{Stereolabs}
+		was used \cite{zeddoc}. The processing of the frames
+		given by the camera is done on the embedded computer
+		\textit{Jetson Nano}. Regarding the actuators, a servomotor
+		controls the bearing of the car, and a motor controls the speed
+		of the car through an \textit{ESC}. In order to communicate
+		with the motor controller, or \textit{ESC} a \textit{PWM shield}
+		was needed. Basically, a \textit{PWM} signal, which stands for
+		\textit{Pulse Width Modulation} in this case, is a certain type
+		of signal which are characterized by their duty cycle. This 
+		fundamental parameter is equivalent to the command sent 
+		to the \textit{ESC}. At this end, the \textit{PWM shield} PCA9685
+		of Adafruit was used \cite{adafruitpwm}. Ultimately, since
+		in the field of mobile robotics, robots tend to be mobile by definition,
+		the tracking robot had to be powered on its own. To 
+		meet that constraint two batteries were added.
 		
 		\begin{figure}
 			\label{hardwarearchitecture}
@@ -233,17 +256,68 @@ each challenge that had to be tackled.
 		the entire mechanics of the \textit{RC car} platform. Thus, this option was 
 		not considered.
 		\\\indent How is it possible then not to modify the mechanics and
-		at the same time decreasing the speed? If the mechanics was to 
+		at the same time to decrease the speed? If the mechanics was to 
 		be kept identical, that is to say that the power chain should 
 		remain untouched, the motor has to remain of the same dimensions.
-		This is why as a new motor, a \textit{brushed DC motor} was in part 
-		chosen. Taking a 
-	
-		\subsection{Motor Controller}	
+		This is why as new motor, a \textit{brushed DC motor} was in part 
+		chosen. Economically talking, a \textit{brushed} motor is far cheaper
+		in comparison to its counterpart the \textit{brushless} motor. Yet, the
+		speed has still not been decreased.
+		\\\indent To understand how it is actually possible to 
+		slow down a \textit{DC motor} it is essential to fathom the 
+		existing relation between the torque applied to the charge
+		and the \textit{RPM}\footnote{Revolutions Per Minutes.},
+		or in other words the angular speed 
+		of the shaft of the motor. Basically, the angular speed is
+		inversely proportional 
+		to the torque. Thus, in order to decrease the angular speed, a 
+		\textit{brushed DC motor} with more torque had to be chosen. \cite{bonanza, motor}
+		
+		\subsection{Motor Controller}
+		
+		A \textit{DC motor} without a controller is not very useful. At this 
+		stage, a controller had to be selected in order to set by commands
+		the angular speed of the motor.
+		Numerous strategies exist to regulate the speed of a \textit{DC motor}.
+		For instance, it is possible to use specific motor controllers \cite{f1tenth}, 
+		transistors, or \textit{ESCs}. From all the projects introduced
+		in the state or the art part \vref{buildingcar}, a majority 
+		uses \textit{ESCs}.
+		\\\indent Yet, the race car of the \textit{MIT}\footnote{Massachusetts Institute
+		of Technology, USA.} employs \textit{VESC}, which stands for \textit{Vedder 
+		Electronic Speed Controller} \cite{mitracecar}. Such \textit{ESCs} were designed
+		to provide more flexibility in the control of the low speeds. However, their price
+		were far too high to be considered in this project.
+		\\\indent All in all, a new brushed motor \textit{ESC} was bought.
 	
 	\section{Power consumption}
+		
+		\subsection{How many?}
+		% How many batteries?
+		The first question that should came to mind is not which type of battery
+		should be bought, or even
+		how much power the hardware requires, but how many batteries the robot 
+		needs. It is common in robotic applications and more 
+		extensively in any system to split the power supply into two parts.\cite{racecarj} 
+		\\\indent Actuators, that is to say for instance motors
+		or servomotors, tend to require far more power than the embedded computer. Besides, 
+		should the actuators draw too much current\footnote{It often happens that the 
+		actuators may induce current peaks.}, the embedded computer will switch off. Thus, 
+		as a matter of safety, it is crucial to isolate the power source of the actuators
+		from the one of the embedded computer. This explains the choice of two separate 
+		batteries.
+		% split the power source in more than two parts : usb hub --> battery for the computer + for the actuators : minimum.
+		
+		\subsection{Which one?}
+		% How do we power the computer, and the motor? Pb when powered via micro-usb ---> powered via barrel jacket.
+		% Present the battery adviced by jetson hacks.
+		% How many power do our hardware need?
 	
 	\section{Remote control and processing}
+	
+	\section{Performances of the embedded computer}
+	
+	\section{Unit Tests}
 
 
 \chapter{Software}\label{software}

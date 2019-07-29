@@ -217,7 +217,13 @@
 {\chapter} % command
 [display] % shape
 {\sffamily\bfseries\Large\itshape} % format of the font of the chapter
-{\sffamily\renewcommand{\LettrineFontHook}{\calligra} \textcolor{red}{\lettrine[lines=1]{P}{art} \thechapter} \centering} % label
+{
+\sffamily\renewcommand{\LettrineFontHook}{\calligra}
+\textcolor{red}{
+%\lettrine[lines=1]{P}{art}
+Part
+\thechapter
+} \centering} % label
 {0.5ex} % sep
 {
     \rule{\textwidth}{1pt}
@@ -285,5 +291,5 @@
 	% command for starting each introduction paragrapg of each chapter.
 \newcommand{\introductionLettrine}[2]{
 	\renewcommand{\LettrineFontHook}{\GoudyInfamily\color{red}}
-	\lettrine[lines=3, lhang=0.33, loversize=0.25, findent=0pt]{#1}{#2}
+	\lettrine[lines=2, lhang=0.33, loversize=0.25, findent=0pt]{#1}{#2}
 }
