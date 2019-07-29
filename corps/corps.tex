@@ -34,7 +34,9 @@
 		
 		In order to realize the tracking robot, several requirements had to be met in this
 		project. First of all, the robot had to reuse an old \textit{Race Car} platform comprising
-		the chassis, the wheels \dots all the mechanics. The brain of the robot, that is to say
+		the chassis, the wheels \dots all the mechanics. The platform is the \textit{H1 model}
+		of the \textit{monster Car} \cite{datasheet}.
+		The brain of the robot, that is to say 
 		the embedded computer had to be the \textit{Jetson Nano} designed by \textit{Nvidia} \cite{nano}. By and
 		large, to build the tracker the material of the laboratory had to be used as much as 
 		possible, and the equipment bought had to remain affordable.
@@ -97,20 +99,20 @@
 		\\\indent Throughout this report, which presents the 
 		results of the project, three questions will be answered:
 		\begin{itemize}
-			\item[\textbullet] How can the hardware of the robot be selected?
+			\item[\textbullet] How was the hardware selected?
 			You can find the answers to 
 			this question in the part \vref{hardware}.
-			\item[\textbullet] How can the tracking algorithm be built? Which belongs 
+			\item[\textbullet] How was the tracking algorithm implemented? Which belongs 
 			more to the software. You can find the answers to 
 			this question in the section \vref{tracking}.
-			\item[\textbullet] How can the \textit{ROS} architecture be designed? 
+			\item[\textbullet] How was the \textit{ROS} architecture designed? 
 			Which belongs more to the software. You can find the answers to 
 			this question in the section \vref{ros}.
 		\end{itemize}
 		
 \chapter{State of the art}
 
-		In order to build the tracker, the first step was to choose the
+		\introductionLettrine{I}{n} order to build the tracker, the first step was to choose the
 		hardware of the robot. Secondly, the \textit{ROS} architecture had to be decided
 		and thirdly the tracking algorithm had to be implemented. This part 
 		presents a brief overview of different existing projects and solutions 
@@ -140,7 +142,12 @@
 		
 		\section{Tracking}
 		
-		The mission of the tracker is to follow a specific object in a frame
+		Multiple ways of tracking a target exist, in this project the most
+		common one was used : a \textit{visual tracking}. Visual tracking
+		is basically based on the processing of images or frames taken by a camera. 
+		\\\indent More precisely, the mission of the tracker implemented
+		in this project is to follow
+		a specific object in a frame
 		\footnote{Given by a camera for instance.}, to be able to 
 		learn the object in that process, and even to be able to recover the target after 
 		any occlusion. Looking at the deep learning models and algorithms 
@@ -160,14 +167,84 @@
 		Developing with \textit{ROS} gives also an incredible
 		advantage to any roboticist. In fact, some \textit{ROS packages}
 		which are totally open-source already provide cutting-edge algorithms
-		such as sensor fusion by Kalman filtering, \textit{SLAM}. Unfortunately, 
-		applied to tracking few \textit{ROS} packages were developed, and
+		such as sensor fusion by Kalman filtering, \textit{SLAM}
+		\footnote{Simultaneous Localization And Mapping.}. Unfortunately, 
+		applied to specific object tracking few \textit{ROS} packages were developed, and
 		the existing ones do not use deep learning techniques at all.
-		\\\indent Apart from that, 
-		%TODO 
-		
-		
+		\\\indent Nevertheless, some \textit{ROS interfaces} were implemented
+		for \textit{ROS}, which can allow one to use a tracking algorithm
+		compatible with the \textit{ROS interface}, also often named
+		\textit{bridge} \cite{mtf}. The main problem is mainly that the implemented
+		programs are not up-to-date which renders the integration
+		in \textit{ROS} sometimes almost impossible due to software dependencies.
+		\\\indent Apart from that, several projects, almost all shared on
+		\textit{github}, implement tracking solutions. However, they 
+		either do not use deep learning, or are not supported by \textit{ROS} 
+		anymore. The book \textit{ROS Robotics Projects} presents
+		a well-documented tracking project, though no
+		deep learning techniques are used \cite{rosprojects}. Yet, 
+		the \textit{ROS} architecture inspired some of the realization 
+		of the own architecture of this project.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
+
 \chapter{Hardware}\label{hardware}
+
+\introductionLettrine{F}{irst} of all, before even thinking about the tracking process, and
+the behavior of the robot, the existing platform had to be fixed, and if needed adapted
+to the current needs of the project. This part starts by presenting the latest architecture 
+of the tracking robot, an then breaks this architecture apart by giving an overview of
+each challenge that had to be tackled.
+	
+	\section{Hardware architecture}
+	
+		% TODO What do we need to build a robot?
+		It is crucial to chose wisely the hardware of the robot in the first place, since
+		the software could be seen then as an exploitation of the hardware of 
+		the robot. The initial hardware of the robot did comprise
+		a \textit{brushed DC motor}\footnote{More is explained 
+		on that in the section \vref{motor}.} and a motor controller, or \textit{ESC}, which
+		stands for \textit{ Electronic Speed Controller}.
+		\\\indent This initial architecture had to be adapted for several reasons.
+		The latest hardware architecture of the tracking robot is
+		presented on figure \vref{hardwarearchitecture}, which
+		shows each component and how each interacts with each other.
+		\\\indent Let's explain a bit what are the crucial parts
+		that constitute a tracking robot. The target tracking process used
+		in this project is based on image and depth inputs, but to be more
+		precise, on a \textit{stereo camera}. A \textit{stereo camera}
+		provides basically two types of information : depth and color.
+		
+		\begin{figure}
+			\label{hardwarearchitecture}
+		\end{figure}
+
+	\section{Low speed control}\label{motor}
+	
+		\subsection{Motor}
+		
+		After having fixed the existing \textit{RC car}, the speed was unfortunately 
+		too high to meet the likely processing speed of the embedded computer.
+		The next step
+		was then to find a way to slow down the robot. 
+		\\\indent The first constraint was to avoid changing the mechanics as much as
+		possible. Changing the gear box, without buying a new \textit{ESC} and a new
+		motor could have been possible. Yet, it would have required to alter 
+		the entire mechanics of the \textit{RC car} platform. Thus, this option was 
+		not considered.
+		\\\indent How is it possible then not to modify the mechanics and
+		at the same time decreasing the speed? If the mechanics was to 
+		be kept identical, that is to say that the power chain should 
+		remain untouched, the motor has to remain of the same dimensions.
+		This is why as a new motor, a \textit{brushed DC motor} was in part 
+		chosen. Taking a 
+	
+		\subsection{Motor Controller}	
+	
+	\section{Power consumption}
+	
+	\section{Remote control and processing}
+
 
 \chapter{Software}\label{software}
 

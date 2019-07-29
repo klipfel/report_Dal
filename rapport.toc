@@ -26,10 +26,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Hardware}{10}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Software}{11}{chapter.4}
+\contentsline {section}{\numberline {3.1}Hardware architecture}{10}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Tracking}{11}{section.4.1}
+\contentsline {section}{\numberline {3.2}Low speed control}{10}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}ROS}{11}{section.4.2}
+\contentsline {subsection}{\numberline {3.2.1}Motor}{10}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{13}{section*.2}
+\contentsline {subsection}{\numberline {3.2.2}Motor Controller}{11}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Power consumption}{11}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Remote control and processing}{11}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Software}{12}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Tracking}{12}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}ROS}{12}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{14}{section*.3}

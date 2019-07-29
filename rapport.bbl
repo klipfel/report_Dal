@@ -35,6 +35,28 @@
     \field{title}{Amazon Deep Racer.}
   \endentry
 
+  \entry{mtf}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ASMJ}{%
+         family={Abhineet\bibnamedelima Singha},
+         familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Martin\bibnamedelima Jagersanda},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ASMJ1}
+    \strng{fullhash}{ASMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{AS18}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Modular Tracking Framework: A unified approach to
+  registration based tracking}
+    \field{journaltitle}{Computer Vision and Image Understanding, Elsevier}
+    \field{year}{2018}
+  \endentry
+
   \entry{bjelonicYolo2018}{misc}{}
     \name{author}{1}{}{%
       {{hash=BM}{%
@@ -54,6 +76,26 @@
     \field{howpublished}{\url{https://github.com/leggedrobotics/darknet_ros}}
     \field{title}{{YOLO ROS}: Real-Time Object Detection for {ROS}}
     \field{year}{2016--2018}
+  \endentry
+
+  \entry{datasheet}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Cars},
+         familyi={C\bibinitperiod},
+         given={Monster},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Car}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{H1 model.}
+    \field{title}{Instructions manual}
   \endentry
 
   \entry{ghost}{misc}{}
@@ -135,6 +177,30 @@
     \field{howpublished}{\url{http://got-10k.aitestunion.com/leaderboard}}
     \field{title}{Leaderboard : Up-to-date generic object tracking performance}
     \field{year}{2019}
+  \endentry
+
+  \entry{rosprojects}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JL}{%
+         family={Joseph},
+         familyi={J\bibinitperiod},
+         given={Lentin},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt}%
+    }
+    \strng{namehash}{JL1}
+    \strng{fullhash}{JL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Jos17}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{note}{Chapter 2}
+    \field{title}{ROS Robotics Projects}
+    \field{year}{2017}
   \endentry
 
   \entry{latexcompanion}{book}{}
