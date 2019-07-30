@@ -24,9 +24,20 @@
 \BOOKMARK [1][-]{section.3.6}{3.6 Unit Tests}{chapter.3}% 24
 \BOOKMARK [0][-]{chapter.4}{4 Software}{}% 25
 \BOOKMARK [1][-]{section.4.1}{4.1 Tracking}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{4.2 ROS}{chapter.4}% 27
-\BOOKMARK [0][-]{chapter.5}{5 Results}{}% 28
-\BOOKMARK [0][-]{chapter.6}{6 Setup}{}% 29
-\BOOKMARK [1][-]{section.6.1}{6.1 Hardware setup}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.2}{6.2 Software setup}{chapter.6}% 31
-\BOOKMARK [0][-]{section*.3}{Bibliography}{}% 32
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Overview}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Goturn}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 ROS interface}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Unit Tests}{section.4.1}% 30
+\BOOKMARK [1][-]{section.4.2}{4.2 ROS}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 ROS Basics}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Overview}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Speed regulation}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Bearing regulation}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Unit Tests}{section.4.2}% 36
+\BOOKMARK [0][-]{chapter.5}{5 Results : integration}{}% 37
+\BOOKMARK [0][-]{chapter.6}{6 Setup}{}% 38
+\BOOKMARK [1][-]{section.6.1}{6.1 Hardware setup}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{6.2 Software setup}{chapter.6}% 40
+\BOOKMARK [0][-]{appendix.A}{A Hardware Library}{}% 41
+\BOOKMARK [0][-]{appendix.B}{B ROS}{}% 42
+\BOOKMARK [0][-]{section*.3}{Bibliography}{}% 43

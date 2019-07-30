@@ -5,6 +5,8 @@
 \RequirePackage{etex}
 \RequirePackage[a4paper,vdivide={*,22cm,4cm}]{geometry}
 
+\RequirePackage{verbatim}
+
 \RequirePackage{minitoc}  %précis.
 
 \RequirePackage[stable]{footmisc}   %footnotes in section title
@@ -163,21 +165,23 @@
 } { 
 \hspace*{\fill}$\qed$\end{thinleftbar}\par}
 
-
+% For program insertion in the latex file.
 \RequirePackage{listings}
 \definecolor{green_comment}{rgb}{0.25,0.5,0.5}
-\lstset{  basicstyle=\small\ttfamily\upshape,
+\lstset{  basicstyle=\footnotesize\ttfamily\upshape, % sets the size of the code display.
           keywordstyle=\color{blue}\bfseries,
           identifierstyle=,
           commentstyle=\ttfamily\color{green_comment},
           stringstyle=\ttfamily\color{red},
           showstringspaces=false,
-%          numbers=left,
-%          firstnumber=1,
-%          numberstyle=\tiny,
+          numbers=left,
+          firstnumber=1,
+          numberstyle=\tiny,
 %          stepnumber=5,
-          frame=single,
-          language=SQL}
+          frame=none,
+          language=Python}
+%\RequirePackage{minted} % a alternative to listings, but does only work on linux.
+% For python highlighting : https://python.g-node.org/python-summerschool-2009/python_code_in_latex.html
 
 \RequirePackage{csquotes}
 
@@ -297,4 +301,6 @@ Part
 	\lettrine[lines=2, lhang=0.33, loversize=0.25, findent=0pt]{#1}{#2}
 }
 
-%\RequirePackage{minted}
+%----------------------------------------------------------------------------------
+% Notes inside the latex file
+\newcommand{\notes}[1]{}

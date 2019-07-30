@@ -54,14 +54,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Tracking}{15}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}ROS}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.1}Overview}{15}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{16}{chapter.5}
+\contentsline {subsection}{\numberline {4.1.2}Goturn}{15}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Setup}{17}{chapter.6}
+\contentsline {subsection}{\numberline {4.1.3}ROS interface}{15}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Hardware setup}{17}{section.6.1}
+\contentsline {subsection}{\numberline {4.1.4}Unit Tests}{16}{subsection.4.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Software setup}{17}{section.6.2}
+\contentsline {section}{\numberline {4.2}ROS}{16}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{19}{section*.3}
+\contentsline {subsection}{\numberline {4.2.1}ROS Basics}{16}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Overview}{16}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Speed regulation}{16}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}Bearing regulation}{16}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.5}Unit Tests}{16}{subsection.4.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Results : integration}{17}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Setup}{18}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Hardware setup}{18}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Software setup}{18}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Hardware Library}{20}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}ROS}{22}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{23}{section*.3}

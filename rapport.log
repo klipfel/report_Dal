@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  30 JUL 2019 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  30 JUL 2019 19:00
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -65,6 +65,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
 .cfg"))
+("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.st
+y"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\minitoc\minitoc.s
 ty"
 Package: minitoc 2018/07/12 v62 Package minitoc
@@ -84,7 +91,7 @@ Package minitoc Info: I0023
 (minitoc)             part level macros available.
 Package minitoc Info: I0003
 (minitoc)             chapter level macros available.
-\mtc@toks=\toks16
+\mtc@toks=\toks18
 \mtc@strutbox=\box26
 \mtc@hstrutbox=\box27
 Package minitoc Info: I0002
@@ -131,7 +138,7 @@ File: english.mld 2006/01/13
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\footmisc\footmisc
 .sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks17
+\FN@temptoken=\toks19
 \footnotemargin=\dimen111
 \c@pp@next@reset=\count97
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
@@ -167,8 +174,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 .tex"
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutil
 s.tex"
-\XKV@toks=\toks18
-\XKV@tempa@toks=\toks19
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
 )
 \XKV@depth=\count99
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -185,7 +192,7 @@ Package: fcnumparser 2017/06/15
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
 y"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
+\@emptytoks=\toks22
 \ex@=\dimen112
 )
 \c@padzeroesN=\count101
@@ -225,8 +232,8 @@ put line 308.
 \dayofyear=\count123
 \dayofweek=\count124
 LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks21
-\dt@b=\toks22
+\dt@a=\toks23
+\dt@b=\toks24
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.s
 ty"
@@ -279,7 +286,7 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 "
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-\pIIe@GRAPH=\toks23
+\pIIe@GRAPH=\toks25
 \@arclen=\dimen120
 \@arcrad=\dimen121
 \@tempdimd=\dimen122
@@ -344,7 +351,7 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \col@sep=\dimen125
 \ar@mcellbox=\box28
 \extrarowheight=\dimen126
-\NC@list=\toks24
+\NC@list=\toks26
 \extratabsurround=\skip49
 \backup@length=\skip50
 \ar@cellbox=\box29
@@ -455,8 +462,8 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box33
-\AM@global@opts=\toks25
-\AM@toc@title=\toks26
+\AM@global@opts=\toks27
+\AM@toc@title=\toks28
 \c@AM@survey=\count148
 \AM@templatesizebox=\box34
 )
@@ -468,7 +475,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \aftertitleunit=\skip57
 \ttl@plus=\dimen138
 \ttl@minus=\dimen139
-\ttl@toksa=\toks27
+\ttl@toksa=\toks29
 \titlewidth=\dimen140
 \titlewidthlast=\dimen141
 \titlewidthfirst=\dimen142
@@ -476,7 +483,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl
 .sty"
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
-\everycr=\toks28
+\everycr=\toks30
 \minrowclearance=\skip58
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating
@@ -486,7 +493,7 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rotFPtop=\skip59
 \rotFPbot=\skip60
 \rot@float@box=\box36
-\rot@mess@toks=\toks29
+\rot@mess@toks=\toks31
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
 .sty"
@@ -591,21 +598,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip10
 \c@parentequation=\count164
 \dspbrk@lvl=\count165
-\tag@help=\toks30
+\tag@help=\toks32
 \row@=\count166
 \column@=\count167
 \maxfields@=\count168
-\andhelp@=\toks31
+\andhelp@=\toks33
 \eqnshift@=\dimen159
 \alignsep@=\dimen160
 \tagshift@=\dimen161
 \tagwidth@=\dimen162
 \totwidth@=\dimen163
 \lineht@=\dimen164
-\@envbody=\toks32
+\@envbody=\toks34
 \multlinegap=\skip62
 \multlinetaggap=\skip63
-\mathdisplay@stack=\toks33
+\mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -624,15 +631,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
 "
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks34
-\thm@bodyfont=\toks35
-\thm@headfont=\toks36
-\thm@notefont=\toks37
-\thm@headpunct=\toks38
+\thm@style=\toks36
+\thm@bodyfont=\toks37
+\thm@headfont=\toks38
+\thm@notefont=\toks39
+\thm@headpunct=\toks40
 \thm@preskip=\skip64
 \thm@postskip=\skip65
 \thm@headsep=\skip66
-\dth@everypar=\toks39
+\dth@everypar=\toks41
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\euscript
 .sty"
@@ -648,7 +655,7 @@ f.sty"
 rcs.sty"
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfutil-common.tex"
-\pgfutil@everybye=\toks40
+\pgfutil@everybye=\toks42
 \pgfutil@tempdima=\dimen165
 \pgfutil@tempdimb=\dimen166
 
@@ -677,12 +684,12 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfkeys.code.tex"
-\pgfkeys@pathtoks=\toks41
-\pgfkeys@temptoks=\toks42
+\pgfkeys@pathtoks=\toks43
+\pgfkeys@temptoks=\toks44
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks43
+\pgfkeys@tmptoks=\toks45
 ))
 \pgf@x=\dimen167
 \pgf@y=\dimen168
@@ -693,14 +700,14 @@ gfkeysfiltered.code.tex"
 \pgf@xc=\dimen173
 \pgf@yc=\dimen174
 \w@pgf@writea=\write4
-\r@pgf@reada=\read1
+\r@pgf@reada=\read2
 \c@pgf@counta=\count169
 \c@pgf@countb=\count170
 \c@pgf@countc=\count171
 \c@pgf@countd=\count172
-\t@pgf@toka=\toks44
-\t@pgf@tokb=\toks45
-\t@pgf@tokc=\toks46
+\t@pgf@toka=\toks46
+\t@pgf@tokb=\toks47
+\t@pgf@tokc=\toks48
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
 \pgf.cfg"
@@ -741,9 +748,9 @@ hparser.code.tex"
 \pgfmath@dimen=\dimen175
 \pgfmath@count=\count175
 \pgfmath@box=\box40
-\pgfmath@toks=\toks47
-\pgfmath@stack@operand=\toks48
-\pgfmath@stack@operation=\toks49
+\pgfmath@toks=\toks49
+\pgfmath@stack@operand=\toks50
+\pgfmath@stack@operation=\toks51
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.code.tex"
@@ -899,8 +906,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 h.code.tex")
 \pgffor@iter=\dimen258
 \pgffor@skip=\dimen259
-\pgffor@stack=\toks50
-\pgffor@toks=\toks51
+\pgffor@stack=\toks52
+\pgffor@toks=\toks53
 ))
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
 er\tikz\tikz.code.tex"
@@ -949,7 +956,7 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 \TX@target=\dimen270
 \TX@delta=\dimen271
 \TX@cols=\count188
-\TX@ftn=\toks52
+\TX@ftn=\toks54
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\supe
 rtabular.sty"
@@ -988,7 +995,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count192
 \c@LT@tables=\count193
 \c@LT@chunks=\count194
-\LT@p@ftn=\toks53
+\LT@p@ftn=\toks55
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscap
 e.sty"
@@ -1008,9 +1015,9 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count195
-\float@exts=\toks54
+\float@exts=\toks56
 \float@box=\box56
-\@float@everytoks=\toks55
+\@float@everytoks=\toks57
 \@floatcapt=\box57
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.st
@@ -1186,7 +1193,7 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 80.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 82.
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1358,8 +1365,8 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
 "
 Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks56
-\inpenc@posthook=\toks57
+\inpenc@prehook=\toks58
+\inpenc@posthook=\toks59
 ) ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -1480,10 +1487,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip76
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 110.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 110.
+Package hyperref Info: Option `colorlinks' set `true' on input line 112.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 112.
 
-Package hyperref Info: Option `breaklinks' set `true' on input line 110.
+Package hyperref Info: Option `breaklinks' set `true' on input line 112.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\g
 lossaries.sty"
@@ -1492,8 +1499,8 @@ Package: glossaries 2018/07/23 v4.41 (NLCT)
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc
 .sty"
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks58
-\@glsmrest=\toks59
+\@glsmfirst=\toks60
+\@glsmrest=\toks61
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\textcase
 .sty"
@@ -1515,7 +1522,7 @@ Package: substr 2009/10/20 v1.2 Handle substrings
 -fp.sty"
 Package: datatool-fp 2018/12/07 v2.31 (NLCT)
 )
-\@dtl@toks=\toks60
+\@dtl@toks=\toks62
 \@dtl@tmpcount=\count298
 \dtl@tmplength=\skip77
 \dtl@sortresult=\count299
@@ -1544,12 +1551,12 @@ h\glossaries-english.ldf"
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
 \gls@level=\count305
-\@gls@tmpb=\toks61
+\@gls@tmpb=\toks63
 \gls@tmplen=\skip78
-\glskeylisttok=\toks62
-\glslabeltok=\toks63
-\glsshorttok=\toks64
-\glslongtok=\toks65
+\glskeylisttok=\toks64
+\glslabeltok=\toks65
+\glsshorttok=\toks66
+\glslongtok=\toks67
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles
 \glossary-hypernav.sty"
@@ -1601,7 +1608,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 .sty"
 \lst@mode=\count314
 \lst@gtempboxa=\box86
-\lst@token=\toks66
+\lst@token=\toks68
 \lst@length=\count315
 \lst@currlwidth=\dimen320
 \lst@column=\count316
@@ -1638,7 +1645,7 @@ Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 \csq@qlevel=\count325
 \csq@maxlvl=\count326
 \csq@tshold=\count327
-\csq@ltx@everypar=\toks67
+\csq@ltx@everypar=\toks69
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
 .def"
@@ -1713,7 +1720,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibinitsep=\skip89
 \bibparsep=\skip90
 \bibhang=\skip91
-\blx@bcfin=\read2
+\blx@bcfin=\read3
 \blx@bcfout=\write5
 \c@mincomprange=\count370
 \c@maxcomprange=\count371
@@ -1967,38 +1974,38 @@ LaTeX Warning: Unused global option(s):
 (rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 44.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 42.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 44.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2096,12 +2103,12 @@ kii"
 \scratchbox=\box96
 \nofMPsegments=\count465
 \nofMParguments=\count466
-\everyMPshowfont=\toks68
+\everyMPshowfont=\toks70
 \MPscratchCnt=\count467
 \MPscratchDim=\dimen331
 \MPnumerator=\count468
 \makeMPintoPDFobject=\count469
-\everyMPtoPDFconversion=\toks69
+\everyMPtoPDFconversion=\toks71
 )
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
 -base.sty"
@@ -2119,7 +2126,7 @@ Package grfext Info: Graphics extension search list:
 )
 \AtBeginShipoutBox=\box97
  ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring ON on input line 44.
+Package hyperref Info: Link coloring ON on input line 42.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
 sty"
@@ -2132,14 +2139,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 \c@section@level=\count470
 LaTeX Info: Redefining \Ref on input line 515.
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
  (rapport.out) (rapport.out)
 \@outlinefile=\write7
 \openout7 = `rapport.out'.
 
-LaTeX Info: Redefining \Ref on input line 44.
+LaTeX Info: Redefining \Ref on input line 42.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-englis
 h\glossaries-dictionary-English.dict"
@@ -2163,85 +2170,85 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 44.
-Package biblatex Info: Reference segment=0 on input line 44.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 48.
+Package biblatex Info: Reference section=0 on input line 42.
+Package biblatex Info: Reference segment=0 on input line 42.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 46.
  ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 48.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 46.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 48.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 46.
 
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 48.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 46.
 
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 48.
+(Font)              <12> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 48.
+(Font)              <8> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 48.
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+(Font)              <6> on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
  ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=134, 236.15828pt x 284.52798pt>
+<imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=178, 236.15828pt x 284.52798pt>
 
 File: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf Graphic file (type pdf)
 <use imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf>
 Package pdftex.def Info: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf  used on in
-put line 48.
+put line 46.
 (pdftex.def)             Requested size: 99.18579pt x 119.50148pt.
-<imgs/logo_dal_nd.png, id=135, 1606.0pt x 1140.26pt>
+<imgs/logo_dal_nd.png, id=179, 1606.0pt x 1140.26pt>
 File: imgs/logo_dal_nd.png Graphic file (type png)
 <use imgs/logo_dal_nd.png>
-Package pdftex.def Info: imgs/logo_dal_nd.png  used on input line 48.
+Package pdftex.def Info: imgs/logo_dal_nd.png  used on input line 46.
 (pdftex.def)             Requested size: 113.80379pt x 102.42758pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 48.
+(Font)              <10> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 48.
+(Font)              <7> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 48.
+(Font)              <5> on input line 46.
 
-Overfull \hbox (138.1816pt too wide) in paragraph at lines 48--48
+Overfull \hbox (138.1816pt too wide) in paragraph at lines 46--46
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/lmr/bx/sc' in size <12> not available
-(Font)              Font shape `T1/cmr/bx/sc' tried instead on input line 48.
+(Font)              Font shape `T1/cmr/bx/sc' tried instead on input line 46.
 
-Overfull \vbox (37.49623pt too high) detected at line 48
+Overfull \vbox (37.49623pt too high) detected at line 46
  []
 
 [1
 
 {C:/Users/Arnaud/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./imgs/log
 o_ENSTA_Bretagne_Vertical_CMJN.pdf> <./imgs/logo_dal_nd.png>]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 48.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 46.
 
 ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 48.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 46.
 
 (rapport.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2309,7 +2316,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 108.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 112.
 
  ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2318,7 +2325,7 @@ Chapter 2.
 Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 24.2126pt (I) loversize=0.25;
-(lettrine.sty)             reported on input line 121.
+(lettrine.sty)             reported on input line 125.
 [9
 
 ] [10]
@@ -2326,42 +2333,67 @@ Chapter 3.
 Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 24.2126pt (F) loversize=0.25;
-(lettrine.sty)             reported on input line 199.
+(lettrine.sty)             reported on input line 203.
 
-Package caption Warning: \label without proper reference on input line 244.
+Package caption Warning: \label without proper reference on input line 248.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `hardwarearchitecture' on page 11 undefined on input l
-ine 217.
+ine 221.
 
 [11
 
 ] [12] [13] [14]
 Chapter 4.
+Package lettrine.sty Info: Targeted height = 19.3701pt
+(lettrine.sty)             (no accent, loversize=0),
+(lettrine.sty)             Lettrine height = 24.2126pt (T) loversize=0.25;
+(lettrine.sty)             reported on input line 442.
 [15
 
-]
+] [16]
 Chapter 5.
-[16
+Package lettrine.sty Info: Targeted height = 19.3701pt
+(lettrine.sty)             (no accent, loversize=0),
+(lettrine.sty)             Lettrine height = 24.2126pt (T) loversize=0.25;
+(lettrine.sty)             reported on input line 548.
+[17
 
 ]
 Chapter 6.
 Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 24.2126pt (T) loversize=0.25;
-(lettrine.sty)             reported on input line 429.
-) (corps/conclusion.tex [17
+(lettrine.sty)             reported on input line 564.
+) (corps/conclusion.tex [18
 
-]) (corps/appendix.tex) [18
+]) (corps/appendix.tex [19
 
 ]
-Overfull \hbox (4.46788pt too wide) in paragraph at lines 60--60
+Appendix A.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 7.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 7.
+("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(codes/hardware.py
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 3.
+ [20
+
+]) [21]
+Appendix B.
+) [22
+
+]
+Overfull \hbox (4.46788pt too wide) in paragraph at lines 58--58
 []\T1/lmr/m/n/10.95 Adafruit. \T1/lmr/m/it/10.95 Adafruit 16-Channel 12-bit PWM
 /Servo Driver - I2C in-ter-face - PCA9685\T1/lmr/m/n/10.95 .
  []
 
-[19
+[23
 
 
 ]
@@ -2386,14 +2418,14 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the rapport.log file.
 
-[20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
+[24]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: D1C7CAC35FBF2E3AAF8F8385D5198191;2095.
+(rerunfilecheck)             Checksum: DDC1767440F378D9357C599AAC3880C5;2856.
 
 
 LaTeX Warning: There were undefined references.
@@ -2403,18 +2435,18 @@ Package logreq Info: Writing requests to 'rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40000 strings out of 492970
- 720561 string characters out of 3126151
- 1243955 words of memory out of 3000000
- 42735 multiletter control sequences out of 15000+200000
- 100113 words of font info for 88 fonts, out of 3000000 for 9000
+ 40646 strings out of 492970
+ 727647 string characters out of 3126151
+ 1265324 words of memory out of 3000000
+ 43255 multiletter control sequences out of 15000+200000
+ 100750 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,94p,2016b,2055s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-it.enc}{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
--rm.enc}{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-ts1.enc}{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-ec.enc} <C:\Users\Arnaud\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ 69i,12n,94p,2016b,2098s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
+nc}{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
+hit.enc}{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-rm.enc}{C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-ts1.enc} <C:\Users\Arnaud\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecxc1200.pk><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/initials/GoudyIn.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Arnaud/AppData/Local/Programs/
@@ -2432,10 +2464,12 @@ pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
 ri9.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
 m/lmssbo10.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmssbx10.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/urw/zapfding/uzdr.pfb>
-Output written on rapport.pdf (20 pages, 715812 bytes).
+type1/public/lm/lmtk10.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/lm/lmtt9.pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on rapport.pdf (24 pages, 803183 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 803 PDF objects out of 1000 (max. 8388607)
+ 210 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -138,6 +138,32 @@
     \field{title}{Ghost II : controlling an RC car with a computer.}
   \endentry
 
+  \entry{goturn}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DHSSST}{%
+         family={David\bibnamedelima Held},
+         familyi={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+         suffix={Sebastian\bibnamedelima Thrun},
+         suffixi={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Silvio\bibnamedelima Savarese},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Stanford}%
+    }
+    \strng{namehash}{DHSTSS1}
+    \strng{fullhash}{DHSTSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DH}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\href{http://davheld.github.io/GOTURN/GOTURN.pdf}{paper
+  in pdf.}}
+    \field{title}{Learning to Track at 100 FPS with Deep Regression Networks}
+  \endentry
+
   \entry{donkey}{misc}{}
     \name{author}{1}{}{%
       {{hash=D}{%
@@ -632,6 +658,26 @@
     \field{sortinithash}{S}
     \field{howpublished}{\url{https://www.sunfounder.com/picar-s-kit.html}}
     \field{title}{Raspberry Pi Smart Robot.}
+  \endentry
+
+  \entry{goturnpy}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ngu}{%
+         prefix={nrupatunga\bibnamedelima github},
+         prefixi={n\bibinitperiod\bibinitdelim g\bibinitperiod},
+         family={user},
+         familyi={u\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ung1}
+    \strng{fullhash}{ung1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{use}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+  \field{howpublished}{\href{https://github.com/nrupatunga/PY-GOTURN/}{link.}}
+    \field{title}{Goturn-Py}
   \endentry
 \enddatalist
 \endinput

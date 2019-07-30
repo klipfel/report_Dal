@@ -23,7 +23,11 @@
 		that it has become the standard to develop robots. \textit{ROS2} is already in part 
 		operational. In this project though, 
 		it has been decided that the first version of \textit{ROS} will be used since \textit{ROS2} is still 
-		in heavy development and \textit{ROS} is better documented than its counterpart.
+		in heavy development and \textit{ROS} is better documented than its counterpart. Besides, 
+		some sensors used in this project, such as
+		the \textit{ZED camera}\footnote{See \vref{hardwareoverview}.},
+		have packages that are still in beta version, hence less reliable than the ones
+		of \textit{ROS}.
 		\\\indent Why is \textit{Deep Learning} suitable for robotic applications? In general, \textit{AI}
 		\footnote{Artificial Intelligence, which comprises \textit{Deep Learning}.}
 		is really adapted for critical algorithms, such as embedded codes
@@ -146,7 +150,7 @@
 		follows some fundamental principles.
 		\\\indent The selection of the hardware is discussed further in the part \vref{hardware}.
 		
-		\section{Tracking}
+		\section{Tracking}\label{statearttracking}
 		
 		Multiple ways of tracking a target exist, in this project the most
 		common one was used : a \textit{visual tracking}. Visual tracking
@@ -204,7 +208,7 @@ each challenge which had to be tackled.
 	
 	\section{Hardware architecture}
 		
-		\subsection{Overview}
+		\subsection{Overview}\label{hardwareoverview}
 		
 		It is crucial to chose wisely the hardware of the robot in the first place, since
 		the software could be seen then as an exploitation of the hardware of 
@@ -412,17 +416,148 @@ each challenge which had to be tackled.
 	
 	\section{Unit Tests}
 
-		% Finding the lowest speed.
-
-
+		Before trying to integrate anything, that is to say 
+		to use the hardware inside a \textit{ROS} framework 
+		or to merge hardware and tracking, the hardware was
+		tested independently.
+		\\\indent Especially, regarding the actuators, 
+		being the servomotor and motor, a low-level library 
+		was written in python, \textit{hardware.py}, which is
+		presented in the appendix \vref{hardwarelib}. 
+		It belongs to the software of course, but since the low-level 
+		library is aimed to directly drive the hardware, this 
+		section can be considered inside the hardware part. 
+		\\\indent In fact, this library enables to create
+		a \textit{python object} for each piece
+		of hardware. Each object provides
+		some high level methods, which can 
+		then be used in a more complex \textit{ROS}
+		architecture. Parameters were also set 
+		in order to transfer a low-level command
+		to a high-level command.
+		
 
 \chapter{Software}\label{software}
 
+	\introductionLettrine{T}{he} hardware selection has been discussed in the part \vref{hardware}. 
+	Once the hardware architecture is defined, and tested. The software 
+	part must be implemented in order then to merge them together. The software
+	comprises mainly two challenges : the realization of the tracking and the
+	conception of the \textit{ROS} architecture.
+	
 	\section{Tracking}\label{tracking}
 	
+		% NOTES
+		% strategy of development, position of the problem
+			% pretrained model
+			% then complicate it
+		% Why GOTURN? opencv, easy of use first, and then maybe my own, can be trained
+			% add the goturn paper
+		% ROS interfacing and GOTURN
+		% Unit Tests : really good for human faces (it was apparently more trained on human faces), 10-30FPS with 
+		% the webcam of the computer, a static image
+		
+		\subsection{Overview}
+		
+		As explained in \vref{hardwareoverview} and \vref{statearttracking}, in this project
+		the tracking algorithm is implemented with a deep neural network and takes as input
+		the color frames of the \textit{ZED camera}. The goal is
+		to have a tracking algorithm able to follow a specific target in 
+		a sequence of frames.
+		\\\indent The approach to the problem was to find a tracking algorithm or model 
+		which is pretrained. Basically, starting with the easiest solution and 
+		then, if needed, refining it. Another idea was also to 
+		have the model running in a controlled environment and then, once tested, 
+		interfacing it with \textit{ROS}.
+		
+		\subsection{Goturn}
+		
+		Among the numerous and variegated tracking solutions presented in 
+		\cite{trakinglist} the pretrained model \textit{GOTURN} was chosen.
+		\\\indent First of all, only the tracking algorithms that were
+		implemented in \textit{python} were selected for compatibilities issues.
+		\textit{GOTURN} was also the best choice regarding the ease of 
+		programming. It is implemented inside the \textit{OpenCV}
+		library, which is one of the most widely used
+		computer-vision library worldwide, and which renders it far easier
+		to integrate the tracking model in the \textit{ROS} architecture
+		afterward. \cite{goturn}
+		\\\indent \textit{GOTURN} is also sustainable and flexible, for it is
+		possible to acquire the untrained model for a more 
+		specific application.\cite{goturnpy}
+		
+		\subsection{ROS interface}
+		
+		Making the \textit{GOTURN} tracker work inside
+		the \textit{ROS} framework was not that easy, 
+		although it was easier than the other available solutions.
+		% python environment for opencv, docker
+		Running the \textit{GOTURN} function provided 
+		in the \textit{OpenCV} library needed 
+		to have a version of \textit{OpenCV} higher than $3.4.2$. However, since
+		\textit{ROS} relies on \textit{Python 2.7}, 
+		it only comes with an older version. I was not
+		able to uninstall this library since it was
+		a dependencies for other \textit{ROS} packages. The 
+		workaround was to create a \textit{Python Environment}
+		using \textit{virtualenv} on \textit{Ubuntu}, and then 
+		to specify this \textit{Python} interpreter of this
+		particular environment in the code of the tracker
+		using the \textit{shebang}, the first line of code
+		where the interpreter is specified.
+		% ROS interface, image message
+
+		\subsection{Unit Tests}
+		
 	\section{ROS}\label{ros}
 	
-\chapter{Results}\label{results}
+		\begin{comment}
+		
+		The Bascis of ROS
+			master
+			topic 
+			nodes
+			services
+		Overview of the ROS architecture
+			Position of the problem
+			How does the ROS architecture work? Function of each node
+			Two version of the ROS architecture
+				remote processing
+				local processing
+		Speed regulation
+			PID controller
+		Bearing regulation
+			PID controller
+		Unit tests without the hardware : everything was simulated
+			Only the remote one was tested
+				
+		\end{comment}
+		
+		\subsection{ROS Basics}
+		
+		\subsection{Overview}
+		
+		\subsection{Speed regulation}
+		
+		\subsection{Bearing regulation}
+		
+		\subsection{Unit Tests}
+			
+\chapter{Results : integration}\label{results}
+	
+	\introductionLettrine{T}{his} part gives an analysis of the latest results
+	obtained in this project. Basically, the part tackles
+	the integration of the software in the hardware.
+	
+	\begin{comment}
+	
+		Results of the integration of the hardware with the software:
+		test with the remote architecture and the Ethernet cable
+			5 FPS in average
+			curve of the error
+			several pictures showing that the robot follows the target
+	
+	\end{comment}
 
 \chapter{Setup}\label{setup}
 
