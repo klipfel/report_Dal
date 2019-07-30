@@ -1,13 +1,6 @@
 \clearpage
 \newgeometry{hmargin=2.5cm,vmargin=2cm}
 
-\chapter{Setup}\label{setup}
-
-\introductionLettrine{T}{his} part presents the material needed and the 
-necessary conditions to replicate the results of
-this project. Should you need some explanations on the project, please
-refer to parts \vref{context}, \vref{stateofart}, \vref{hardware}, and \vref{software}.
-
 \chapter{Project Contextualization}\label{context}
 
 	\introductionLettrine{T}{his} part gives a first and general glimpse into what was at stake in 
@@ -211,6 +204,7 @@ each challenge which had to be tackled.
 	
 	\section{Hardware architecture}
 		
+		\subsection{Overview}
 		
 		It is crucial to chose wisely the hardware of the robot in the first place, since
 		the software could be seen then as an exploitation of the hardware of 
@@ -242,12 +236,16 @@ each challenge which had to be tackled.
 		of Adafruit was used \cite{adafruitpwm}. Ultimately, since
 		in the field of mobile robotics, robots tend to be mobile by definition,
 		the tracking robot had to be powered on its own. To 
-		meet that constraint two batteries were added.
+		meet that constraint two batteries were added. From all that has
+		been mentioned in this paragraph, only the initial servomotor was
+		saved.
 		
 		\begin{figure}
 			\label{hardwarearchitecture}
 		\end{figure}
 
+		\subsection{Components list}
+		
 	\section{Low speed control}\label{motor}
 	
 		\subsection{Motor}
@@ -295,6 +293,20 @@ each challenge which had to be tackled.
 		to provide more flexibility in the control of the low speeds. However, their price
 		were far too high to be considered in this project.
 		\\\indent All in all, a new brushed motor \textit{ESC} was bought.
+		\\\indent \textit{ESCs} were first designed for \textit{RC cars}, that is to say for 
+		remote control in general. This is why, the commands that should be given to them
+		as inputs are signals transmitted by remote controller, \textit{PWM signals}. In order
+		to generate such signals the \textit{GPIO}\footnote{Which stands for \textit{General Purpose Inputs Outputs}.}
+		pins or outputs of the \textit{Jetson Nano} 
+		provide some relevant functionalities. The jetson nano has two channels that
+		can generate \textit{PWM} signals. Yet, the \textit{PWM shield}  PCA9685
+		of Adafruit is more reliable, since its function is exclusively to generate
+		such signals. The selected solution was to use the \textit{GPIO} pins 
+		to generate \textit{I2C}\footnote{Two-wire communication 
+		protocol that allows to address several devices or give several 
+		orders at the same time to external devices from a microcontroller.} signals to communicate
+		with the \textit{PWM shield}. The \textit{PWM shield}
+		then outputs the right \textit{PWM signals}.\cite{tk1servo,nanogpio,nanogpiolayout} 
 	
 	\section{Power consumption}
 		
@@ -324,27 +336,84 @@ each challenge which had to be tackled.
 		\\\indent All these choices were further underpinned by 
 		the projects presented in \vref{buildingcar}.
 		
-		\subsection{Which one?}
+		\subsection{Which ones?}
 		% Battery for the ESC and motor : actuator.
-		Regarding the motor, which is the actuator that 
+		On the one hand, regarding the motor, which is the actuator that 
 		draws the more power among the hardware of the robot, an independent 
 		\textit{Li-Po} battery has been chosen. This choice
 		was further promoted, for \textit{Li-Po} batteries, in 
 		comparison to \textit{NiMH} and \textit{Ni-Cd} batteries, 
 		tend to be more efficient and start to gradually 
 		supersede them.
-		% TODO 
 		% How do we power the computer, and the motor? Pb when powered via micro-usb ---> powered via barrel jacket :
 		% battery for the servomotor
+		\\\indent On the other hand, regarding the power source of the embedded computer, with 
+		the normal power input through \textit{micro-usb} the power supplied
+		was maximum 10 Watts, and the jetson nano used to be turned off. As a matter of fact,
+		after some tests, it appears that it was due to an under-powering of the 
+		\textit{Jetson Nano}, although the \textit{Jetson Nano} was not connected
+		to any other device. Multiple ways exist to power the \textit{Jetson Nano}.
+		Powering the board through the \textit{Power Jack}, which gives maximum 20 Watts, 
+		was the chosen solution. Hence, the battery \textit{Krisdonia 25000mAh} was bought to meet that 
+		requirement \cite{nanopowerbank}. In addition, it enables to plug more external devices to the \textit{Jetson Nano}
+		and fasten its overall performances.
+		\\\indent The servomotor is still not powered. Servomotors are commanded
+		via \textit{PWM signals}. Those ones are generated with the \textit{PWM shield}, also 
+		used for the communication with the \textit{ESC}. The \textit{PWM shield} needs to power the 
+		servomotor though. This is done by using the \textit{V+} external power input of
+		the \textit{Adafruit shield}. Since the \textit{Krisdonia 25000mAh} is powerfull 
+		enough with a \textit{DC ouput} for the\textit{Jetson Nano} and two other independent
+		\textit{USB power outputs} with a $5V/3A$, the servomotor is powered through the \textit{PWM shield}
+		with the \textit{Krisdonia 25000mAh} battery.
 		% Present the battery adviced by jetson hacks.
 		% How many power do our hardware need?
-		\cite{jetsonhacksmorepower}
+		\cite{jetsonhacksmorepower,nanoguide,elinuxdoc}
 		
 	\section{Remote control and processing}
-	
+		
+		% Remote control of the robot, supervising, displaying information
+		% other interest : using more powerful GPUs for deep learning applications : processing the frames on 
+		% a remote computer.
+		When the tracking robot is in mission, it is essential that 
+		at each time the information gathered and processed by the
+		robot can be displayed and monitored by a human agent.
+		For instance, it is useful to store the data on a remote 
+		computer, to display some curves, or 
+		simply to command the robot remotely when the tracker encounters
+		some hurdles. Communication can be established via \textit{SSH}\footnote{Secure Shell.}
+		in a terminal environment. Yet, the robot needs to be able 
+		to be connected to a network, and unfortunately, the 
+		\textit{Jetson Nano} does not provide any way to do that. The most common way 
+		to achieve that is by using a \textit{WiFi Module}. A huge 
+		variety of such devices can be find on the market, the question 
+		is then which one of those is the most suitable for the 
+		targeted application.
+		\\\indent Another aspect of the decision should take into 
+		account that it would be more efficient and sustainable 
+		to be able to process the frames of the camera on
+		a remote computer more powerful than the \textit{Jetston Nano}.
+		However, to send frames via \textit{WiFi} the \textit{ WiFi Module}
+		must possess a relevant bandwidth and a faster than average communication
+		speed. For this reason the module \textit{8265NGW} of Intel was chosen, which 
+		delivers up to 867Mbps \cite{wifi}.
+		
 	\section{Performances of the embedded computer}
 	
+		The performances of the embedded computer are crucial in 
+		any robotic application.
+		At first the \textit{Jetson Nano} was too slow 
+		to do anything else than acquiring the image of the \textit{ZED camera}.
+		In order to increase those performances a bigger \textit{SD card} of 
+		about 64 GB had to be added.
+		\\\indent Improving the processing speed of the \textit{Jetson Nano}
+		could also be done by artificially increasing the \textit{RAM}\footnote{Random Access
+		Memory.} of the board, which comes with a limited 4 GB of \textit{RAM}. The latter
+		was not put in place, it is highly recommended in the future though. \cite{swap}
+	
 	\section{Unit Tests}
+
+		% Finding the lowest speed.
+
 
 
 \chapter{Software}\label{software}
@@ -353,4 +422,23 @@ each challenge which had to be tackled.
 	
 	\section{ROS}\label{ros}
 	
-\chapter{Results}
+\chapter{Results}\label{results}
+
+\chapter{Setup}\label{setup}
+
+	\introductionLettrine{T}{his} part presents the material needed and the 
+	necessary conditions to replicate the \hyperref[results]{results}\footnote{cf. \vref{results}.} of
+	this project. Should you need some explanations on the project, please
+	refer to parts \vref{context}, \vref{stateofart}, \vref{hardware}, and \vref{software}.
+
+	\section{Hardware setup}
+
+	% TODO
+	% wiring, blueprint of the wiring (or maybe use the same than the hardware architecture)
+	
+	\begin{itemize}
+		\item [\ding{55}] \underline{Computers} : Jetson Nano, Ubuntu 18.04, remote computer Ubuntu 18.04. 
+	\end{itemize}
+	
+	
+	\section{Software setup}

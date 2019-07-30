@@ -156,6 +156,24 @@
     \field{title}{Donkey Car.}
   \endentry
 
+  \entry{elinuxdoc}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=e}{%
+         family={eLinux.org},
+         familyi={e\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{e1}
+    \strng{fullhash}{e1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{eLi}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{howpublished}{\href{https://elinux.org/Jetson_Nano}{link}}
+    \field{title}{Jetson Nano documentation}
+  \endentry
+
   \entry{f1tenth}{misc}{}
     \name{author}{1}{}{%
       {{hash=FUOP}{%
@@ -202,6 +220,69 @@
     \field{year}{2019}
   \endentry
 
+  \entry{swap}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Hacks},
+         familyi={H\bibinitperiod},
+         given={Jetson},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Hac}
+    \field{extraalpha}{1}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+  \field{howpublished}{\href{https://www.jetsonhacks.com/2019/04/14/jetson-nano-use-more-memory/}{link.}}
+    \field{title}{Jetson Nano – Use More Memory!}
+  \endentry
+
+  \entry{nanogpiolayout}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Hacks},
+         familyi={H\bibinitperiod},
+         given={Jetson},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Hac}
+    \field{extraalpha}{2}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+  \field{howpublished}{\url{https://www.jetsonhacks.com/nvidia-jetson-nano-j41-header-pinout/}}
+    \field{title}{NVIDIA Jetson Nano J41 Header Pinout}
+  \endentry
+
+  \entry{tk1servo}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Hacks},
+         familyi={H\bibinitperiod},
+         given={Jetson},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Hac15}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+  \field{howpublished}{\url{https://www.jetsonhacks.com/2015/10/14/pwm-servo-driver-board-nvidia-jetson-tk1/}}
+    \field{title}{PWM Servo Driver Board – NVIDIA Jetson TK1}
+    \field{year}{2015}
+  \endentry
+
   \entry{jetsonhacksmorepower}{misc}{}
     \name{author}{1}{}{%
       {{hash=HJ}{%
@@ -221,6 +302,25 @@
   \field{howpublished}{\url{https://www.jetsonhacks.com/2019/04/10/jetson-nano-use-more-power/}}
     \field{title}{Jetson Nano – Use More Power!}
     \field{year}{2019}
+  \endentry
+
+  \entry{wifi}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Int}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+  \field{howpublished}{\href{https://www.intel.com/content/dam/www/public/us/en/documents/product-briefs/dual-band-wireless-ac-8265-brief.pdf}{pdf
+  documentation.}}
+    \field{title}{Intel Dual Band Wireless AC - 8265}
   \endentry
 
   \entry{racecarj}{misc}{}
@@ -287,6 +387,26 @@
     \field{title}{Robot Operating System : the complete reference (volume 1 and
   2)}
     \field{year}{2016}
+  \endentry
+
+  \entry{nanopowerbank}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=K}{%
+         family={Krisdonia},
+         familyi={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{K1}
+    \strng{fullhash}{K1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kri}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+  \field{howpublished}{\href{https://www.amazon.com/dp/B076GYGR6M}{amazon.com}}
+    \field{title}{Krisdonia Portable Laptop Charger (TSA-Approved)
+  92.5Wh/25000mAh Travel Laptop Power Bank External Battery Bank for HP, Dell,
+  Lenovo and Other laptops}
   \endentry
 
   \entry{bonanza}{book}{}
@@ -378,16 +498,16 @@
 
   \entry{jetbot}{misc}{}
     \name{author}{1}{}{%
-      {{hash=n}{%
-         family={nvidia},
-         familyi={n\bibinitperiod},
+      {{hash=N}{%
+         family={Nvidia},
+         familyi={N\bibinitperiod},
       }}%
     }
-    \strng{namehash}{n1}
-    \strng{fullhash}{n1}
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{nvi}
+    \field{labelalpha}{Nvi}
     \field{extraalpha}{1}
     \field{sortinit}{N}
     \field{sortinithash}{N}
@@ -395,19 +515,59 @@
     \field{title}{Jetbot : an educational robot.}
   \endentry
 
-  \entry{kaya}{misc}{}
+  \entry{nanoguide}{misc}{}
     \name{author}{1}{}{%
-      {{hash=n}{%
-         family={nvidia},
-         familyi={n\bibinitperiod},
+      {{hash=N}{%
+         family={Nvidia},
+         familyi={N\bibinitperiod},
       }}%
     }
-    \strng{namehash}{n1}
-    \strng{fullhash}{n1}
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{nvi}
+    \field{labelalpha}{Nvi}
     \field{extraalpha}{2}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+  \field{howpublished}{\href{https://developer.download.nvidia.com/assets/embedded/secure/jetson/Nano/docs/NVIDIA_Jetson_Nano_Developer_Kit_User_Guide.pdf?qLgf5-QtTkYRqAtmK1356pXLyURzsMeGKUnbE77kXPBbihSmfhC2ieV62eF0T3EPI1OCj-dtZvWlvb9DrF60h9pNcvNTPwPjPCyDFqU2MqD207wbiHq_Snu3usMcC15gPzLYT7xnyvCghrca5Y7UGA9ghYaF6An7MERpvymWTMDvkULGYwWnr1nKJW__DXey4YNAxTZ7}{pdf
+  file.}}
+    \field{title}{Jetson Nano Developer Kit Guide}
+  \endentry
+
+  \entry{nanogpio}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={Nvidia},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nvi}
+    \field{extraalpha}{3}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{howpublished}{\url{https://github.com/NVIDIA/jetson-gpio}}
+    \field{note}{github hosted documentation.}
+    \field{title}{Jetson.GPIO - Linux for Tegra}
+  \endentry
+
+  \entry{kaya}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={Nvidia},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nvi}
+    \field{extraalpha}{4}
     \field{sortinit}{N}
     \field{sortinithash}{N}
   \field{howpublished}{\url{https://docs.nvidia.com/isaac/isaac/apps/tutorials/doc/assemble_kaya.html}}

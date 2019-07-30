@@ -96,7 +96,10 @@
 \RequirePackage[hyphens]{url}
 \urlstyle{same}
 \RequirePackage[pdftex,colorlinks,breaklinks]{hyperref}
-\hypersetup{%
+\hypersetup{% setup for the hyperlinks in the pdf.
+  colorlinks = true,
+  linkcolor = blue,
+  urlcolor=blue,
   pdftitle={rapport},
   pdfauthor={Arnaud KLIPFEL},
   pdfkeywords={rapport de projet},
@@ -293,3 +296,5 @@ Part
 	\renewcommand{\LettrineFontHook}{\GoudyInfamily\color{red}}
 	\lettrine[lines=2, lhang=0.33, loversize=0.25, findent=0pt]{#1}{#2}
 }
+
+%\RequirePackage{minted}

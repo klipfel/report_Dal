@@ -2,58 +2,66 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Setup}{6}{chapter.1}
+\contentsline {chapter}{\numberline {1}Project Contextualization}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Project Contextualization}{7}{chapter.2}
+\contentsline {section}{\numberline {1.1}Project Specification}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Project Specification}{7}{section.2.1}
+\contentsline {subsection}{\numberline {1.1.1}Motivations}{7}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Motivations}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Requirements}{7}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Requirements}{7}{subsection.2.1.2}
+\contentsline {section}{\numberline {1.2}Strategy}{8}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Strategy}{8}{section.2.2}
+\contentsline {subsection}{\numberline {1.2.1}Different periods}{8}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Different periods}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Different aspects}{8}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Different aspects}{8}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {2}State of the art}{9}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}State of the art}{9}{chapter.3}
+\contentsline {section}{\numberline {2.1}Building an electric car}{9}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Building an electric car}{9}{section.3.1}
+\contentsline {section}{\numberline {2.2}Tracking}{9}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Tracking}{9}{section.3.2}
+\contentsline {section}{\numberline {2.3}Using ROS}{10}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Using ROS}{10}{section.3.3}
+\contentsline {chapter}{\numberline {3}Hardware}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Hardware}{11}{chapter.4}
+\contentsline {section}{\numberline {3.1}Hardware architecture}{11}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Hardware architecture}{11}{section.4.1}
+\contentsline {subsection}{\numberline {3.1.1}Overview}{11}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Low speed control}{11}{section.4.2}
+\contentsline {subsection}{\numberline {3.1.2}Components list}{11}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Motor}{11}{subsection.4.2.1}
+\contentsline {section}{\numberline {3.2}Low speed control}{11}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Motor Controller}{12}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {3.2.1}Motor}{11}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Power consumption}{12}{section.4.3}
+\contentsline {subsection}{\numberline {3.2.2}Motor Controller}{12}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}How many?}{12}{subsection.4.3.1}
+\contentsline {section}{\numberline {3.3}Power consumption}{12}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Which one?}{12}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {3.3.1}How many?}{12}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Remote control and processing}{13}{section.4.4}
+\contentsline {subsection}{\numberline {3.3.2}Which ones?}{13}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Performances of the embedded computer}{13}{section.4.5}
+\contentsline {section}{\numberline {3.4}Remote control and processing}{13}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Unit Tests}{13}{section.4.6}
+\contentsline {section}{\numberline {3.5}Performances of the embedded computer}{13}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Software}{14}{chapter.5}
+\contentsline {section}{\numberline {3.6}Unit Tests}{14}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Tracking}{14}{section.5.1}
+\contentsline {chapter}{\numberline {4}Software}{15}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}ROS}{14}{section.5.2}
+\contentsline {section}{\numberline {4.1}Tracking}{15}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Results}{15}{chapter.6}
+\contentsline {section}{\numberline {4.2}ROS}{15}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{17}{section*.3}
+\contentsline {chapter}{\numberline {5}Results}{16}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Setup}{17}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Hardware setup}{17}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Software setup}{17}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{19}{section*.3}
