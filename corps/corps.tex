@@ -10,6 +10,12 @@ refer to parts \vref{context}, \vref{stateofart}, \vref{hardware}, and \vref{sof
 
 \chapter{Project Contextualization}\label{context}
 
+	\introductionLettrine{T}{his} part gives a first and general glimpse into what was at stake in 
+	the realization of the tracking robot. The relevance of the 
+	project is justified, the requirements and goals of the project
+	are defined, and the global strategy of development is
+	presented.
+
 	\section{Project Specification}
 	
 		\subsection{Motivations}
@@ -307,12 +313,33 @@ each challenge which had to be tackled.
 		from the one of the embedded computer. This explains the choice of two separate 
 		batteries.
 		% split the power source in more than two parts : usb hub --> battery for the computer + for the actuators : minimum.
+		\\\indent By and large, the takeway is that the embedded computer must not, 
+		in any circumstances, be switched off, since the hardware will still 
+		apply the last commands stored in the more detrimental cases. It is 
+		also highly recommended to use a self-powered \textit{USB-Hub}
+		to plug any subsequent device to the embedded computer, which 
+		may draw too much current from the embedded computer \cite{racecarj}.
+		That advice was not applied in this project, and could be
+		seen as a point of improvement.
+		\\\indent All these choices were further underpinned by 
+		the projects presented in \vref{buildingcar}.
 		
 		\subsection{Which one?}
-		% How do we power the computer, and the motor? Pb when powered via micro-usb ---> powered via barrel jacket.
+		% Battery for the ESC and motor : actuator.
+		Regarding the motor, which is the actuator that 
+		draws the more power among the hardware of the robot, an independent 
+		\textit{Li-Po} battery has been chosen. This choice
+		was further promoted, for \textit{Li-Po} batteries, in 
+		comparison to \textit{NiMH} and \textit{Ni-Cd} batteries, 
+		tend to be more efficient and start to gradually 
+		supersede them.
+		% TODO 
+		% How do we power the computer, and the motor? Pb when powered via micro-usb ---> powered via barrel jacket :
+		% battery for the servomotor
 		% Present the battery adviced by jetson hacks.
 		% How many power do our hardware need?
-	
+		\cite{jetsonhacksmorepower}
+		
 	\section{Remote control and processing}
 	
 	\section{Performances of the embedded computer}
@@ -325,3 +352,5 @@ each challenge which had to be tackled.
 	\section{Tracking}\label{tracking}
 	
 	\section{ROS}\label{ros}
+	
+\chapter{Results}

@@ -202,6 +202,27 @@
     \field{year}{2019}
   \endentry
 
+  \entry{jetsonhacksmorepower}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Hacks},
+         familyi={H\bibinitperiod},
+         given={Jetson},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Hac19}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+  \field{howpublished}{\url{https://www.jetsonhacks.com/2019/04/10/jetson-nano-use-more-power/}}
+    \field{title}{Jetson Nano – Use More Power!}
+    \field{year}{2019}
+  \endentry
+
   \entry{racecarj}{misc}{}
     \name{author}{1}{}{%
       {{hash=J}{%

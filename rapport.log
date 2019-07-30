@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  29 JUL 2019 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  29 JUL 2019 22:19
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -2201,14 +2201,14 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=114, 236.15828pt x 284.52798pt>
+<imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf, id=118, 236.15828pt x 284.52798pt>
 
 File: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf Graphic file (type pdf)
 <use imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf>
 Package pdftex.def Info: imgs/logo_ENSTA_Bretagne_Vertical_CMJN.pdf  used on in
 put line 46.
 (pdftex.def)             Requested size: 99.18579pt x 119.50148pt.
-<imgs/logo_dal_nd.png, id=115, 1606.0pt x 1140.26pt>
+<imgs/logo_dal_nd.png, id=119, 1606.0pt x 1140.26pt>
 File: imgs/logo_dal_nd.png Graphic file (type png)
 <use imgs/logo_dal_nd.png>
 Package pdftex.def Info: imgs/logo_dal_nd.png  used on input line 46.
@@ -2255,7 +2255,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [4
 
-]) (corps/corps.tex [5
+]
+Package lettrine.sty Info: Targeted height = 19.3701pt
+(lettrine.sty)             (no accent, loversize=0),
+(lettrine.sty)             Lettrine height = 24.2126pt (T) loversize=0.25;
+(lettrine.sty)             reported on input line 14.
+) (corps/corps.tex [5
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -2302,12 +2307,16 @@ Package lettrine.sty Info: Targeted height = 19.3701pt
 
 ]
 Chapter 2.
+Package lettrine.sty Info: Targeted height = 19.3701pt
+(lettrine.sty)             (no accent, loversize=0),
+(lettrine.sty)             Lettrine height = 24.2126pt (T) loversize=0.25;
+(lettrine.sty)             reported on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 19.
+(Font)              <9> on input line 25.
 [7
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 109.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 115.
 
  ("C:\Users\Arnaud\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2316,7 +2325,7 @@ Chapter 3.
 Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 24.2126pt (I) loversize=0.25;
-(lettrine.sty)             reported on input line 122.
+(lettrine.sty)             reported on input line 128.
 [9
 
 ] [10]
@@ -2324,22 +2333,26 @@ Chapter 4.
 Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 24.2126pt (F) loversize=0.25;
-(lettrine.sty)             reported on input line 200.
+(lettrine.sty)             reported on input line 206.
 
-Package caption Warning: \label without proper reference on input line 242.
+Package caption Warning: \label without proper reference on input line 248.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `hardwarearchitecture' on page 11 undefined on input l
-ine 217.
+ine 223.
 
 [11
 
-] [12]
+] [12] [13]
 Chapter 5.
-) (corps/conclusion.tex [13
+[14
 
-]) (corps/appendix.tex) [14
+]
+Chapter 6.
+) (corps/conclusion.tex [15
+
+]) (corps/appendix.tex) [16
 
 ]
 Overfull \hbox (4.46788pt too wide) in paragraph at lines 58--58
@@ -2347,7 +2360,7 @@ Overfull \hbox (4.46788pt too wide) in paragraph at lines 58--58
 /Servo Driver - I2C in-ter-face - PCA9685\T1/lmr/m/n/10.95 .
  []
 
-[15
+[17
 
 
 ]
@@ -2372,14 +2385,14 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the rapport.log file.
 
-[16]
+[18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (rapport.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: A531DEADDDAC9814F0661656F6E20E20;1771.
+(rerunfilecheck)             Checksum: A6F67EE5FEF3E299843DB56ED221A0D9;1817.
 
 
 LaTeX Warning: There were undefined references.
@@ -2389,10 +2402,10 @@ Package logreq Info: Writing requests to 'rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39937 strings out of 492970
- 719171 string characters out of 3126151
+ 39950 strings out of 492970
+ 719399 string characters out of 3126151
  1244957 words of memory out of 3000000
- 42698 multiletter control sequences out of 15000+200000
+ 42704 multiletter control sequences out of 15000+200000
  100113 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,94p,2016b,1867s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2415,9 +2428,9 @@ rs/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:
 /Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.
 pfb><C:/Users/Arnaud/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
 ssbx10.pfb>
-Output written on rapport.pdf (16 pages, 675782 bytes).
+Output written on rapport.pdf (18 pages, 681504 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 506 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 247 words of extra memory for PDF output out of 10000 (max. 10000000)
 
