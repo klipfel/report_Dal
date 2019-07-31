@@ -494,20 +494,53 @@ each challenge which had to be tackled.
 		% python environment for opencv, docker
 		Running the \textit{GOTURN} function provided 
 		in the \textit{OpenCV} library needed 
-		to have a version of \textit{OpenCV} higher than $3.4.2$. However, since
+		to have a version of \textit{OpenCV} higher than $3.4.2$.
+		However, since
 		\textit{ROS} relies on \textit{Python 2.7}, 
 		it only comes with an older version. I was not
 		able to uninstall this library since it was
-		a dependencies for other \textit{ROS} packages. The 
+		a dependency for other \textit{ROS} packages. The 
 		workaround was to create a \textit{Python Environment}
 		using \textit{virtualenv} on \textit{Ubuntu}, and then 
 		to specify this \textit{Python} interpreter of this
 		particular environment in the code of the tracker
 		using the \textit{shebang}, the first line of code
 		where the interpreter is specified.
+		% TODO add the tutorial for the goturn code
 		% ROS interface, image message
+		\\\indent Once the right version of
+		\textit{OpenCV} was installed, and the \textit{Python}
+		interpreter suitably indicated, the \textit{GOTURN} function
+		needed to be interfaced with the \textit{ROS} environment.
+		\textit{ROS} uses its own type of data, named \textit{messages}.
+		For instance an image or frame is an \textit{Image.msg} message,
+		which totally differs from the way \textit{OpenCV}
+		represents images. % TODO : ADD THE DOCUMENTATION OF THE IMAGE.MSG
+		The bone of contention here was to be able to 
+		convert the \textit{ROS} datatype into the \textit{OpenCV} one.
+		This is called \textit{Interfacing}.
+		Fortunately, the package \textit{cv\_bridge} provides that 
+		functionality.
+		\\\indent The code was then adapted to satisfy \textit{ROS}
+		functionalities. 
 
 		\subsection{Unit Tests}
+		
+		The tracking algorithm was first tested outside the \textit{ROS}
+		framework. Actually, the frame rate was around 50 \textit{FPS}\footnote{Frames per second.},
+		half of what was advertised
+		in the original paper \cite{goturn}. Yet, this may be due to
+		the \textit{OpenCV} implementation, which is not 
+		the initial one, though inspired of it.
+		\\\indent The next step was to interface this implementation 
+		with \textit{ROS}. The tests comprised a static image, and 
+		the webcam of the computer. The performances were unchanged.
+		\\\indent These tests also demonstrated that the \textit{OpenCV}
+		\textit{GOTURN} model was really accurate at tracking
+		humans. Yet, when it came to everything else, the model 
+		was lost easily. The assumption here may be that 
+		the model was more trained on humans. The performances
+		could be increased by retraining the model.
 		
 	\section{ROS}\label{ros}
 	
@@ -533,7 +566,11 @@ each challenge which had to be tackled.
 				
 		\end{comment}
 		
+		
+		 % TODO
 		\subsection{ROS Basics}
+		
+		
 		
 		\subsection{Overview}
 		
@@ -551,7 +588,10 @@ each challenge which had to be tackled.
 	
 	\begin{comment}
 	
-		Results of the integration of the hardware with the software:
+		> Integration of the zed camera in the ROS architecture.
+			5 FPS
+		
+		> Results of the integration of the hardware with the software:
 		test with the remote architecture and the Ethernet cable
 			5 FPS in average
 			curve of the error
