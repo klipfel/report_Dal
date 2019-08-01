@@ -9,3 +9,30 @@
 	Ideas for further development : ROS2, c++
 
 \end{comment}
+
+\introductionLettrine{A}{t} the end, the tracker robot was able to track 
+a target, although human targets were followed 
+more accurately. The \textit{ROS} architecture
+that has been implemented is flexible and could
+be used for further improvements.
+\\\indent Regarding the performances, in 
+comparison to a person following robot \cite{personfollowing}
+tracking at a rate of 20 \textit{FPS}, the tracker
+implemented in this project tracks at a maximum of 6 \textit{FPS}.
+The performances could be improved though. The person 
+following robot was implemented in \textit{C++} in 
+comparison to the tracker in this project, which was 
+implemented entirely in \textit{Python}.
+\\\indent Another point of refinement could be the 
+training of the \textit{GOTURN} model to make 
+it more accurate, the realization of a personal 
+deep learning network, or the test of another one.
+\\\indent For any further implementation, 
+and especially if realizing a personal 
+deep learning model is the goal, switching to \textit{ROS2}
+could be a wise move, since \textit{ROS2}
+is coded in \textit{Python 3}, and would make it easier to 
+use the common deep learning libraries out of the box, such 
+as \textit{PyTorch} or \textit{Tensorflow}. 
+For any deep learning implementation with the \textit{Jetson Nano}, 
+it is recommended to read through the \textit{Nvidia} tutorials  first\cite{dptuto}.

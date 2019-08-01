@@ -779,6 +779,26 @@
     \field{title}{Kaya}
   \endentry
 
+  \entry{dptuto}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={Nvidia},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nvi}
+    \field{extraalpha}{5}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+  \field{howpublished}{\href{https://developer.nvidia.com/embedded/twodaystoademo}{link
+  to tutorial.}}
+    \field{title}{Two Days to a Demo.}
+  \endentry
+
   \entry{model}{report}{}
     \name{author}{3}{}{%
       {{hash=PR}{%

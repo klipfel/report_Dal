@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  1 AUG 2019 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  1 AUG 2019 15:36
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -2271,13 +2271,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [3] (corps/abstract.tex [4
 
-] [5
+]
+Package lettrine.sty Info: Targeted height = 19.3701pt
+(lettrine.sty)             (no accent, loversize=0),
+(lettrine.sty)             Lettrine height = 24.2126pt (T) loversize=0.25;
+(lettrine.sty)             reported on input line 17.
+ [5
 
 ]
 Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 24.2126pt (T) loversize=0.25;
-(lettrine.sty)             reported on input line 21.
+(lettrine.sty)             reported on input line 45.
 ) (corps/corps.tex [6
 
 ]
@@ -2352,7 +2357,7 @@ nput line 224.
 LaTeX Warning: Reference `hardwarearchitecture' on page 11 undefined on input l
 ine 224.
 
-<imgs/hardware.png, id=418, 1630.09pt x 2193.19376pt>
+<imgs/hardware.png, id=423, 1630.09pt x 2193.19376pt>
 File: imgs/hardware.png Graphic file (type png)
 <use imgs/hardware.png>
 Package pdftex.def Info: imgs/hardware.png  used on input line 254.
@@ -2368,7 +2373,7 @@ Package lettrine.sty Info: Targeted height = 19.3701pt
 [16
 
 ] [17]
-<imgs/ros.png, id=536, 1858.945pt x 1166.3575pt>
+<imgs/ros.png, id=541, 1858.945pt x 1166.3575pt>
 File: imgs/ros.png Graphic file (type png)
 <use imgs/ros.png>
 Package pdftex.def Info: imgs/ros.png  used on input line 661.
@@ -2392,7 +2397,12 @@ Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             reported on input line 876.
 ) (corps/conclusion.tex [22
 
-]) (corps/appendix.tex [23
+]
+Package lettrine.sty Info: Targeted height = 19.3701pt
+(lettrine.sty)             (no accent, loversize=0),
+(lettrine.sty)             Lettrine height = 24.2126pt (A) loversize=0.25;
+(lettrine.sty)             reported on input line 13.
+) (corps/appendix.tex [23
 
 ]
 Appendix A.
@@ -2459,10 +2469,10 @@ Package logreq Info: Writing requests to 'rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40744 strings out of 492970
- 729789 string characters out of 3126151
+ 40760 strings out of 492970
+ 729987 string characters out of 3126151
  1264324 words of memory out of 3000000
- 43325 multiletter control sequences out of 15000+200000
+ 43340 multiletter control sequences out of 15000+200000
  112086 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,94p,2016b,2102s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2496,9 +2506,9 @@ s/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Arnaud/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Arnaud/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/Users/Arnaud/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on rapport.pdf (28 pages, 1857415 bytes).
+Output written on rapport.pdf (28 pages, 1881020 bytes).
 PDF statistics:
- 953 PDF objects out of 1000 (max. 8388607)
- 237 named destinations out of 1000 (max. 500000)
+ 964 PDF objects out of 1000 (max. 8388607)
+ 238 named destinations out of 1000 (max. 500000)
  449 words of extra memory for PDF output out of 10000 (max. 10000000)
 
