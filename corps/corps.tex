@@ -613,15 +613,18 @@ each challenge which had to be tackled.
 		\subsection{Overview}
 		
 		First of all let's first explain the principles enforced
-		by the \textit{ROS} architecture. The tracking robot
+		by the \textit{ROS} architecture presented 
+		figure \vref{rosarchitecture}. The tracking robot
 		has two independent commands as follows :
 		% TODO presents an abstract form of the robot model.
-		\[ \begin{cases}\label{key}
+		\begin{equation}
+		\begin{cases}
 			\dot{x} = u_{1}cos(\theta),\\
 			\dot{y} = u_{1}sin(\theta),\\
 			\dot{\theta} = u_1tan(u_2),\\
 			\dot{\delta} = \dot{u_{2}}	
-		\end{cases} \]
+		\end{cases}
+		\end{equation}
 		In these normalized state equations, inspired by \cite{model},
 		hypothesizing that the robot evolves on a plan, which is 
 		an acceptable approximation in the tests and applications conducted in this 
@@ -639,12 +642,21 @@ each challenge which had to be tackled.
 		to use the color information to control the bearing and to 
 		to use the depth information to control the speed of the 
 		robot. For each type of control the frames of the 
-		camera are processed, an error is computed, and then 
+		camera are processed, and then 
 		a command is generated.
 		\\\indent A similar strategy was also put
 		in place in another paper \cite{personfollowing}.
 		
-		% TODO add the paper http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/05/personfollowingrobotcnn_icvs2017.pdf for the control law 
+		\FloatBarrier
+		
+		\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=1.0\columnwidth, height = 0.7\columnwidth]{imgs/ros.png}
+			\caption{\textit{ROS} architecture.}
+			\label{rosarchitecture}
+		\end{figure}
+		
+		\FloatBarrier
 		
 		\subsection{Bearing regulation}
 			
@@ -654,9 +666,9 @@ each challenge which had to be tackled.
 		target in the image by computing a bounding box. An
 		error is then calculated by comparing the bounding box
 		to the entire image. This error  has the following expression:
-		\[
+		\begin{equation}
 			e = \frac{m - m_{bb}}{X}
-		\]
+		\end{equation}
 		where $m$ is the middle of the image regarding the horizontal 
 		axis or the $x$-axis. $m_{bb}$ is the middle of the bounding
 		box along the horizontal axis in the frame of 
@@ -666,9 +678,6 @@ each challenge which had to be tackled.
 		to horizontally center the bounding box in the image, which 
 		will entail that the robot will be directed toward 
 		the target.
-		\\\indent In the \textit{ROS} architecture this error
-		is published in topic \textit{bearing$\backslash$error}
-		by the node of the tracker.
 		% TODO in the ROS architecture
 		
 		\subsection{Speed regulation}
@@ -676,18 +685,50 @@ each challenge which had to be tackled.
 		In order to regulate the speed of the robot, the depth 
 		information of the stereo camera is processed. Once the 
 		bounding box is computed by the tracker, only 
-		the depth in the are of the bounding box is considered.
+		the depth in the area of the bounding box is considered.
 		The idea is then to regulate the speed regarding the object
 		in the bounding box, which is the closest to the robot.
-		The command is as follows:
-		\[ \begin{cases}\label{key}
-			u_1 = \min\limits_{i,j \in\ bounding\ box }(d_{i,j}) \times K,\\
+		Neither an error needs to be computed, nor a \textit{PID}
+		controller 
+		needs to be implemented. The command is
+		directly the depth.
+		\\\indent In practice, the command is not only the raw depth.
+		The matrix of the depth in the bounding box, represented 
+		as $D_{bb}$ in \eqref{eq:math}, is filtered
+		by a function or kernel \textit{f} which takes the median 
+		of the $N$ lowest depth values in $D_{bb}$. Through that 
+		process the noise in the image is filtered and
+		an equivalent depth value is computed for the closest
+		obstacle inside the bouding box.
+		The command implementing the dynamic following of the target
+		for the \textit{ESC} is as follows:
+		
+		\begin{comment}
+		\[ \begin{cases}
+			u_1 = \frac{\min\limits_{i,j \in\ bounding\ box }(d_{i,j})}{d_{max}} \times K  + \bar{u_1},,\\
 			u_{1,min},\ if\ d_{i,j} \leq d_{min},\\
 			u_{1,max},\ if\ d_{i,j} \geq d_{max}		
 		\end{cases} \]
+		\end{comment}
+		
+		\begin{equation}\label{eq:math}
+		\begin{cases}
+		u_1 = f(D_{bb})\times K + \bar{u_1},\\
+		u_{1,min},\ if\ f(D_{bb}) \leq d_{min},\\
+		u_{1,max},\ if\ f(D_{bb}) \geq d_{max}		
+		\end{cases}
+		\end{equation}
+				
 		The speed will gradually increase if the target rolls away.
 		If the target is too far, the speed will saturate, and reversely, 
-		if the target is too close, the robot will stop.
+		if the target is too close, the robot will stop. 
+		The parameters in the command law had to be determined
+		experimentally.
+		\\\indent In case a potentially dangerous obstacle is not comprised in the 
+		bounding box, the tracker won't see it with the previous technique. Thus, a lidar sensor
+		could be added on the front of the robot to detect obstacle in case of emergency.
+		Alternatively, the entire depth matrix could be filtered and processed to detect
+		other obstacles outside the bounding box and stop the robot if needed.
 		
 		\subsection{Unit Tests}\label{hardwaretests}
 		
