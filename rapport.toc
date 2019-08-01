@@ -30,78 +30,78 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Overview}{11}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Components list}{11}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Components list}{13}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Low speed control}{11}{section.3.2}
+\contentsline {section}{\numberline {3.2}Low speed control}{13}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Motor}{11}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Motor}{13}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Motor Controller}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Motor Controller}{13}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Power consumption}{12}{section.3.3}
+\contentsline {section}{\numberline {3.3}Power consumption}{13}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}How many?}{12}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}How many?}{13}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Which ones?}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Which ones?}{14}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Remote control and processing}{13}{section.3.4}
+\contentsline {section}{\numberline {3.4}Remote control and processing}{14}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Performances of the embedded computer}{13}{section.3.5}
+\contentsline {section}{\numberline {3.5}Performances of the embedded computer}{15}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Unit Tests}{14}{section.3.6}
+\contentsline {section}{\numberline {3.6}Unit Tests}{15}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Software}{15}{chapter.4}
+\contentsline {chapter}{\numberline {4}Software}{16}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Tracking}{15}{section.4.1}
+\contentsline {section}{\numberline {4.1}Tracking}{16}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Overview}{15}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Overview}{16}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Goturn}{15}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Goturn}{16}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}ROS interface}{15}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.3}ROS interface}{16}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}Unit Tests}{16}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.4}Unit Tests}{17}{subsection.4.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}ROS}{16}{section.4.2}
+\contentsline {section}{\numberline {4.2}ROS}{17}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}ROS Basics}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}ROS Basics}{17}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Overview}{16}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Overview}{17}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Bearing regulation}{17}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Bearing regulation}{18}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Speed regulation}{17}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Speed regulation}{19}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Unit Tests}{18}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}Unit Tests}{19}{subsection.4.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Integration}{19}{chapter.5}
+\contentsline {chapter}{\numberline {5}Integration}{20}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Integration of the ZED camera and the \textit {Wifi} communication in the ROS architecture}{19}{section.5.1}
+\contentsline {section}{\numberline {5.1}Integration of the ZED camera and the \textit {Wifi} communication in the ROS architecture}{20}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Conditions}{19}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Conditions}{20}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Analysis}{19}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Analysis}{20}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Integration of the remote control}{19}{section.5.2}
+\contentsline {section}{\numberline {5.2}Integration of the remote control}{20}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Conditions}{19}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Conditions}{20}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Analysis}{20}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Analysis}{21}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Integration of the actuators}{20}{section.5.3}
+\contentsline {section}{\numberline {5.3}Integration of the actuators}{21}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Conditions}{20}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Conditions}{21}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Analysis}{20}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Analysis}{21}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Setup}{21}{chapter.6}
+\contentsline {chapter}{\numberline {6}Setup}{22}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Hardware setup}{21}{section.6.1}
+\contentsline {section}{\numberline {6.1}Hardware setup}{22}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Software setup}{21}{section.6.2}
+\contentsline {section}{\numberline {6.2}Software setup}{22}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Hardware Library}{23}{appendix.A}
+\contentsline {chapter}{\numberline {A}Hardware Library}{24}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}ROS}{25}{appendix.B}
+\contentsline {chapter}{\numberline {B}ROS}{26}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{26}{section*.4}
+\contentsline {chapter}{Bibliography}{27}{section*.4}
