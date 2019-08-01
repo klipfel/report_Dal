@@ -118,6 +118,41 @@
     \field{title}{Instructions manual}
   \endentry
 
+  \entry{personfollowing}{report}{}
+    \name{author}{3}{}{%
+      {{hash=CBX}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Bao\bibnamedelima Xin},
+         giveni={B\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sahdev},
+         familyi={S\bibinitperiod},
+         given={Raghavender},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TJK}{%
+         family={Tsotsos},
+         familyi={T\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CBXSRTJK1}
+    \strng{fullhash}{CBXSRTJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{CST}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Integrating Stereo Vision with a CNN Tracker for a
+  Person-Following Robot}
+    \list{institution}{1}{%
+      {York University, Canada}%
+    }
+  \endentry
+
   \entry{ghost}{misc}{}
     \name{author}{1}{}{%
       {{hash=DS}{%
@@ -219,6 +254,36 @@
     \field{sortinithash}{F}
     \field{howpublished}{\url{http://f1tenth.org/build.html}}
     \field{title}{F1Tenth race car.}
+  \endentry
+
+  \entry{rosbyexample}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FC}{%
+         family={Fairchild},
+         familyi={F\bibinitperiod},
+         given={Carol},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HDTL}{%
+         family={Harman},
+         familyi={H\bibinitperiod},
+         given={Dr. Thomas\bibnamedelima L.},
+         giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt}%
+    }
+    \strng{namehash}{FCHDTL1}
+    \strng{fullhash}{FCHDTL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{FH17}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{ROS Robotics By Example}
+    \field{year}{2017}
   \endentry
 
   \entry{trakinglist}{misc}{}
@@ -435,6 +500,120 @@
   Lenovo and Other laptops}
   \endentry
 
+  \entry{rosdoctransport}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LV}{%
+         family={Lamoine},
+         familyi={L\bibinitperiod},
+         given={Victor},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LV1}
+    \strng{fullhash}{LV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Lam}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{howpublished}{\href{http://wiki.ros.org/image\_transport}{link.}}
+    \field{title}{Documentation of the package \textit{image\_transport}}
+  \endentry
+
+  \entry{buildingrobot}{book}{}
+    \name{author}{5}{}{%
+      {{hash=MA}{%
+         family={Mahtani},
+         familyi={M\bibinitperiod},
+         given={Anil},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Sanchez},
+         familyi={S\bibinitperiod},
+         given={Luis},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Fernandez},
+         familyi={F\bibinitperiod},
+         given={Enrique},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Martinez},
+         familyi={M\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Joseph},
+         familyi={J\bibinitperiod},
+         given={Lentin},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt}%
+    }
+    \strng{namehash}{MA+1}
+    \strng{fullhash}{MASLFEMAJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mah+18}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{ROS Programming: Building Powerful Robots: Design, build and
+  simulate complex robots using the Robot Operating System}
+    \field{year}{2018}
+  \endentry
+
+  \entry{learnopencvtracking}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MS}{%
+         family={Mallick},
+         familyi={M\bibinitperiod},
+         given={Satya},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS1}
+    \strng{fullhash}{MS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mal17}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\href{https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/}{link
+  to course on learnOpenCV.}}
+    \field{title}{Object Tracking using OpenCV (C++/Python)}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{learnopencvgoturn}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MS}{%
+         family={Mallick},
+         familyi={M\bibinitperiod},
+         given={Satya},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS1}
+    \strng{fullhash}{MS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mal18}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\href{https://www.learnopencv.com/goturn-deep-learning-based-object-tracking/}{link
+  to course on learnOpenCV.}}
+    \field{title}{GOTURN : Deep Learning based Object Tracking}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{bonanza}{book}{}
     \name{author}{1}{}{%
       {{hash=MG}{%
@@ -598,6 +777,79 @@
     \field{sortinithash}{N}
   \field{howpublished}{\url{https://docs.nvidia.com/isaac/isaac/apps/tutorials/doc/assemble_kaya.html}}
     \field{title}{Kaya}
+  \endentry
+
+  \entry{model}{report}{}
+    \name{author}{3}{}{%
+      {{hash=PR}{%
+         family={Pepy},
+         familyi={P\bibinitperiod},
+         given={Romain},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lambert},
+         familyi={L\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Mounier},
+         familyi={M\bibinitperiod},
+         given={Hugues},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PRLAMH1}
+    \strng{fullhash}{PRLAMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{PLM}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Path Planning using a Dynamic Vehicle Model}
+    \list{institution}{1}{%
+      {Université Paris Sud XI, France}%
+    }
+  \endentry
+
+  \entry{imagemsg}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ROS}
+    \field{extraalpha}{1}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+  \field{howpublished}{\href{http://docs.ros.org/melodic/api/sensor\_msgs/html/msg/Image.html}{link.}}
+    \field{title}{sensor\_msgs/Image Message}
+  \endentry
+
+  \entry{rosdoccvbridge}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={ROS},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ROS}
+    \field{extraalpha}{2}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+  \field{howpublished}{\href{http://docs.ros.org/melodic/api/cv_bridge/html/index.html}{link
+  to documentation.}}
+    \field{title}{\textit{cv\_brdige} package.}
   \endentry
 
   \entry{motor}{book}{}

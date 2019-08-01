@@ -68,22 +68,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Overview}{16}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Speed regulation}{16}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Bearing regulation}{17}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Bearing regulation}{16}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Speed regulation}{17}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}Unit Tests}{16}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}Unit Tests}{17}{subsection.4.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results : integration}{17}{chapter.5}
+\contentsline {chapter}{\numberline {5}Integration}{18}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Setup}{18}{chapter.6}
+\contentsline {section}{\numberline {5.1}Integration of the ZED camera and the \textit {Wifi} communication in the ROS architecture}{18}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Hardware setup}{18}{section.6.1}
+\contentsline {subsection}{\numberline {5.1.1}Conditions}{18}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Software setup}{18}{section.6.2}
+\contentsline {subsection}{\numberline {5.1.2}Analysis}{18}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Hardware Library}{20}{appendix.A}
+\contentsline {section}{\numberline {5.2}Integration of the remote control}{18}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}ROS}{22}{appendix.B}
+\contentsline {subsection}{\numberline {5.2.1}Conditions}{18}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{23}{section*.3}
+\contentsline {subsection}{\numberline {5.2.2}Analysis}{19}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Integration of the actuators}{19}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Conditions}{19}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Analysis}{19}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Setup}{20}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Hardware setup}{20}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Software setup}{20}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Hardware Library}{22}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}ROS}{24}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{25}{section*.3}

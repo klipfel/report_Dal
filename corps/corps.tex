@@ -152,7 +152,7 @@
 		
 		\section{Tracking}\label{statearttracking}
 		
-		Multiple ways of tracking a target exist, in this project the most
+		Multiple ways of tracking a target exist \cite{learnopencvtracking}, in this project the most
 		common one was used : a \textit{visual tracking}. Visual tracking
 		is basically based on the processing of images or frames taken by a camera. 
 		\\\indent More precisely, the mission of the tracker implemented
@@ -195,6 +195,9 @@
 		deep learning techniques are used \cite{rosprojects}. Yet, 
 		the \textit{ROS} architecture inspired some of the realization 
 		of the own architecture of this project.
+		\\\indent A paper tackled a robot for person following \cite{personfollowing}.
+		Yet, the tracker in this project is not just intended to track a person, 
+		but more generally any object.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 
@@ -434,14 +437,16 @@ each challenge which had to be tackled.
 		then be used in a more complex \textit{ROS}
 		architecture. Parameters were also set 
 		in order to transfer a low-level command
-		to a high-level command.
+		to a high-level command. As expected, 
+		the speed was sufficiently decreased for
+		the tracking application.
 		
 
 \chapter{Software}\label{software}
 
 	\introductionLettrine{T}{he} hardware selection has been discussed in the part \vref{hardware}. 
-	Once the hardware architecture is defined, and tested. The software 
-	part must be implemented in order then to merge them together. The software
+	Once the hardware architecture is defined and tested, the software 
+	part must be implemented in order to merge them together. The software
 	comprises mainly two challenges : the realization of the tracking and the
 	conception of the \textit{ROS} architecture.
 	
@@ -494,7 +499,7 @@ each challenge which had to be tackled.
 		% python environment for opencv, docker
 		Running the \textit{GOTURN} function provided 
 		in the \textit{OpenCV} library needed 
-		to have a version of \textit{OpenCV} higher than $3.4.2$.
+		to have a version of \textit{OpenCV} higher than $3.4.2$ \cite{learnopencvgoturn}.
 		However, since
 		\textit{ROS} relies on \textit{Python 2.7}, 
 		it only comes with an older version. I was not
@@ -506,21 +511,24 @@ each challenge which had to be tackled.
 		particular environment in the code of the tracker
 		using the \textit{shebang}, the first line of code
 		where the interpreter is specified.
-		% TODO add the tutorial for the goturn code
 		% ROS interface, image message
 		\\\indent Once the right version of
 		\textit{OpenCV} was installed, and the \textit{Python}
 		interpreter suitably indicated, the \textit{GOTURN} function
 		needed to be interfaced with the \textit{ROS} environment.
 		\textit{ROS} uses its own type of data, named \textit{messages}.
-		For instance an image or frame is an \textit{Image.msg} message,
+		For instance an image or frame is an \textit{Image.msg} message \cite{imagemsg},
 		which totally differs from the way \textit{OpenCV}
-		represents images. % TODO : ADD THE DOCUMENTATION OF THE IMAGE.MSG
+		represents images.
 		The bone of contention here was to be able to 
 		convert the \textit{ROS} datatype into the \textit{OpenCV} one.
 		This is called \textit{Interfacing}.
 		Fortunately, the package \textit{cv\_bridge} provides that 
-		functionality.
+		functionality \cite{rosdoccvbridge}. 
+		\\\indent For sending frames between two devices connected
+		to the same network the \textit{ROS} package \textit{image\_transport}
+		can be used \cite{rosdoctransport}. The \textit{ZED camera} already
+		provides compressed image channels, using the \textit{image\_transport} package.
 		\\\indent The code was then adapted to satisfy \textit{ROS}
 		functionalities. 
 
@@ -531,7 +539,8 @@ each challenge which had to be tackled.
 		half of what was advertised
 		in the original paper \cite{goturn}. Yet, this may be due to
 		the \textit{OpenCV} implementation, which is not 
-		the initial one, though inspired of it.
+		the initial one, though inspired of it. 
+		These performances seem to suffice for the realization of the tracker though.
 		\\\indent The next step was to interface this implementation 
 		with \textit{ROS}. The tests comprised a static image, and 
 		the webcam of the computer. The performances were unchanged.
@@ -539,14 +548,16 @@ each challenge which had to be tackled.
 		\textit{GOTURN} model was really accurate at tracking
 		humans. Yet, when it came to everything else, the model 
 		was lost easily. The assumption here may be that 
-		the model was more trained on humans. The performances
-		could be increased by retraining the model.
+		the model had been more trained on human targets. 
+		Regarding the reliability of the tracking given 
+		the nature of the target, the performances
+		could be increased by retraining the model \cite{goturnpy}.
 		
 	\section{ROS}\label{ros}
 	
 		\begin{comment}
 		
-		The Bascis of ROS
+		The Bascis of ROS : add some ROS books
 			master
 			topic 
 			nodes
@@ -557,12 +568,14 @@ each challenge which had to be tackled.
 			Two version of the ROS architecture
 				remote processing
 				local processing
+			present the state equation for the variables of the controller
 		Speed regulation
 			PID controller
 		Bearing regulation
 			PID controller
 		Unit tests without the hardware : everything was simulated
-			Only the remote one was tested
+			test on one computer : simulation = without the hardware
+			x test with the remote computer : still without the zed camera and actuators
 				
 		\end{comment}
 		
@@ -570,35 +583,234 @@ each challenge which had to be tackled.
 		 % TODO
 		\subsection{ROS Basics}
 		
-		
-		
+			\textit{ROS} is a robotic \textit{middleware}. Basically, it
+			handles the interactions between the processes
+			running on a robot.
+			\\\indent In the \textit{ROS} world, a process, for 
+			instance a program which sends commands to a motor or reads the 
+			outputs of a sensor, is named a \textit{Node}. In that way, 
+			\textit{ROS} abstractly depicts a robot as a graph, which 
+			comprises nodes which interact between each other.
+			\\\indent How can nodes interact? Each node \textit{publishes}
+			information on a channel named \textit{topic}, which could 
+			be seen as a file which could be red by other nodes.
+			In the \textit{ROS} language, the node that 
+			writes the information is the \textit{publisher}
+			and the node that reads is the \textit{subscriber}.
+			This way 
+			of communicating is called \textit{Asynchronous} since 
+			each node can read any given \textit{topic} at any time.
+			\\\indent \textit{Services} enables to communicate in  a
+			\textit{synchronous} way, that is to say that 
+			a \textit{client} node will send a request to another node,
+			the \textit{server}. The \textit{server} will then respond to 
+			that request. 
+			\\\indent What was just presented 
+			was the fundamentals of \textit{ROS},
+			for further knowledge on the \textit{ROS}
+			philosophy please check these books : \cite{rosprojects,ros,buildingrobot, rosbyexample} .
+			
 		\subsection{Overview}
+		
+		First of all let's first explain the principles enforced
+		by the \textit{ROS} architecture. The tracking robot
+		has two independent commands as follows :
+		% TODO presents an abstract form of the robot model.
+		\[ \begin{cases}\label{key}
+			\dot{x} = u_{1}cos(\theta),\\
+			\dot{y} = u_{1}sin(\theta),\\
+			\dot{\theta} = u_1tan(u_2),\\
+			\dot{\delta} = \dot{u_{2}}	
+		\end{cases} \]
+		In these normalized state equations, inspired by \cite{model},
+		hypothesizing that the robot evolves on a plan, which is 
+		an acceptable approximation in the tests and applications conducted in this 
+		project, $u_{1}$ is the first command and is the speed of the 
+		robot which can be controlled through the \textit{ESC}, $u_{2}$
+		is the second command and is the bearing angle, which 
+		can be set via the servomotor. $(x,y)$ are
+		the coordinates of the robot on the plan. $\theta$ is the heading, and 
+		$\delta$ is the bearing angle. As the state equations show it, 
+		making the robot translate is done through $u_1$, and making 
+		the robot rotating is done through $u_1$ and $u_2$.
+		\\\indent The sensor used for tracking, that is to say
+		the \textit{ZED} stereo camera gives basically the depth and
+		the color information. The concept is 
+		to use the color information to control the bearing and to 
+		to use the depth information to control the speed of the 
+		robot. For each type of control the frames of the 
+		camera are processed, an error is computed, and then 
+		a command is generated.
+		\\\indent A similar strategy was also put
+		in place in another paper \cite{personfollowing}.
+		
+		% TODO add the paper http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/05/personfollowingrobotcnn_icvs2017.pdf for the control law 
+		
+		\subsection{Bearing regulation}
+			
+		To control the bearing of the robot the \textit{RGB} images 
+		of the camera are used. The \textit{GOTURN} algorithm 
+		processes an image and outputs the location of the 
+		target in the image by computing a bounding box. An
+		error is then calculated by comparing the bounding box
+		to the entire image. This error  has the following expression:
+		\[
+			e = \frac{m - m_{bb}}{X}
+		\]
+		where $m$ is the middle of the image regarding the horizontal 
+		axis or the $x$-axis. $m_{bb}$ is the middle of the bounding
+		box along the horizontal axis in the frame of 
+		the image. $X$ is the width of the image, which is used
+		as a normalization. A \textit{PID}, or \textit{proportional
+		integrate derivative} controller will tend
+		to horizontally center the bounding box in the image, which 
+		will entail that the robot will be directed toward 
+		the target.
+		\\\indent In the \textit{ROS} architecture this error
+		is published in topic \textit{bearing$\backslash$error}
+		by the node of the tracker.
+		% TODO in the ROS architecture
 		
 		\subsection{Speed regulation}
 		
-		\subsection{Bearing regulation}
+		In order to regulate the speed of the robot, the depth 
+		information of the stereo camera is processed. Once the 
+		bounding box is computed by the tracker, only 
+		the depth in the are of the bounding box is considered.
+		The idea is then to regulate the speed regarding the object
+		in the bounding box, which is the closest to the robot.
+		The command is as follows:
+		\[ \begin{cases}\label{key}
+			u_1 = \min\limits_{i,j \in\ bounding\ box }(d_{i,j}) \times K,\\
+			u_{1,min},\ if\ d_{i,j} \leq d_{min},\\
+			u_{1,max},\ if\ d_{i,j} \geq d_{max}		
+		\end{cases} \]
+		The speed will gradually increase if the target rolls away.
+		If the target is too far, the speed will saturate, and reversely, 
+		if the target is too close, the robot will stop.
 		
-		\subsection{Unit Tests}
+		\subsection{Unit Tests}\label{hardwaretests}
+		
+		In order to test the \textit{ROS} architecture, 
+		for the local part, without \textit{Wifi} communication,
+		everything was launched on a personal computer, \textit{Asus G703VI}.
+		The stereo camera was simulated, and the commands were not 
+		applied. The tests showed that the architecture
+		worked as expected with a processing rate of 30 \textit{FPS},
+		which far more than acceptable. The next step was the integration discussed
+		in the part \vref{results}.
 			
-\chapter{Results : integration}\label{results}
+\chapter{Integration}\label{results}
 	
 	\introductionLettrine{T}{his} part gives an analysis of the latest results
 	obtained in this project. Basically, the part tackles
-	the integration of the software in the hardware.
+	the integration of the software in the hardware. The technique 
+	applied was to gradually remove each aspect of the simulation 
+	environment, adding more and more real constraints at each stride.
 	
 	\begin{comment}
 	
-		> Integration of the zed camera in the ROS architecture.
+		> Integration of the zed camera in the ROS architecture + powered via the wall plug + wifi.
 			5 FPS
 		
-		> Results of the integration of the hardware with the software:
+		> With the wifi stick + in real conditions : shutdown --> power and driver problem.
+		
+		> Ethernet cable : Results of the integration of the hardware with the software:
 		test with the remote architecture and the Ethernet cable
 			5 FPS in average
 			curve of the error
 			several pictures showing that the robot follows the target
+			
+		> Test with the new wifi stick + the processing on the robot.
 	
 	\end{comment}
+	
+	\section{Integration of the ZED camera and the \textit{Wifi} communication in the ROS architecture}\label{test1}
+		
+		\subsection{Conditions}
+		
+		The goal of this integration test was to determine whether, while plugged 
+		to the wall-plug, that is to say without any power-bank or 
+		batterie, the tracking system was functioning correctly
+		with a remote processing via \textit{Wifi}.
+		\\\indent The computer \textit{Asus G703VI} was used
+		as a remote computer and the \textit{Jetson Nano} was 
+		used for the embedded computer on the robot. The
+		actuators had not been integrated yet. Besides,\\
+		\textit{the ZED camera} was used to 
+		test whether the tracking process was working 
+		with a real stereo camera.
+		
+		\subsection{Analysis}
+		
+		The tracking rate obtained was about 5-6 \textit{FPS} with 
+		a low resolution \textit{VGA} and 4 \textit{FPS} with a \textit{720p} quality.
+		The discrepancy between the 30 \textit{FPS} obtained
+		in simulation, as discussed in \vref{hardwaretests}, and the 
+		tracking rate in this test could be surprising at first.
+		Yet, it is totally understandable considering that the 
+		frames of the \textit{ZED camera} are compressed, and then sent
+		to the remote computer where they are processed for tracking 
+		purpose, and finally the commands are sent to the robot. 
+		The commands were not applied to the hardware though.
+		\\\indent Such a frame rate for the overhaul processing 
+		is though acceptable, and the latencies are not 
+		perceivable. The performances could be enhanced if the 
+		processing was done just on the \textit{Jetson Nano}.
+		It would however be more complicated to run very 
+		greedy deep learning models.
 
+	\section{Integration of the remote control}
+	
+		\subsection{Conditions}
+		
+		After having tested that the \textit{ROS} architecture
+		was functioning with a real stereo camera and through 
+		\textit{Wifi} communication,  the next step was to test
+		whether the use of batteries was not undermining the 
+		process thanks to power issues. Several batteries 
+		were added : one for the motor, \textit{Li-Po 3s}, and 
+		one for the embedded computer and the servomotor, however 
+		not the one ordered which had not arrived yet. 
+	
+		\subsection{Analysis}
+		
+		The network established between 
+		the remote station and the robot were breaking down frequently.
+		It appeared that the \textit{Wifi stick} used, the
+		\href{https://www.miniinthebox.com/en/p/5ghz-usb-wifi-adapter-600mbps-wifi-antenna-2dbi-support-windows-mac-802-11ac-usb-network-card-wifi-dongle-for-desktop-laptop-pc\_p5957285.html?prm=2.3.5.1}{\textit{usb wifi dongle EP-AC1607}}, since the 
+		ordered one had not been delivered at that time, had 
+		faulty drivers, which backfired when the \textit{Jetson Nano} was
+		underpowered.
+		\\\indent The test demonstrated that powering the 
+		\textit{Jetson Nano} through micro-usb was not 
+		sufficient. The ordered battery \textit{Krisdonia 25000mAh}
+		should fix the issue.
+		
+	\section{Integration of the actuators}
+		
+		\subsection{Conditions}
+		
+		The goal of this test was to add the actuators 
+		to the \textit{ROS} architecture and finally 
+		see the robot move. To avoid the network shutdowns 
+		experienced in the latter test, the communication
+		between the two computers
+		was handled via \textit{Ethernet}, and the batteries
+		were used. 
+		
+		\subsection{Analysis}
+		
+		No network shutdowns were experienced, and 
+		the tracking rate was identical to
+		the results obtained in the test 
+		presented in \vref{test1}. The test 
+		showed that the \textit{Wifi stick}
+		had in fact a faulty driver, and that 
+		power was also an issue to solve.
+		The components of the hardware architecture in \vref{hardwareoverview} were chosen
+		to meet these requirements.
+		
 \chapter{Setup}\label{setup}
 
 	\introductionLettrine{T}{his} part presents the material needed and the 
