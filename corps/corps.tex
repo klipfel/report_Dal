@@ -221,7 +221,7 @@ each challenge which had to be tackled.
 		stands for \textit{ Electronic Speed Controller}.
 		\\\indent This initial architecture had to be adapted for several reasons.
 		The latest hardware architecture of the tracking robot is
-		presented on figure \vref{hardwarearchitecture}, which
+		presented on figure \vref{hardwarepng}, which
 		shows each component and how each interacts with each other.
 		\\\indent Let's explain a bit what are the crucial parts
 		that constitute a tracking robot. The target tracking process used
@@ -259,6 +259,17 @@ each challenge which had to be tackled.
 		\FloatBarrier
 
 		\subsection{Components list}
+		
+		The following list contains the links to each product bought in the 
+		hardware architecture presented figure \vref{hardwarepng}:
+		\begin{enumerate}
+			\item [\textbullet] \href{https://www.amazon.ca/Brushed-Motor-Poles-Alloy-Sensorless/dp/B07DG1M6GG/ref=sr\_1\_2\_sspa?keywords=rc+motor+540\&qid=1560194350\&s=gateway\&sr=8-2-spons\&psc=1\&smid=A25D668S2Q0USJ}{Brushed DC motor 540 80T}.
+			\item [\textbullet] \href{https://www.amazon.ca/dp/B01LQ5815I/ref=sspa\_dk\_detail\_9?psc=1\&pd\_rd\_i=B01LQ5815I\&pd\_rd\_w=KE07s\&pf\_rd\_p=4b7c8c1c-293f-4b1e-a49a-8787dff31bcb\&pd\_rd\_wg=tw4bW\&pf\_rd\_r=FCD2V9TCG2GP9CZTJ48H\&pd\_rd\_r=c195eecb-8c58-11e9-b4d5-432c6a0843e7}{ESC 60A}.
+			\item[\textbullet] \href{https://www.amazon.com/dp/B076GYGR6M}{Krisdonia power bank}.
+			\item[\textbullet] \href{https://www.amazon.com/gp/product/B0721MLM8B/ref=ppx\_yo\_dt\_b\_asin\_title\_o00\_s00?ie=UTF8\&psc=1}{Intel AC 8625}.
+			\item[\textbullet] \href{https://www.amazon.com/gp/product/B01E29566W/ref=ppx\_yo\_dt\_b\_asin\_title\_o00\_s00?ie=UTF8\&psc=1}{Chaohang Antennas}.
+			\item[\textbullet] \href{https://www.amazon.ca/Fconegy-7000mAh-40CLipo-Rechargeable-hardcase/dp/B07HHSKFND/ref=sr\_1\_2\_sspa?keywords=lipo\%2Bbattery\%2B3s\%2Btruck\%2Brc\%2Bcar\&qid=1560269139\&s=gateway\&sr=8-2-spons\&th=1}{LiPo battery}.
+		\end{enumerate}
 		
 	\section{Low speed control}\label{motor}
 	
@@ -871,6 +882,23 @@ each challenge which had to be tackled.
 		The components of the hardware architecture in \vref{hardwareoverview} were chosen
 		to meet these requirements.
 		
+		\FloatBarrier
+		
+		\begin{figure}[!htbp]
+			\centering
+			\subfloat[]{
+				\includegraphics[width=0.2\columnwidth, height = 0.5\columnwidth]{imgs/time1.jpg}}
+			\subfloat[]{
+				\includegraphics[width=0.2\columnwidth, height = 0.5\columnwidth]{imgs/time2.jpg}}
+			\subfloat[]{
+				\includegraphics[width=0.2\columnwidth, height = 0.5\columnwidth]{imgs/time3.jpg}}
+			\subfloat[]{
+				\includegraphics[width=0.2\columnwidth, height = 0.5\columnwidth]{imgs/time4.jpg}}
+			\caption{Pictures of the tracker following the camera.}\label{imagestest1}
+		\end{figure}
+		
+		\FloatBarrier
+		
 \chapter{Setup}\label{setup}
 
 	\introductionLettrine{T}{his} part presents the material needed and the 
@@ -884,8 +912,21 @@ each challenge which had to be tackled.
 	% wiring, blueprint of the wiring (or maybe use the same than the hardware architecture)
 	
 	\begin{itemize}
-		\item [\ding{55}] \underline{Computers} : Jetson Nano, Ubuntu 18.04, remote computer Ubuntu 18.04. 
+		\item [\ding{55}] Disposition of the components as showed in figure \vref{hardwarepng}.
+		\item [\ding{55}] Remote computer.
 	\end{itemize}
 	
 	
 	\section{Software setup}
+	
+	\begin{itemize}
+		% TODO add a bash file or a make file that could do everything.
+		\item [\ding{55}] Ubuntu 18.04 installed on both the Jetson Nano and the remote computer. 
+		\item [\ding{55}] \textit{ROS} \textit{melodic} installed on both computers.
+		\item [\ding{55}] \textit{OpenCV 4} on both computers (for \textit{Goturn}).
+		\item [\ding{55}] Network connection between the remote computer and the Jetson nano : \textit{netcat}, and \textit{ping} tests.
+		\item [\ding{55}] Open a terminal on the remote computer, run the makefile. (planned for next week)
+		\begin{lstlisting}[style=BashInputStyle]
+		$ make ini
+		\end{lstlisting}
+	\end{itemize}

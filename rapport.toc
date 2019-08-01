@@ -38,9 +38,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Motor Controller}{13}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Power consumption}{13}{section.3.3}
+\contentsline {section}{\numberline {3.3}Power consumption}{14}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}How many?}{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}How many?}{14}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}Which ones?}{14}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
@@ -102,6 +102,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Hardware Library}{24}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}ROS}{26}{appendix.B}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{27}{section*.4}
+\contentsline {chapter}{Bibliography}{26}{section*.5}

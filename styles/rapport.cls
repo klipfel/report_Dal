@@ -167,6 +167,18 @@
 
 % For program insertion in the latex file.
 \RequirePackage{listings}
+\lstdefinestyle{BashInputStyle}{
+	language=bash,
+	basicstyle=\small\sffamily,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=3pt,
+	frame=tb,
+	columns=fullflexible,
+	backgroundcolor=\color{yellow!20},
+	linewidth=0.9\linewidth,
+	xleftmargin=0.1\linewidth
+}
 \definecolor{green_comment}{rgb}{0.25,0.5,0.5}
 \lstset{  basicstyle=\footnotesize\ttfamily\upshape, % sets the size of the code display.
           keywordstyle=\color{blue}\bfseries,
