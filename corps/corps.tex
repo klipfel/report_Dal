@@ -203,7 +203,6 @@
 		but more generally any object.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
-%TODO
 \chapter{Hardware}\label{hardware}
 
 \introductionLettrine{F}{irst} of all, before even thinking about the tracking process, and
@@ -259,7 +258,36 @@ each challenge which had to be tackled.
 		\end{figure}
 
 		\FloatBarrier
-
+		
+		The figure \vref{hardwarepng} gives a high level understanding of the 
+		hardware organization. But how do the pins of the \textit{Jetson Nano} and the
+		\textit{adafruit PWM shield} interact?
+		\\\indent The figure \vref{pinsnano} presents the \textit{GPIO} layout of the 
+		\textit{Jetson Nano}, and the figure \vref{ada} presents the 
+		pins layout of the \textit{adafruit PWM shield}.
+		
+		\FloatBarrier
+		
+		\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=0.6\columnwidth, height = 0.6\columnwidth]{imgs/nvidia_jetson_gpio.png}
+			\caption{\textit{GPIO} pins of the \textit{Jetson Nano}.}
+			\label{pinsnano}
+		\end{figure}
+		
+		\FloatBarrier
+		
+		\FloatBarrier
+		
+		\begin{figure}[!htbp]
+			\centering
+			\includegraphics[width=1.0\columnwidth, height = 0.4\columnwidth]{imgs/plugging.png}
+			\caption{Pins layout of the \textit{adafruit PWM shield}.}
+			\label{ada}
+		\end{figure}
+		
+		\FloatBarrier
+		
 		\subsection{Components list}
 		
 		The following list contains the links to each product bought in the 
@@ -396,8 +424,7 @@ each challenge which had to be tackled.
 		% Present the battery adviced by jetson hacks.
 		% How many power do our hardware need?
 		\cite{jetsonhacksmorepower,nanoguide,elinuxdoc}
-	
-	% TODO
+
 	\section{Remote control and processing}
 		
 		% Remote control of the robot, supervising, displaying information
@@ -409,9 +436,9 @@ each challenge which had to be tackled.
 		For instance, it is useful to store the data on a remote 
 		computer, to display some curves, or 
 		simply to command the robot remotely when the tracker encounters
-		some hurdles. Communication can be established via \textit{SSH}\footnote{Secure Shell.}
+		some hurdles. Communication can be established via \textit{SSH}, or Secure Shell,
 		in a terminal environment. Yet, the robot needs to be able 
-		to be connected to a network, and unfortunately, the 
+		to connect to a network, and unfortunately, the 
 		\textit{Jetson Nano} does not provide any way to do that. The most common way 
 		to achieve that is by using a \textit{WiFi Module}. A huge 
 		variety of such devices can be find on the market, the question 
@@ -435,9 +462,8 @@ each challenge which had to be tackled.
 		In order to increase those performances a bigger \textit{SD card} of 
 		about 64 GB had to be added.
 		\\\indent Improving the processing speed of the \textit{Jetson Nano}
-		could also be done by artificially increasing the \textit{RAM}\footnote{Random Access
-		Memory.} of the board, which comes with a limited 4 GB of \textit{RAM}. The latter
-		was not put in place, it is highly recommended in the future though. \cite{swap}
+		could also be done by artificially increasing the \textit{RAM}, or Random Access
+		Memory, of the board, which comes with a limited 4 GB of \textit{RAM}. \cite{swap}
 	
 	\section{Unit Tests}
 
@@ -561,7 +587,7 @@ each challenge which had to be tackled.
 		half of what was advertised
 		in the original paper \cite{goturn}. Yet, this may be due to
 		the \textit{OpenCV} implementation, which is not 
-		the initial one, though inspired of it. 
+		the initial one. 
 		These performances seem to suffice for the realization of the tracker though.
 		\\\indent The next step was to interface this implementation 
 		with \textit{ROS}. The tests comprised a static image, and 
@@ -613,7 +639,7 @@ each challenge which had to be tackled.
 			outputs of a sensor, is named a \textit{Node}. In that way, 
 			\textit{ROS} abstractly depicts a robot as a graph, which 
 			comprises nodes which interact between each other.
-			\\\indent How can nodes interact? Each node \textit{publishes}
+			\\\indent How can the nodes interact? Each node \textit{publishes}
 			information on a channel named \textit{topic}, which could 
 			be seen as a file which could be red by other nodes.
 			In the \textit{ROS} language, the node that 
@@ -680,8 +706,8 @@ each challenge which had to be tackled.
 		
 		\FloatBarrier
 		
-		One way the \textit{ROS} architecture figure 
-		\vref{rosarchitecture} was tested
+		One way to implement the \textit{ROS} architecture figure 
+		\vref{rosarchitecture}
 		was to run only the nodes of the drivers on
 		the \textit{Jetson Nano} since each driver needs
 		to run on the hardware, which enables to do 
@@ -756,11 +782,11 @@ each challenge which had to be tackled.
 		The speed will gradually increase if the target rolls away.
 		If the target is too far, the speed will saturate, and reversely, 
 		if the target is too close, the robot will stop. 
-		The parameters in the command law had to be determined
+		The parameters in the command law have to be determined
 		experimentally.
 		\\\indent In case a potentially dangerous obstacle is not comprised in the 
 		bounding box, the tracker won't see it with the previous technique. Thus, a lidar sensor
-		could be added on the front of the robot to detect obstacle in case of emergency.
+		could be added on the front of the robot to detect any obstacle in case of emergency.
 		Alternatively, the entire depth matrix could be filtered and processed to detect
 		other obstacles outside the bounding box and stop the robot if needed.
 		
@@ -772,7 +798,7 @@ each challenge which had to be tackled.
 		The stereo camera was simulated, and the commands were not 
 		applied. The tests showed that the architecture
 		worked as expected with a processing rate of 30 \textit{FPS},
-		which far more than acceptable. The next step was the integration discussed
+		far more than acceptable. The next step was the integration discussed
 		in the part \vref{results}.
 			
 \chapter{Integration}\label{results}
@@ -851,7 +877,7 @@ each challenge which had to be tackled.
 		\subsection{Analysis}
 		
 		The network established between 
-		the remote station and the robot were breaking down frequently.
+		the remote station and the robot was breaking down frequently.
 		It appeared that the \textit{Wifi stick} used, the
 		\href{https://www.miniinthebox.com/en/p/5ghz-usb-wifi-adapter-600mbps-wifi-antenna-2dbi-support-windows-mac-802-11ac-usb-network-card-wifi-dongle-for-desktop-laptop-pc\_p5957285.html?prm=2.3.5.1}{\textit{usb wifi dongle EP-AC1607}}, since the 
 		ordered one had not been delivered at that time, had 
@@ -935,26 +961,29 @@ each challenge which had to be tackled.
 		the tracking processing and which is hard to speed up, the
 		\textit{Goturn} algorithm could be sent to the \textit{Maxwell GPU}
 		of the \textit{Jetson Nano} for better performances. 
-		This is what is called \textit{GPU acceleration}. The performances
+		This is called \textit{GPU acceleration}. The performances
 		were obtained here for an execution on the \textit{two-core CPU} of the 
-		\textit{Jetson Nano}.
+		\textit{Jetson Nano}. Using \textit{GPU} acceleration should
+		bring far better performances \cite{nanotest,installingopencv}.
 		\\\indent However, sending the model to the \textit{GPU} is not trivial.
 		Since \textit{Goturn} is an \textit{OpenCV} function, it is impossible 
 		to use conventional tools, such as \textit{PyCuda, tensorflow-gpu, PyTorch} 
 		to send the code to the \textit{GPU}. The previous tools would require 
-		to hard-code the \textit{Goturn} network.
+		to hard-code the \textit{Goturn} network. \cite{nvidiagpupy,}
 		\\\indent On the backend, \textit{OpenCV} uses \textit{OpenCL} for \textit{GPU}
 		acceleration, and on the \textit{Jetson Nano} \textit{Cuda}, which 
 		is suited for \textit{Nvidia}'s systems uses \textit{OpenCL}, and so \textit{OpenCV}
 		acceleration. The basic \textit{GPU} acceleration of \textit{OpenCV} should 
-		be operating.
+		be operating. It is possible to add some flags, while building 
+		the \textit{OpenCV} library from source to activate the 
+		\textit{GPU} acceleration.\cite{opencl, opencvacceleration, opencvacceleration2, installingopencv}
 		\\\indent Apart from hard-coding the tracking algorithm, another solution would
 		be to use \textit{C++} as a programming language. The idea is then 
 		to code a \textit{C++} wrapper to execute in the back-end a python code.
 		\textit{C++} gives room for more flexibility, and the \textit{Jetson Nano}
 		was primarily designed to use \textit{C++}. These 
 		workarounds have not been tested and present promising results regarding the performances.
-		\\\indent The power supply of the \textit{Jetson Nano} also 
+		\\\indent The power supply of the \textit{Jetson Nano} 
 		influences the frame rate. Once the battery \textit{Krisdonia 25000mAh}
 		is delivered, it would then be possible to double the power supply
 		and, as a consequence, to increase the processing speed.

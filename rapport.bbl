@@ -238,6 +238,25 @@
     \field{title}{Donkey Car.}
   \endentry
 
+  \entry{installingopencv}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=e}{%
+         family={elinux.},
+         familyi={e\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{e1}
+    \strng{fullhash}{e1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{eli}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{\href{https://elinux.org/Jetson/Installing_OpenCV}{link
+  to article.}}
+    \field{title}{Installing OpenCV.}
+  \endentry
+
   \entry{elinuxdoc}{misc}{}
     \name{author}{1}{}{%
       {{hash=e}{%
@@ -245,8 +264,8 @@
          familyi={e\bibinitperiod},
       }}%
     }
-    \strng{namehash}{e1}
-    \strng{fullhash}{e1}
+    \strng{namehash}{e2}
+    \strng{fullhash}{e2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{eLi}
@@ -305,6 +324,27 @@
     \field{sortinithash}{F}
     \field{title}{ROS Robotics By Example}
     \field{year}{2017}
+  \endentry
+
+  \entry{opencvacceleration}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FND}{%
+         family={Forum.},
+         familyi={F\bibinitperiod},
+         given={Nvidia\bibnamedelima Developer},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FND1}
+    \strng{fullhash}{FND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{For}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+  \field{howpublished}{\href{https://devtalk.nvidia.com/default/topic/1049972/jetson-nano/opencv-cuda-python-with-jetson-nano/}{link
+  to FAQ.}}
+    \field{title}{OpenCV, CUDA, Python with Jetson Nano.}
   \endentry
 
   \entry{trakinglist}{misc}{}
@@ -477,6 +517,27 @@
     \field{year}{2017}
   \endentry
 
+  \entry{opencvacceleration2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JJ}{%
+         family={Jung.},
+         familyi={J\bibinitperiod},
+         given={JK},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJ1}
+    \strng{fullhash}{JJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Jun}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+  \field{howpublished}{\href{https://jkjung-avt.github.io/opencv-on-nano/}{link
+  to article.}}
+    \field{title}{Installing OpenCV 3.4.6 on Jetson Nano.}
+  \endentry
+
   \entry{ros}{book}{}
     \name{author}{1}{}{%
       {{hash=KA}{%
@@ -587,6 +648,27 @@
     \field{title}{ROS Programming: Building Powerful Robots: Design, build and
   simulate complex robots using the Robot Operating System}
     \field{year}{2018}
+  \endentry
+
+  \entry{opencl}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MS}{%
+         family={Mallick.},
+         familyi={M\bibinitperiod},
+         given={Satya},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS2}
+    \strng{fullhash}{MS2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mal}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\href{https://www.learnopencv.com/opencv-transparent-api/
+  }{link to article.}}
+    \field{title}{OpenCV Transparent API.}
   \endentry
 
   \entry{learnopencvtracking}{misc}{}
@@ -722,6 +804,26 @@
     \field{title}{ROSCAR.}
   \endentry
 
+  \entry{nvidiagpupy}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={Nvidia.},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N2}
+    \strng{fullhash}{N2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nvi}
+    \field{extraalpha}{1}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+  \field{howpublished}{\href{https://developer.nvidia.com/how-to-cuda-python}{link
+  to article.}}
+    \field{title}{GPU Accelerated Computing with Python.}
+  \endentry
+
   \entry{jetbot}{misc}{}
     \name{author}{1}{}{%
       {{hash=N}{%
@@ -734,7 +836,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{Nvi}
-    \field{extraalpha}{1}
+    \field{extraalpha}{2}
     \field{sortinit}{N}
     \field{sortinithash}{N}
     \field{howpublished}{\url{https://github.com/NVIDIA-AI-IOT/jetbot/wiki}}
@@ -753,7 +855,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{Nvi}
-    \field{extraalpha}{2}
+    \field{extraalpha}{3}
     \field{sortinit}{N}
     \field{sortinithash}{N}
   \field{howpublished}{\href{https://developer.download.nvidia.com/assets/embedded/secure/jetson/Nano/docs/NVIDIA_Jetson_Nano_Developer_Kit_User_Guide.pdf?qLgf5-QtTkYRqAtmK1356pXLyURzsMeGKUnbE77kXPBbihSmfhC2ieV62eF0T3EPI1OCj-dtZvWlvb9DrF60h9pNcvNTPwPjPCyDFqU2MqD207wbiHq_Snu3usMcC15gPzLYT7xnyvCghrca5Y7UGA9ghYaF6An7MERpvymWTMDvkULGYwWnr1nKJW__DXey4YNAxTZ7}{pdf
@@ -773,7 +875,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{Nvi}
-    \field{extraalpha}{3}
+    \field{extraalpha}{4}
     \field{sortinit}{N}
     \field{sortinithash}{N}
     \field{howpublished}{\url{https://github.com/NVIDIA/jetson-gpio}}
@@ -793,7 +895,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{Nvi}
-    \field{extraalpha}{4}
+    \field{extraalpha}{5}
     \field{sortinit}{N}
     \field{sortinithash}{N}
   \field{howpublished}{\url{https://docs.nvidia.com/isaac/isaac/apps/tutorials/doc/assemble_kaya.html}}
@@ -807,12 +909,12 @@
          familyi={N\bibinitperiod},
       }}%
     }
-    \strng{namehash}{N1}
-    \strng{fullhash}{N1}
+    \strng{namehash}{N3}
+    \strng{fullhash}{N3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{Nvi}
-    \field{extraalpha}{5}
+    \field{extraalpha}{6}
     \field{sortinit}{N}
     \field{sortinithash}{N}
   \field{howpublished}{\href{https://developer.nvidia.com/embedded/twodaystoademo}{link
@@ -915,6 +1017,28 @@
     \field{title}{Motors for Makers: A Guide to Steppers, Servos, and Other
   Electrical Machines}
     \field{year}{2015}
+  \endentry
+
+  \entry{nanotest}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SS}{%
+         family={Sterckval.},
+         familyi={S\bibinitperiod},
+         given={Sam},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS1}
+    \strng{fullhash}{SS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ste}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+  \field{howpublished}{\href{https://blog.raccoons.be/coral-tpu-jetson-nano-performance}{link
+  to article.}}
+    \field{title}{Google Coral Edge TPU vs NVIDIA Jetson Nano: A quick deep
+  dive into EdgeAI performance.}
   \endentry
 
   \entry{zeddoc}{misc}{}
