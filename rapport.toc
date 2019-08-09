@@ -94,12 +94,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.2}Analysis}{21}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Setup}{22}{chapter.6}
+\contentsline {section}{\numberline {5.4}Integration of the tracking processing on the embedded computer}{21}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Hardware setup}{22}{section.6.1}
+\contentsline {subsection}{\numberline {5.4.1}Conditions}{21}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Software setup}{22}{section.6.2}
+\contentsline {subsection}{\numberline {5.4.2}Analysis}{22}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Hardware Library}{24}{appendix.A}
+\contentsline {chapter}{\numberline {6}Setup}{23}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{26}{section*.5}
+\contentsline {chapter}{\numberline {A}Hardware Library}{25}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}ROS}{27}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}On the robot}{27}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}On the remote computer}{28}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{31}{section*.5}

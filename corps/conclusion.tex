@@ -10,8 +10,8 @@
 
 \end{comment}
 
-\introductionLettrine{A}{t} the end, the tracker robot was able to track 
-a target, although human targets were followed 
+\introductionLettrine{T}{he} tracker robot was able to track 
+a specified target, human targets were followed 
 more accurately. The \textit{ROS} architecture
 that has been implemented is flexible and could
 be used for further improvements.
@@ -44,3 +44,21 @@ use the common deep learning libraries out of the box, such
 as \textit{PyTorch} or \textit{Tensorflow}. 
 For any deep learning implementation with the \textit{Jetson Nano}, 
 it is recommended to read through the \textit{Nvidia} tutorials  first\cite{dptuto}.
+\\\indent To sum up, the latest tested prototype, as presented in the \href{https://github.com/klipfel/tracker-v1}{github},
+did not implement the speed control. The idea was to obtain first acceptable performances
+for the tracking algorithm, which is the juggernaut of the robot. Several 
+things should be tested for any motivation to continue this project:
+\begin{itemize}
+	\item[\textbullet] Transpose the \textit{ROS} architecture in \textit{ROS2}: it would then 
+	be easier for any \textit{Python} support.
+	\item[\textbullet] Implementing in \textit{C++}: the performances of
+	\textit{C++} compared to those of \textit{Python} are unequivocal. The \textit{Jetson Nano}
+	was designed to be more suitable for \textit{C++} programming.
+	\item[\textbullet] Hard-code the tracking model in \textit{PyTorch, tensorflow}, so that 
+	it would be possible to use \textit{GPU acceleration} on the \textit{Jetson Nano}, cf. 
+	integration presented in \vref{test4}.
+	\item[\textbullet] Test the \textit{Wifi} module and the \textit{Krisdonia 25000mAh}
+	of the \textit{ROS} architecture 
+	presented in \vref{hardwarepng}, when delivered.
+	\item[\textbullet] Test the speed control as presented in figure \vref{rosarchitecture} and in \vref{speed}.
+\end{itemize}

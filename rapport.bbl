@@ -76,6 +76,27 @@
     \field{year}{2018}
   \endentry
 
+  \entry{niko}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BN}{%
+         family={Bartnik},
+         familyi={B\bibinitperiod},
+         given={Nikodem},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BN1}
+    \strng{fullhash}{BN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bar}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+  \field{howpublished}{\href{https://www.instructables.com/id/Object-tracking-robot/}{link
+  to project.}}
+    \field{title}{Object Tracking Robot.}
+  \endentry
+
   \entry{bjelonicYolo2018}{misc}{}
     \name{author}{1}{}{%
       {{hash=BM}{%
@@ -950,6 +971,98 @@
     \field{sortinithash}{U}
   \field{howpublished}{\href{https://github.com/nrupatunga/PY-GOTURN/}{link.}}
     \field{title}{Goturn-Py}
+  \endentry
+
+  \entry{7090411}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=VDM}{%
+         family={{Vo}},
+         familyi={V\bibinitperiod},
+         given={D.\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={{Jiang}},
+         familyi={J\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={{Zell}},
+         familyi={Z\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{human-robot interaction;image colour analysis;mobile robots;object
+  detection;object tracking;pose estimation;real-time systems;robot vision;real
+  time person detection;real time person tracking;mobile robots;RGB-D
+  images;human-robot interaction;human detection;partial occlusions;human
+  poses;Detectors;Kalman filters;Mobile robots;Face;Reliability;Target
+  tracking}
+    \strng{namehash}{VDMJLZA1}
+    \strng{fullhash}{VDMJLZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{VJZ14}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{booktitle}{2014 IEEE International Conference on Robotics and
+  Biomimetics (ROBIO 2014)}
+    \verb{doi}
+    \verb 10.1109/ROBIO.2014.7090411
+    \endverb
+    \field{pages}{689\bibrangedash 694}
+    \field{title}{Real time person detection and tracking by mobile robots
+  using RGB-D images}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{tracker1}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=WM}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Mengmeng},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Daobilige},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MJV}{%
+         family={Miro},
+         familyi={M\bibinitperiod},
+         given={Jaime\bibnamedelima Valls},
+         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WM+1}
+    \strng{fullhash}{WMSDSLLYMJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Wan+}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{howpublished}{\href{https://arxiv.org/abs/1703.04877}{link to
+  paper.}}
+    \field{title}{Real-time 3D Human Tracking for Mobile Robots with
+  Multisensors.}
   \endentry
 \enddatalist
 \endinput
