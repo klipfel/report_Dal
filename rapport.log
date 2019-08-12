@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  12 AUG 2019 09:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.2)  12 AUG 2019 18:55
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -2352,7 +2352,7 @@ Package lettrine.sty Info: Targeted height = 19.3701pt
 (lettrine.sty)             (no accent, loversize=0),
 (lettrine.sty)             Lettrine height = 24.2126pt (F) loversize=0.25;
 (lettrine.sty)             reported on input line 208.
-<imgs/hardware.png, id=424, 1630.09pt x 2193.19376pt>
+<imgs/hardware.png, id=425, 1630.09pt x 2193.19376pt>
 File: imgs/hardware.png Graphic file (type png)
 <use imgs/hardware.png>
 Package pdftex.def Info: imgs/hardware.png  used on input line 255.
@@ -2360,12 +2360,12 @@ Package pdftex.def Info: imgs/hardware.png  used on input line 255.
 [11
 
 ] [12 <./imgs/hardware.png>]
-<imgs/nvidia_jetson_gpio.png, id=440, 642.4pt x 542.025pt>
+<imgs/nvidia_jetson_gpio.png, id=441, 642.4pt x 542.025pt>
 File: imgs/nvidia_jetson_gpio.png Graphic file (type png)
 <use imgs/nvidia_jetson_gpio.png>
 Package pdftex.def Info: imgs/nvidia_jetson_gpio.png  used on input line 273.
 (pdftex.def)             Requested size: 273.15852pt x 273.15392pt.
-<imgs/plugging.png, id=441, 2018.54124pt x 997.7275pt>
+<imgs/plugging.png, id=442, 2018.54124pt x 997.7275pt>
 File: imgs/plugging.png Graphic file (type png)
 <use imgs/plugging.png>
 Package pdftex.def Info: imgs/plugging.png  used on input line 284.
@@ -2386,7 +2386,7 @@ Package lettrine.sty Info: Targeted height = 19.3701pt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 586.
  [18]
-<imgs/ros.png, id=550, 1858.945pt x 1166.3575pt>
+<imgs/ros.png, id=551, 1858.945pt x 1166.3575pt>
 File: imgs/ros.png Graphic file (type png)
 <use imgs/ros.png>
 Package pdftex.def Info: imgs/ros.png  used on input line 702.
@@ -2403,22 +2403,22 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
 [21
 
 ]
-<imgs/time1.jpg, id=578, 1084.05pt x 1927.2pt>
+<imgs/time1.jpg, id=579, 1084.05pt x 1927.2pt>
 File: imgs/time1.jpg Graphic file (type jpg)
 <use imgs/time1.jpg>
 Package pdftex.def Info: imgs/time1.jpg  used on input line 920.
 (pdftex.def)             Requested size: 91.04303pt x 227.60759pt.
-<imgs/time2.jpg, id=579, 1084.05pt x 1927.2pt>
+<imgs/time2.jpg, id=580, 1084.05pt x 1927.2pt>
 File: imgs/time2.jpg Graphic file (type jpg)
 <use imgs/time2.jpg>
 Package pdftex.def Info: imgs/time2.jpg  used on input line 922.
 (pdftex.def)             Requested size: 91.04303pt x 227.60759pt.
-<imgs/time3.jpg, id=580, 1084.05pt x 1927.2pt>
+<imgs/time3.jpg, id=581, 1084.05pt x 1927.2pt>
 File: imgs/time3.jpg Graphic file (type jpg)
 <use imgs/time3.jpg>
 Package pdftex.def Info: imgs/time3.jpg  used on input line 924.
 (pdftex.def)             Requested size: 91.04303pt x 227.60759pt.
-<imgs/time4.jpg, id=581, 1084.05pt x 1927.2pt>
+<imgs/time4.jpg, id=582, 1084.05pt x 1927.2pt>
 File: imgs/time4.jpg Graphic file (type jpg)
 <use imgs/time4.jpg>
 Package pdftex.def Info: imgs/time4.jpg  used on input line 926.
@@ -2578,9 +2578,9 @@ KTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Arnaud/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Arnaud/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb><C:/Users/Arnaud/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb>
-Output written on rapport.pdf (34 pages, 12763062 bytes).
+Output written on rapport.pdf (34 pages, 12763578 bytes).
 PDF statistics:
- 1392 PDF objects out of 1440 (max. 8388607)
+ 1394 PDF objects out of 1440 (max. 8388607)
  535 named destinations out of 1000 (max. 500000)
  503 words of extra memory for PDF output out of 10000 (max. 10000000)
 
